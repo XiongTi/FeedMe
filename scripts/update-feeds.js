@@ -340,12 +340,9 @@ function mergeFeedItems(oldItems = [], newItems = [], maxItems = config.maxItems
 async function updateFeed(sourceUrl) {
   console.log(`更新源: ${sourceUrl}`);
 
-  // 获取今天的日期目录
-  const todayDir = getTodayDateDir();
-
   try {
-    // 获取现有数据（加载当天的数据）
-    const existingData = loadFeedData(sourceUrl, todayDir);
+    // 获取现有数据（从 latest 目录加载）
+    const existingData = loadFeedData(sourceUrl, 'latest');
 
     // 获取新数据
     const newFeed = await fetchRssFeed(sourceUrl);
@@ -409,6 +406,9 @@ async function updateFeed(sourceUrl) {
     
     // 保存到文件（按日期保存）
     await saveFeedData(sourceUrl, updatedData, todayDir);
+    
+    // 同时保存一份到 latest 目录
+    await saveFeedData(sourceUrl, updatedData, 'latest');
 
     return updatedData;
   } catch (error) {
@@ -425,9 +425,18 @@ async function updateAllFeeds() {
   const todayDir = getTodayDateDir();
   const dataDir = path.join(process.cwd(), config.dataPath);
   const todayDataDir = path.join(dataDir, todayDir);
+  const latestDataDir = path.join(dataDir, 'latest');
 
   const results = {};
   const feedCounts = {};
+
+  // 确保目录存在
+  if (!fs.existsSync(todayDataDir)) {
+    fs.mkdirSync(todayDataDir, { recursive: true });
+  }
+  if (!fs.existsSync(latestDataDir)) {
+    fs.mkdirSync(latestDataDir, { recursive: true });
+  }
 
   for (const source of config.sources) {
     try {
@@ -452,19 +461,13 @@ async function updateAllFeeds() {
 
   // 生成索引文件，包含每个源的文章数量（保存在当天目录）
   const indexPath = path.join(todayDataDir, 'index.json');
-  if (!fs.existsSync(todayDataDir)) {
-    fs.mkdirSync(todayDataDir, { recursive: true });
-  }
   fs.writeFileSync(indexPath, JSON.stringify(feedCounts, null, 2), 'utf-8');
   console.log(`已生成索引文件: ${indexPath}`);
 
-  // 同时更新一个指向当天数据的 latest 链接
-  const latestLink = path.join(dataDir, 'latest');
-  if (fs.existsSync(latestLink)) {
-    fs.unlinkSync(latestLink);
-  }
-  fs.symlinkSync(todayDir, latestLink, 'dir');
-  console.log(`已更新 latest 链接: ${latestLink} -> ${todayDir}`);
+  // 同时复制到 latest 目录
+  const latestIndexPath = path.join(latestDataDir, 'index.json');
+  fs.writeFileSync(latestIndexPath, JSON.stringify(feedCounts, null, 2), 'utf-8');
+  console.log(`已更新 latest 索引文件: ${latestIndexPath}`);
 
   console.log("所有RSS源更新完成");
   return results;

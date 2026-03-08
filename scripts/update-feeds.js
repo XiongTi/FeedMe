@@ -99,17 +99,27 @@ function ensureDataDir() {
   return dataDir;
 }
 
+// 获取今天的日期目录
+function getTodayDateDir() {
+  return new Date().toISOString().split('T')[0]; // 格式: 2026-03-08
+}
+
 // 获取源的文件路径
-function getSourceFilePath(sourceUrl) {
+function getSourceFilePath(sourceUrl, dateDir = null) {
   const dataDir = ensureDataDir();
   // 使用URL的Base64编码作为文件名，避免非法字符
   const sourceHash = Buffer.from(sourceUrl).toString('base64').replace(/[/+=]/g, '_');
-  return path.join(dataDir, `${sourceHash}.json`);
+  // 按日期保存到不同目录
+  const targetDir = dateDir ? path.join(dataDir, dateDir) : dataDir;
+  if (!fs.existsSync(targetDir)) {
+    fs.mkdirSync(targetDir, { recursive: true });
+  }
+  return path.join(targetDir, `${sourceHash}.json`);
 }
 
 // 保存源数据到文件
-async function saveFeedData(sourceUrl, data) {
-  const filePath = getSourceFilePath(sourceUrl);
+async function saveFeedData(sourceUrl, data, dateDir = null) {
+  const filePath = getSourceFilePath(sourceUrl, dateDir);
 
   try {
     fs.writeFileSync(filePath, JSON.stringify(data, null, 2), 'utf-8');
@@ -121,8 +131,8 @@ async function saveFeedData(sourceUrl, data) {
 }
 
 // 从文件加载源数据
-function loadFeedData(sourceUrl) {
-  const filePath = getSourceFilePath(sourceUrl);
+function loadFeedData(sourceUrl, dateDir = null) {
+  const filePath = getSourceFilePath(sourceUrl, dateDir);
 
   try {
     if (!fs.existsSync(filePath)) {
@@ -330,9 +340,12 @@ function mergeFeedItems(oldItems = [], newItems = [], maxItems = config.maxItems
 async function updateFeed(sourceUrl) {
   console.log(`更新源: ${sourceUrl}`);
 
+  // 获取今天的日期目录
+  const todayDir = getTodayDateDir();
+
   try {
-    // 获取现有数据
-    const existingData = loadFeedData(sourceUrl);
+    // 获取现有数据（加载当天的数据）
+    const existingData = loadFeedData(sourceUrl, todayDir);
 
     // 获取新数据
     const newFeed = await fetchRssFeed(sourceUrl);
@@ -391,8 +404,11 @@ async function updateFeed(sourceUrl) {
       lastUpdated: new Date().toISOString(),
     };
 
-    // 保存到文件
-    await saveFeedData(sourceUrl, updatedData);
+    // 获取今天的日期目录
+    const todayDir = getTodayDateDir();
+    
+    // 保存到文件（按日期保存）
+    await saveFeedData(sourceUrl, updatedData, todayDir);
 
     return updatedData;
   } catch (error) {
@@ -404,6 +420,11 @@ async function updateFeed(sourceUrl) {
 // 更新所有源
 async function updateAllFeeds() {
   console.log("开始更新所有RSS源");
+
+  // 获取今天的日期目录
+  const todayDir = getTodayDateDir();
+  const dataDir = path.join(process.cwd(), config.dataPath);
+  const todayDataDir = path.join(dataDir, todayDir);
 
   const results = {};
   const feedCounts = {};
@@ -429,10 +450,21 @@ async function updateAllFeeds() {
     }
   }
 
-  // 生成索引文件，包含每个源的文章数量
-  const indexPath = path.join(process.cwd(), config.dataPath, 'index.json');
+  // 生成索引文件，包含每个源的文章数量（保存在当天目录）
+  const indexPath = path.join(todayDataDir, 'index.json');
+  if (!fs.existsSync(todayDataDir)) {
+    fs.mkdirSync(todayDataDir, { recursive: true });
+  }
   fs.writeFileSync(indexPath, JSON.stringify(feedCounts, null, 2), 'utf-8');
   console.log(`已生成索引文件: ${indexPath}`);
+
+  // 同时更新一个指向当天数据的 latest 链接
+  const latestLink = path.join(dataDir, 'latest');
+  if (fs.existsSync(latestLink)) {
+    fs.unlinkSync(latestLink);
+  }
+  fs.symlinkSync(todayDir, latestLink, 'dir');
+  console.log(`已更新 latest 链接: ${latestLink} -> ${todayDir}`);
 
   console.log("所有RSS源更新完成");
   return results;

@@ -1,6 +1,14 @@
 import { config } from "@/config/rss-config"
 import type { FeedData, FeedItem } from "@/lib/types"
 
+export interface FeedIndex {
+  [url: string]: {
+    name: string
+    count: number
+    category: string
+  }
+}
+
 /**
  * 从静态数据文件加载RSS数据
  * 使用fetch从public/data目录加载JSON文件
@@ -109,4 +117,28 @@ export async function mergeFeedItems(
     .slice(0, maxItems); // 只保留指定数量的条目
 
   return { mergedItems, newItemsForSummary }
+}
+
+/**
+ * 加载 RSS 源索引，获取每个源的文章数量
+ */
+export async function loadFeedIndex(): Promise<FeedIndex | null> {
+  try {
+    const basePath = window.location.pathname.endsWith('/')
+      ? window.location.pathname
+      : window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/') + 1)
+
+    const indexUrl = `${basePath}data/index.json`
+    const response = await fetch(indexUrl)
+
+    if (!response.ok) {
+      return null
+    }
+
+    const data = await response.json()
+    return data as FeedIndex
+  } catch (error) {
+    console.error("Error loading feed index:", error)
+    return null
+  }
 }

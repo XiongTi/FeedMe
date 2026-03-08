@@ -406,16 +406,33 @@ async function updateAllFeeds() {
   console.log("开始更新所有RSS源");
 
   const results = {};
+  const feedCounts = {};
 
   for (const source of config.sources) {
     try {
-      await updateFeed(source.url);
+      const data = await updateFeed(source.url);
       results[source.url] = true;
+      // 记录每个源的文章数量
+      feedCounts[source.url] = {
+        name: source.name,
+        count: data.items.length,
+        category: source.category
+      };
     } catch (error) {
       console.error(`更新 ${source.url} 失败:`, error);
       results[source.url] = false;
+      feedCounts[source.url] = {
+        name: source.name,
+        count: 0,
+        category: source.category
+      };
     }
   }
+
+  // 生成索引文件，包含每个源的文章数量
+  const indexPath = path.join(process.cwd(), config.dataPath, 'index.json');
+  fs.writeFileSync(indexPath, JSON.stringify(feedCounts, null, 2), 'utf-8');
+  console.log(`已生成索引文件: ${indexPath}`);
 
   console.log("所有RSS源更新完成");
   return results;

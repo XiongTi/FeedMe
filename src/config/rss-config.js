@@ -13,9 +13,10 @@
 // 默认配置
 export const config = {
   sources: [
+    // Folo 订阅 - 通过 API 单独获取
     {
       name: "Folo 订阅",
-      url: "folo://253497641939404800",
+      url: "folo://list",
       category: "Folo",
     },
     {

@@ -99,7 +99,7 @@ export const config = {
   ],
   maxItemsPerFeed: 30,
   // AI 打分阈值配置
-  aiScoreThreshold: 6.0,
+  aiScoreThreshold: 7.0,
   dataPath: "./public/data",
 }
 

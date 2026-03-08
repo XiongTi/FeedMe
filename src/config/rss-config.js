@@ -38,12 +38,12 @@ export const config = {
       url: "https://rsshub.rssforever.com/github/trending/weekly/any",
       category: "代码项目",
     },
-    // HuggingFace 在国内访问困难，先禁用
-    // {
-    //   name: "Hugging Face 每日论文",
-    //   url: "https://rsshub.rssforever.com/huggingface/daily-papers",
-    //   category: "科研论文",
-    // },
+    {
+      name: "Hugging Face 每日论文",
+      url: "https://rsshub.rssforever.com/huggingface/daily-papers",
+      category: "科研论文",
+    },
+    // HuggingFace Blog 503 错误，暂不可用
     // {
     //   name: "Hugging Face 博客",
     //   url: "https://rsshub.rssforever.com/huggingface/blog",

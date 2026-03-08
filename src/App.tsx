@@ -6,15 +6,16 @@ import { ScrollToTop } from '@/components/scroll-to-top';
 import { defaultSource, getSourcesByCategory } from '@/config/rss-config';
 import { Github, Rss, Sparkles, Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useSearchParams } from '@/hooks/use-navigation';
 import { Badge } from '@/components/ui/badge';
+import { loadFeedIndex, type FeedIndex } from '@/lib/data-store';
 
 function App() {
   return (
     <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
       <div className="min-h-screen bg-background flex">
-        <Sidebar />
+        <SidebarWithData />
         <main className="flex-1 min-h-screen">
           <div className="container py-6 px-4 md:px-8 mx-auto max-w-3xl">
             <Header />
@@ -32,7 +33,17 @@ function App() {
   );
 }
 
-function Sidebar() {
+function SidebarWithData() {
+  const [feedIndex, setFeedIndex] = useState<FeedIndex | null>(null)
+
+  useEffect(() => {
+    loadFeedIndex().then(setFeedIndex)
+  }, [])
+
+  return <Sidebar feedIndex={feedIndex} />
+}
+
+function Sidebar({ feedIndex }: { feedIndex: FeedIndex | null }) {
   const [isOpen, setIsOpen] = useState(false)
   const searchParams = useSearchParams()
   const currentSource = searchParams.get("source")
@@ -87,26 +98,34 @@ function Sidebar() {
                     {category}
                   </h3>
                   <div className="space-y-1">
-                    {sources.map((source: any) => (
-                      <a
-                        key={source.url}
-                        href={`${basePath}?source=${encodeURIComponent(source.url)}`}
-                        className={`
-                          block px-3 py-2 rounded-md text-sm transition-colors
-                          ${currentSource === source.url 
-                            ? 'bg-primary text-primary-foreground font-medium' 
-                            : 'hover:bg-muted text-foreground/80'}
-                        `}
-                        onClick={() => setIsOpen(false)}
-                      >
-                        <div className="flex items-center justify-between">
-                          <span className="truncate">{source.name}</span>
-                          <Badge variant="secondary" className="text-xs ml-2 shrink-0">
-                            {source.maxItems || 30}
-                          </Badge>
-                        </div>
-                      </a>
-                    ))}
+                    {sources.map((source: any) => {
+                      // 从索引中获取真实数量
+                      const indexData = feedIndex?.[source.url]
+                      const count = indexData?.count || 0
+                      
+                      return (
+                        <a
+                          key={source.url}
+                          href={`${basePath}?source=${encodeURIComponent(source.url)}`}
+                          className={`
+                            block px-3 py-2 rounded-md text-sm transition-colors
+                            ${currentSource === source.url 
+                              ? 'bg-primary text-primary-foreground font-medium' 
+                              : 'hover:bg-muted text-foreground/80'}
+                          `}
+                          onClick={() => setIsOpen(false)}
+                        >
+                          <div className="flex items-center justify-between">
+                            <span className="truncate">{source.name}</span>
+                            {count > 0 && (
+                              <Badge variant="secondary" className="text-xs ml-2 shrink-0">
+                                {count}
+                              </Badge>
+                            )}
+                          </div>
+                        </a>
+                      )
+                    })}
                   </div>
                 </div>
               ))}

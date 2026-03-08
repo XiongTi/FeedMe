@@ -137,46 +137,91 @@ function loadFeedData(sourceUrl) {
   }
 }
 
-// 生成摘要函数
-async function generateSummary(title, content) {
-  try {
-    // 确保 content 不为空
-    const contentToClean = content || "";
-    // 清理内容 - 移除HTML标签
-    const cleanContent = contentToClean.replace(/<[^>]*>?/gm, "");
+// AI 打分 prompt
+const SCORING_SYSTEM = `你是一个专业的内容评分专家。请根据以下标准对内容进行评分：
 
-    // 准备提示词
-    const prompt = `
-你是一个专业的内容摘要生成器。请根据以下文章标题和内容，生成一个简洁、准确的中文摘要。
+**评分维度（0-10分）：**
+- 9-10分：突破性进展、重大发布、重要研究突破
+- 7-8分：高价值技术分析、实用工具、有深度的观点
+- 5-6分：有意思但不必需、增量改进
+- 3-4分：低优先级、常见内容
+- 0-2分：噪音、广告、无关内容
+
+考虑因素：技术深度、创新性、实用性、影响力。`;
+
+const SCORING_USER = `请分析以下内容并返回 JSON 格式的评分和摘要：
+
+标题：{title}
+内容：{content}
+
+返回格式：
+{{
+  "score": <0-10的数字>,
+  "reason": "<简短评分理由>",
+  "summary": "<100字左右的中文摘要>
+}}`;
+
+const SUMMARY_SYSTEM = `你是一个专业的内容摘要生成器。请根据以下文章标题和内容，生成一个简洁、准确的中文摘要。
 摘要应该：
 1. 捕捉文章的主要观点和关键信息
 2. 使用清晰、流畅的中文
 3. 长度控制在100字左右
 4. 保持客观，不添加个人观点
-5. 如果文章内容为空或不包含有效信息，不要生成文章标题或内容未提及的无关内容。对非中文的标题进行翻译，不需要翻译中文的标题
+5. 如果文章内容为空或不包含有效信息，不要生成文章标题或内容未提及的无关内容。对非中文的标题进行翻译，不需要翻译中文的标题`;
 
-文章标题：${title}
+const SUMMARY_USER = `文章标题：{title}
 
 文章内容：
-${cleanContent.slice(0, 5000)} // 限制内容长度以避免超出token限制
-`;
+{content}`;
+
+// 生成摘要和评分函数
+async function generateSummaryAndScore(title, content) {
+  try {
+    const contentToClean = (content || "").replace(/<[^>]*>?/gm, "");
+    const cleanContent = contentToClean.slice(0, 5000);
+
+    // 同时请求评分和摘要
+    const prompt = SCORING_USER
+      .replace('{title}', title)
+      .replace('{content}', cleanContent);
 
     const completion = await openai.chat.completions.create({
       model: OPENAI_MODEL_NAME,
       messages: [
-        {
-          role: "user",
-          content: prompt
-        }
+        { role: "system", content: SCORING_SYSTEM },
+        { role: "user", content: prompt }
       ],
       temperature: 0.3,
-      max_tokens: 500,
+      max_tokens: 600,
     });
 
-    return completion.choices[0].message.content?.trim() || "无法生成摘要。";
+    const response = completion.choices[0].message.content?.trim() || "";
+
+    // 尝试解析 JSON
+    let result = {};
+    try {
+      result = JSON.parse(response);
+    } catch (e) {
+      // 如果 JSON 解析失败，尝试从文本中提取
+      const scoreMatch = response.match(/"score"\s*:\s*(\d+(?:\.\d+)?)/);
+      const reasonMatch = response.match(/"reason"\s*:\s*"([^"]+)"/);
+      const summaryMatch = response.match(/"summary"\s*:\s*"([^"]+)"/);
+
+      result = {
+        score: scoreMatch ? parseFloat(scoreMatch[1]) : 5,
+        reason: reasonMatch ? reasonMatch[1] : "",
+        summary: summaryMatch ? summaryMatch[1] : response
+      };
+    }
+
+    return {
+      score: result.score || 5,
+      reason: result.reason || "",
+      summary: result.summary || "无法生成摘要"
+    };
   } catch (error) {
-    console.error("生成摘要时出错:", error);
-    return "无法生成摘要。AI 模型暂时不可用。";
+    console.error("生成摘要和评分时出错:", error);
+    return { score: 5, reason: "AI 模型暂时不可用", summary: "无法生成摘要" };
   }
 }
 
@@ -248,21 +293,23 @@ function mergeFeedItems(oldItems = [], newItems = [], maxItems = config.maxItems
         newItemsForSummary.push(item);
       }
 
-      // 无论如何都更新Map，使用新条目（但保留旧摘要如果有的话）
-      // 注意：item.summary 可能来自 Atom feed 的 <summary> 标签，这是原始内容，而不是我们生成的摘要
-      // 为了避免混淆，将 Atom feed 的 summary 移动到 content 字段
+      // 无论如何都更新Map，使用新条目（但保留旧摘要和评分如果有的话）
       let generatedSummary = existingItem?.summary;
+      let existingScore = existingItem?.ai_score;
+      let existingReason = existingItem?.ai_reason;
 
       // 如果 item 有 summary 但没有 content，这可能是 Atom feed 的情况
       if (!item.content && item.summary && !generatedSummary) {
-        item.content = item.summary; // 将 Atom feed 的 summary 移动到 content
-        item.summary = undefined; // 清除原始的 summary，避免与我们的生成摘要混淆
+        item.content = item.summary;
+        item.summary = undefined;
       }
 
       const serializedItem = {
         ...item,
         content: item.content || existingItem?.content || "",
-        summary: generatedSummary || item.summary, // 保留已生成的摘要
+        summary: generatedSummary || item.summary,
+        ai_score: existingScore ?? item.ai_score,
+        ai_reason: existingReason ?? item.ai_reason,
       };
 
       itemsMap.set(item.link, serializedItem);
@@ -299,19 +346,24 @@ async function updateFeed(sourceUrl) {
 
     console.log(`发现 ${newItemsForSummary.length} 条新条目，来自 ${sourceUrl}`);
 
-    // 为新条目生成摘要
+    // 为新条目生成摘要和评分
+    const threshold = config.aiScoreThreshold || 6.0;
     const itemsWithSummaries = await Promise.all(
       mergedItems.map(async (item) => {
         // 如果是新条目且需要生成摘要
         if (newItemsForSummary.some((newItem) => newItem.link === item.link) && !item.summary) {
           try {
-            // 确保使用任何可用的内容源 - content, item 本身的 summary 字段, 或 contentSnippet
             const contentForSummary = item.content || item.contentSnippet || "";
-            const summary = await generateSummary(item.title, contentForSummary);
-            return { ...item, summary };
+            const result = await generateSummaryAndScore(item.title, contentForSummary);
+            return { 
+              ...item, 
+              summary: result.summary,
+              ai_score: result.score,
+              ai_reason: result.reason
+            };
           } catch (err) {
             console.error(`为条目 ${item.title} 生成摘要时出错:`, err);
-            return { ...item, summary: "无法生成摘要。" };
+            return { ...item, summary: "无法生成摘要", ai_score: 5, ai_reason: "AI 错误" };
           }
         }
         // 否则保持不变
@@ -319,13 +371,23 @@ async function updateFeed(sourceUrl) {
       }),
     );
 
+    // 按 AI 分数排序
+    itemsWithSummaries.sort((a, b) => (b.ai_score || 0) - (a.ai_score || 0));
+
+    // 过滤掉低于阈值的条目
+    const filteredItems = itemsWithSummaries.filter(item => (item.ai_score || 0) >= threshold);
+    const filteredCount = itemsWithSummaries.length - filteredItems.length;
+    if (filteredCount > 0) {
+      console.log(`过滤掉 ${filteredCount} 条低分内容（分数 < ${threshold}）`);
+    }
+
     // 创建新的数据对象
     const updatedData = {
       sourceUrl,
       title: newFeed.title,
       description: newFeed.description,
       link: newFeed.link,
-      items: itemsWithSummaries,
+      items: filteredItems,
       lastUpdated: new Date().toISOString(),
     };
 

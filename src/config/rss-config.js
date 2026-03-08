@@ -38,16 +38,17 @@ export const config = {
       url: "https://rsshub.rssforever.com/github/trending/weekly/any",
       category: "代码项目",
     },
-    {
-      name: "Hugging Face 每日论文",
-      url: "https://rsshub.rssforever.com/huggingface/daily-papers",
-      category: "科研论文",
-    },
-    {
-      name: "Hugging Face 博客",
-      url: "https://rsshub.rssforever.com/huggingface/blog",
-      category: "技术博客",
-    },
+    // HuggingFace 在国内访问困难，先禁用
+    // {
+    //   name: "Hugging Face 每日论文",
+    //   url: "https://rsshub.rssforever.com/huggingface/daily-papers",
+    //   category: "科研论文",
+    // },
+    // {
+    //   name: "Hugging Face 博客",
+    //   url: "https://rsshub.rssforever.com/huggingface/blog",
+    //   category: "技术博客",
+    // },
     {
       name: "Google 开发者博客",
       url: "https://rsshub.rssforever.com/google/developers/en",
@@ -63,16 +64,13 @@ export const config = {
       url: "https://simonwillison.net/atom/everything/",
       category: "技术博客",
     },
-    {
-      name: "Microsoft Research",
-      url: "https://www.microsoft.com/en-us/research/feed/",
-      category: "技术博客",
-    },
+    // Microsoft Research 国内访问困难
     // {
-    //   name: "Product Hunt 今日热门",
-    //   url: "https://rsshub.rssforever.com/producthunt/today",
-    //   category: "产品资讯",
+    //   name: "Microsoft Research",
+    //   url: "https://www.microsoft.com/en-us/research/feed/",
+    //   category: "技术博客",
     // },
+    // Product Hunt 已被注释
     {
       name: "LINUX DO 今日热门",
       url: "https://r4l.deno.dev/https://linux.do/top.rss?period=daily",
@@ -100,6 +98,8 @@ export const config = {
     },
   ],
   maxItemsPerFeed: 30,
+  // AI 打分阈值配置
+  aiScoreThreshold: 6.0,
   dataPath: "./public/data",
 }
 

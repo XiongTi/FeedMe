@@ -504,7 +504,7 @@ async function updateAllFeeds() {
   }
 
   // 先获取 Folo 数据
-  const folioUrl = `folo://${FOLO_CONFIG.listId}`;
+  const folioUrl = "folo://list";
   try {
     console.log("正在获取 Folo 数据...");
     const folioData = await fetchFoloData();

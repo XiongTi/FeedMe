@@ -8,9 +8,9 @@ import { fileURLToPath } from 'url';
 import Parser from 'rss-parser';
 import { OpenAI } from 'openai';
 
-// Folo 配置
+// Folo 配置 - 从环境变量或 GitHub Secrets 读取
 const FOLO_CONFIG = {
-  cookie: process.env.FOLO_COOKIE || '__Secure-better-auth.session_token=你的Cookie',
+  cookie: process.env.FOLO_COOKIE || '',
   listId: process.env.FOLO_LIST_ID || '253497641939404800',
   apiUrl: 'https://api.follow.is/entries',
 };

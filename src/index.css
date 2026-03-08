@@ -94,4 +94,29 @@ body {
   .dark .feed-card {
     @apply bg-card border-border shadow-md hover:shadow-lg;
   }
+
+  /* 隐藏滚动条但保持滚动功能 */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* 流畅的滚动行为 */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* 卡片悬停效果 */
+  .feed-card:hover {
+    @apply border-primary/30;
+  }
+
+  /* 评分徽章动画 */
+  .feed-card:hover [class*="bg-"] {
+    @apply scale-105 transition-transform;
+  }
 }

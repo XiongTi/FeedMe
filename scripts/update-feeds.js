@@ -8,6 +8,13 @@ import { fileURLToPath } from 'url';
 import Parser from 'rss-parser';
 import { OpenAI } from 'openai';
 
+// Folo 配置
+const FOLO_CONFIG = {
+  cookie: process.env.FOLO_COOKIE || '__Secure-better-auth.session_token=你的Cookie',
+  listId: process.env.FOLO_LIST_ID || '253497641939404800',
+  apiUrl: 'https://api.follow.is/entries',
+};
+
 // 从配置文件中导入RSS源配置
 import { config } from '../src/config/rss-config.js';
 
@@ -143,6 +150,64 @@ function loadFeedData(sourceUrl, dateDir = null) {
     return JSON.parse(data);
   } catch (error) {
     console.error(`加载数据 ${sourceUrl} 时出错:`, error);
+    return null;
+  }
+}
+
+// 从 Folo 获取数据
+async function fetchFoloData() {
+  const { cookie, listId, apiUrl } = FOLO_CONFIG;
+  
+  console.log(`从 Folo 获取数据, listId: ${listId}`);
+  
+  try {
+    const response = await fetch(apiUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Cookie': cookie,
+      },
+      body: JSON.stringify({
+        listId: listId,
+        view: 1,
+        withContent: true,
+      }),
+    });
+
+    if (!response.ok) {
+      throw new Error(`Folo API error: ${response.statusText}`);
+    }
+
+    const result = await response.json();
+    
+    if (result.code !== 0) {
+      throw new Error(`Folo API error: ${result.message}`);
+    }
+
+    // 转换 Folo 数据为 FeedMe 格式
+    const items = result.data.map(entry => ({
+      id: entry.entries.id,
+      title: entry.entries.title,
+      link: entry.entries.url,
+      content: entry.entries.content || entry.entries.description || '',
+      contentSnippet: entry.entries.summary || entry.entries.description || '',
+      pubDate: entry.entries.publishedAt,
+      isoDate: entry.entries.publishedAt,
+      creator: entry.entries.author || entry.feeds?.title || 'Unknown',
+      ai_score: 7, // 默认给 Folo 内容 7 分
+      ai_reason: entry.feeds?.title || 'Folo',
+    }));
+
+    return {
+      sourceUrl: `folo://${listId}`,
+      title: 'Folo 订阅',
+      description: '来自 Folo 的订阅内容',
+      link: 'https://app.folo.is',
+      items: items,
+      lastUpdated: new Date().toISOString(),
+    };
+  } catch (error) {
+    console.error('获取 Folo 数据失败:', error);
     return null;
   }
 }
@@ -438,6 +503,41 @@ async function updateAllFeeds() {
     fs.mkdirSync(latestDataDir, { recursive: true });
   }
 
+  // 先获取 Folo 数据
+  const folioUrl = `folo://${FOLO_CONFIG.listId}`;
+  try {
+    console.log("正在获取 Folo 数据...");
+    const folioData = await fetchFoloData();
+    if (folioData && folioData.items.length > 0) {
+      // 保存 Folo 数据
+      const folioFilePath = path.join(latestDataDir, Buffer.from(folioUrl).toString('base64').replace(/[/+=]/g, '_') + '.json');
+      fs.writeFileSync(folioFilePath, JSON.stringify(folioData, null, 2), 'utf-8');
+      results[folioUrl] = true;
+      feedCounts[folioUrl] = {
+        name: 'Folo 订阅',
+        count: folioData.items.length,
+        category: 'Folo'
+      };
+      console.log(`Folo 数据获取成功: ${folioData.items.length} 条`);
+    } else {
+      results[folioUrl] = false;
+      feedCounts[folioUrl] = {
+        name: 'Folo 订阅',
+        count: 0,
+        category: 'Folo'
+      };
+    }
+  } catch (error) {
+    console.error('获取 Folo 数据失败:', error);
+    results[folioUrl] = false;
+    feedCounts[folioUrl] = {
+      name: 'Folo 订阅',
+      count: 0,
+      category: 'Folo'
+    };
+  }
+
+  // 更新其他 RSS 源
   for (const source of config.sources) {
     try {
       const data = await updateFeed(source.url);

@@ -20,13 +20,12 @@ export async function loadFeedData(sourceUrl: string): Promise<FeedData | null> 
     const sourceHash = btoa(sourceUrl).replace(/[/+=]/g, "_")
 
     // 获取当前HTML文档的基础路径
-    // 使用pathname（去掉文件名，保留目录）
     const basePath = window.location.pathname.endsWith('/')
       ? window.location.pathname
       : window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/') + 1)
 
-    // 使用绝对路径从基础路径加载数据文件
-    const dataUrl = `${basePath}data/${sourceHash}.json`
+    // 尝试从 latest 目录加载（当天的数据）
+    const dataUrl = `${basePath}data/latest/${sourceHash}.json`
 
     try {
       const response = await fetch(dataUrl)
@@ -54,7 +53,32 @@ export async function loadFeedData(sourceUrl: string): Promise<FeedData | null> 
 export async function getAllCachedSources(): Promise<string[]> {
   // 从配置中获取所有源URL，因为我们无法动态检索文件系统
   return config.sources.map(source => source.url)
-          }
+}
+
+/**
+ * 加载 RSS 源索引，获取每个源的文章数量
+ */
+export async function loadFeedIndex(): Promise<FeedIndex | null> {
+  try {
+    const basePath = window.location.pathname.endsWith('/')
+      ? window.location.pathname
+      : window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/') + 1)
+
+    // 从 latest 目录加载索引
+    const indexUrl = `${basePath}data/latest/index.json`
+    const response = await fetch(indexUrl)
+
+    if (!response.ok) {
+      return null
+    }
+
+    const data = await response.json()
+    return data as FeedIndex
+  } catch (error) {
+    console.error("Error loading feed index:", error)
+    return null
+  }
+}
 
 /**
  * 合并新旧Feed条目
@@ -117,28 +141,4 @@ export async function mergeFeedItems(
     .slice(0, maxItems); // 只保留指定数量的条目
 
   return { mergedItems, newItemsForSummary }
-}
-
-/**
- * 加载 RSS 源索引，获取每个源的文章数量
- */
-export async function loadFeedIndex(): Promise<FeedIndex | null> {
-  try {
-    const basePath = window.location.pathname.endsWith('/')
-      ? window.location.pathname
-      : window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/') + 1)
-
-    const indexUrl = `${basePath}data/index.json`
-    const response = await fetch(indexUrl)
-
-    if (!response.ok) {
-      return null
-    }
-
-    const data = await response.json()
-    return data as FeedIndex
-  } catch (error) {
-    console.error("Error loading feed index:", error)
-    return null
-  }
 }

@@ -1,7 +1,6 @@
 import { Suspense } from 'react';
 import { ThemeProvider } from '@/components/theme-provider';
 import { RssFeed } from '@/components/rss-feed';
-import { SourceSwitcher } from '@/components/source-switcher';
 import { ThemeToggle } from '@/components/theme-toggle';
 import { ScrollToTop } from '@/components/scroll-to-top';
 import { defaultSource, getSourcesByCategory } from '@/config/rss-config';
@@ -100,7 +99,12 @@ function Sidebar() {
                         `}
                         onClick={() => setIsOpen(false)}
                       >
-                        {source.name}
+                        <div className="flex items-center justify-between">
+                          <span className="truncate">{source.name}</span>
+                          <Badge variant="secondary" className="text-xs ml-2 shrink-0">
+                            {source.maxItems || 30}
+                          </Badge>
+                        </div>
                       </a>
                     ))}
                   </div>
@@ -134,15 +138,7 @@ function Sidebar() {
 function Header() {
   return (
     <div className="space-y-4">
-      <div className="flex items-center justify-between">
-        <div className="md:hidden w-10" /> {/* Spacer for mobile menu button */}
-        <div className="flex-1 md:hidden" /> {/* Spacer */}
-      </div>
-      <div className="hidden md:block">
-        <Suspense fallback={<div className="w-full md:w-[300px] h-10 bg-muted rounded-md animate-pulse" />}>
-          <SourceSwitcher />
-        </Suspense>
-      </div>
+      <div className="h-10" /> {/* Spacer for mobile menu */}
     </div>
   )
 }
@@ -155,7 +151,7 @@ function Footer() {
           Stay hungry. 😋
         </p>
         <p className="text-xs text-muted-foreground mt-1">
-          由 AI 生成摘要 · 评分过滤高价值内容
+          由 AI 评分过滤高价值内容
         </p>
       </div>
     </footer>

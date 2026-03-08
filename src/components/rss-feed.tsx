@@ -141,9 +141,9 @@ export function RssFeed({ defaultSource }: { defaultSource: string }) {
                       </a>
                     </CardTitle>
                   </div>
-                  <CardDescription className="flex items-center gap-2 mt-1">
+                  <CardDescription className="flex items-center gap-2 mt-1 text-muted-foreground/80">
                     {formatDate(item.pubDate || item.isoDate) && <span>{formatDate(item.pubDate || item.isoDate)}</span>}
-                    {item.creator && <span>· {item.creator}</span>}
+                    {item.creator && <><span className="mx-1">·</span><span>{item.creator}</span></>}
                     {item.ai_reason && (
                       <span className="text-xs bg-muted px-2 py-0.5 rounded-full ml-2">
                         {item.ai_reason}

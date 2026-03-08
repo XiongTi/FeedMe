@@ -14,6 +14,11 @@
 export const config = {
   sources: [
     {
+      name: "Folo 订阅",
+      url: "folo://253497641939404800",
+      category: "Folo",
+    },
+    {
       name: "Hacker News 近期最佳",
       url: "https://hnrss.org/best",
       category: "科技资讯",
@@ -63,7 +68,7 @@ export const config = {
       name: "Simon Willison's Weblog",
       url: "https://simonwillison.net/atom/everything/",
       category: "技术博客",
-    }
+    },
     // Microsoft Research 国内访问困难
     // {
     //   name: "Microsoft Research",
@@ -71,35 +76,35 @@ export const config = {
     //   category: "技术博客",
     // },
     // Product Hunt 已被注释
-    //{
-    //  name: "LINUX DO 今日热门",
-    //  url: "https://r4l.deno.dev/https://linux.do/top.rss?period=daily",
-    //  category: "论坛",
-    //},
-    //{
-    //  name: "LINUX DO 近一周热门",
-    //  url: "https://r4l.deno.dev/https://linux.do/top.rss?period=weekly",
-    //  category: "论坛",
-    //},
-    //{
-    //  name: "LINUX DO 近一月热门",
-    //  url: "https://r4l.deno.dev/https://linux.do/top.rss?period=monthly",
-    //  category: "论坛",
-    //},
-    //{
-    //  name: "V2EX 今日热门",
-    //  url: "https://rsshub.rssforever.com/v2ex/topics/hot",
-    //  category: "论坛",
-    //},
-    //{
-    //  name: "Bangumi 近一月热门",
-    //  url: "https://rsshub.rssforever.com/bangumi.tv/anime/followrank",
-    //  category: "番剧资讯",
-    //},
+    {
+      name: "LINUX DO 今日热门",
+      url: "https://r4l.deno.dev/https://linux.do/top.rss?period=daily",
+      category: "论坛",
+    },
+    {
+      name: "LINUX DO 近一周热门",
+      url: "https://r4l.deno.dev/https://linux.do/top.rss?period=weekly",
+      category: "论坛",
+    },
+    {
+      name: "LINUX DO 近一月热门",
+      url: "https://r4l.deno.dev/https://linux.do/top.rss?period=monthly",
+      category: "论坛",
+    },
+    {
+      name: "V2EX 今日热门",
+      url: "https://rsshub.rssforever.com/v2ex/topics/hot",
+      category: "论坛",
+    },
+    {
+      name: "Bangumi 近一月热门",
+      url: "https://rsshub.rssforever.com/bangumi.tv/anime/followrank",
+      category: "番剧资讯",
+    },
   ],
-  maxItemsPerFeed: 10,
+  maxItemsPerFeed: 30,
   // AI 打分阈值配置
-  aiScoreThreshold: 7.5,
+  aiScoreThreshold: 7.0,
   dataPath: "./public/data",
 }
 

@@ -14,11 +14,11 @@
 export const config = {
   sources: [
     // Folo 订阅 - 通过 API 单独获取
-    {
-      name: "Folo 订阅",
-      url: "folo://list",
-      category: "Folo",
-    },
+    //{
+    //  name: "Folo 订阅",
+    //  url: "folo://list",
+    //  category: "Folo",
+   // },
     {
       name: "Hacker News 近期最佳",
       url: "https://hnrss.org/best",

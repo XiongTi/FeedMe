@@ -19,11 +19,11 @@ export const config = {
     //  url: "folo://list",
     //  category: "Folo",
    // },
-    // {
-    //   name: "Hacker News 近期最佳",
-    //   url: "https://hnrss.org/best",
-    //   category: "科技资讯",
-    // },
+     {
+       name: "Hacker News 近期最佳",
+       url: "https://hnrss.org/best",
+       category: "科技资讯",
+     },
     // {
     //   name: "Hacker News 历史每日前十",
      //  url: "https://rsshub.rssforever.com/github/issue/headllines/hackernews-daily",

@@ -179,8 +179,8 @@ async function fetchFoloData() {
       method: 'POST',
       headers: headers,
       body: JSON.stringify({
-        listId: parseInt(listId),
-        view: "1",
+        listId: listId,
+        view: 1,
         withContent: true,
       }),
     });

@@ -467,8 +467,26 @@ async function updateFeed(sourceUrl) {
       }),
     );
 
-    // 按 AI 分数排序
-    itemsWithSummaries.sort((a, b) => (b.ai_score || 0) - (a.ai_score || 0));
+    // 处理日期字段：确保每条都有日期
+    itemsWithSummaries.forEach(item => {
+      if (!item.pubDate && !item.isoDate) {
+        // 没有日期的用当前时间
+        item.pubDate = new Date().toISOString();
+        item.isoDate = item.pubDate;
+      }
+    });
+
+    // 按日期降序排序（越新越前），相同日期再按分数降序（越高越前）
+    itemsWithSummaries.sort((a, b) => {
+      const dateA = new Date(a.pubDate || a.isoDate || 0).getTime();
+      const dateB = new Date(b.pubDate || b.isoDate || 0).getTime();
+      // 日期降序
+      if (dateB !== dateA) {
+        return dateB - dateA;
+      }
+      // 相同日期则按分数降序
+      return (b.ai_score || 0) - (a.ai_score || 0);
+    });
 
     // 过滤掉低于阈值的条目
     const filteredItems = itemsWithSummaries.filter(item => (item.ai_score || 0) >= threshold);

@@ -184,11 +184,15 @@ async function fetchFoloData() {
       }),
     });
 
+    console.log(`Folo API 响应状态: ${response.status}`);
+    const responseText = await response.text();
+    console.log(`Folo API 响应内容: ${responseText.slice(0, 500)}`);
+
     if (!response.ok) {
-      throw new Error(`Folo API error: ${response.statusText}`);
+      throw new Error(`Folo API error: ${response.status} - ${responseText.slice(0, 200)}`);
     }
 
-    const result = await response.json();
+    const result = JSON.parse(responseText);
     
     if (result.code !== 0) {
       throw new Error(`Folo API error: ${result.message}`);

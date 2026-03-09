@@ -157,6 +157,7 @@ function loadFeedData(sourceUrl, dateDir = null) {
 // 从 Folo 获取数据
 async function fetchFoloData() {
   const { cookie, listId, apiUrl } = FOLO_CONFIG;
+  const fullCookie = cookie ? `__Secure-better-auth.session_token=${cookie}` : '';
   
   console.log(`从 Folo 获取数据, listId: ${listId}`);
   
@@ -165,7 +166,7 @@ async function fetchFoloData() {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Cookie': cookie,
+        'Cookie': fullCookie,
       },
       body: JSON.stringify({
         listId: listId,

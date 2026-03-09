@@ -178,8 +178,8 @@ async function fetchFoloData() {
       method: 'POST',
       headers: headers,
       body: JSON.stringify({
-        listId: listId,
-        view: 1,
+        listId: parseInt(listId),
+        view: "1",
         withContent: true,
       }),
     });
@@ -549,6 +549,12 @@ async function updateAllFeeds() {
 
   // 更新其他 RSS 源
   for (const source of config.sources) {
+    // 跳过 Folo 等非 RSS 源
+    if (source.url.startsWith('folo://') || source.url.startsWith('api://')) {
+      console.log(`跳过非RSS源: ${source.url}`);
+      continue;
+    }
+    
     try {
       const data = await updateFeed(source.url);
       results[source.url] = true;

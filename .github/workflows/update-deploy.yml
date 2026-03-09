@@ -39,6 +39,7 @@ jobs:
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
           LLM_API_BASE: ${{ secrets.LLM_API_BASE }}
           LLM_NAME: ${{ secrets.LLM_NAME }}
+          FOLO_COOKIE: ${{ secrets.FOLO_COOKIE }}
 
       - name: Build static site
         run: pnpm build

@@ -162,12 +162,21 @@ async function fetchFoloData() {
   console.log(`从 Folo 获取数据, listId: ${listId}`);
   
   try {
+    const headers = {
+      'Content-Type': 'application/json',
+      'accept': 'application/json',
+      'origin': 'https://app.follow.is',
+      'x-app-name': 'Folo Web',
+      'x-app-version': '0.4.9',
+    };
+    
+    if (fullCookie) {
+      headers['Cookie'] = fullCookie;
+    }
+    
     const response = await fetch(apiUrl, {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Cookie': fullCookie,
-      },
+      headers: headers,
       body: JSON.stringify({
         listId: listId,
         view: 1,

@@ -161,7 +161,7 @@ async function fetchFoloData() {
   console.log(`FOLO_COOKIE 环境变量: ${cookie ? '已设置' : '未设置'}`);
   console.log(`Cookie 前20字符: ${cookie ? cookie.slice(0, 20) : 'N/A'}`);
   
-  const fullCookie = cookie ? `__Secure-better-auth.session_token=${cookie}` : '';
+  const fullCookie = cookie;
   
   console.log(`从 Folo 获取数据, listId: ${listId}`);
   

@@ -1,0 +1,129 @@
+{
+  "sourceUrl": "https://hnrss.org/best",
+  "title": "Hacker News: Best",
+  "description": "Hacker News RSS",
+  "link": "https://news.ycombinator.com/best",
+  "items": [
+    {
+      "title": "The Appalling Stupidity of Spotify's AI DJ",
+      "link": "https://www.charlespetzold.com/blog/2026/02/The-Appalling-Stupidity-of-Spotifys-AI-DJ.html",
+      "pubDate": "Sun, 15 Mar 2026 08:04:55 +0000",
+      "isoDate": "2026-03-15T08:04:55.000Z",
+      "content": "\n<p>Article URL: <a href=\"https://www.charlespetzold.com/blog/2026/02/The-Appalling-Stupidity-of-Spotifys-AI-DJ.html\">https://www.charlespetzold.com/blog/2026/02/The-Appalling-Stupidity-of-Spotifys-AI-DJ.html</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=47385272\">https://news.ycombinator.com/item?id=47385272</a></p>\n<p>Points: 185</p>\n<p># Comments: 163</p>\n",
+      "contentSnippet": "Article URL: https://www.charlespetzold.com/blog/2026/02/The-Appalling-Stupidity-of-Spotifys-AI-DJ.html\nComments URL: https://news.ycombinator.com/item?id=47385272\nPoints: 185\n# Comments: 163",
+      "creator": "ingve",
+      "summary": "本文是对Spotify AI DJ功能的深度批评分析。作者从实际使用体验出发，指出该AI功能存在的诸多问题和\\",
+      "ai_score": 7,
+      "ai_reason": "这是一篇关于Spotify AI DJ产品的技术批评文章，具有一定的技术深度和实用见解，在Hacker News上获得185 points表明有一定影响力"
+    },
+    {
+      "title": "How kernel anti-cheats work",
+      "link": "https://s4dbrd.github.io/posts/how-kernel-anti-cheats-work/",
+      "pubDate": "Sun, 15 Mar 2026 00:15:10 +0000",
+      "isoDate": "2026-03-15T00:15:10.000Z",
+      "content": "\n<p>Article URL: <a href=\"https://s4dbrd.github.io/posts/how-kernel-anti-cheats-work/\">https://s4dbrd.github.io/posts/how-kernel-anti-cheats-work/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=47382791\">https://news.ycombinator.com/item?id=47382791</a></p>\n<p>Points: 223</p>\n<p># Comments: 190</p>\n",
+      "contentSnippet": "Article URL: https://s4dbrd.github.io/posts/how-kernel-anti-cheats-work/\nComments URL: https://news.ycombinator.com/item?id=47382791\nPoints: 223\n# Comments: 190",
+      "creator": "davikr",
+      "summary": "文章深入探讨了内核级反作弊系统的工作原理，涵盖Ring 0级别监控、进程检测、内存扫描等技术实现。内容涉及Windows内核机制、反作弊SDK集成方式，以及如何通过内核驱动防止游戏作弊。适合安全研究人员和游戏开发者了解反作弊技术细节。",
+      "ai_score": 7,
+      "ai_reason": "技术深度较好，详解内核级反作弊机制原理，有实用价值，社区关注度高(223分190评论)"
+    },
+    {
+      "title": "Show HN: Han – A Korean programming language written in Rust",
+      "link": "https://github.com/xodn348/han",
+      "pubDate": "Sat, 14 Mar 2026 21:27:33 +0000",
+      "isoDate": "2026-03-14T21:27:33.000Z",
+      "content": "\n<p>A few weeks ago I saw a post about someone converting an entire C++ codebase to Rust using AI in under two weeks.<p>That inspired me — if AI can rewrite a whole language stack that fast, I wanted to try building a programming language from scratch with AI assistance.<p>I've also been noticing growing global interest in Korean language and culture, and I wondered: what would a programming language look like if every keyword was in Hangul (the Korean writing system)?<p>Han is the result. It's a statically-typed language written in Rust with a full compiler pipeline (lexer → parser → AST → interpreter + LLVM IR codegen).<p>It supports arrays, structs with impl blocks, closures, pattern matching, try/catch, file I/O, module imports, a REPL, and a basic LSP server.<p>This is a side project, not a \"you should use this instead of Python\" pitch. \nFeedback on language design, compiler architecture, or the Korean keyword choices is very welcome.<p><a href=\"https://github.com/xodn348/han\" rel=\"nofollow\">https://github.com/xodn348/han</a></p>\n<hr>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=47381382\">https://news.ycombinator.com/item?id=47381382</a></p>\n<p>Points: 184</p>\n<p># Comments: 101</p>\n",
+      "contentSnippet": "A few weeks ago I saw a post about someone converting an entire C++ codebase to Rust using AI in under two weeks.\nThat inspired me — if AI can rewrite a whole language stack that fast, I wanted to try building a programming language from scratch with AI assistance.\nI've also been noticing growing global interest in Korean language and culture, and I wondered: what would a programming language look like if every keyword was in Hangul (the Korean writing system)?\nHan is the result. It's a statically-typed language written in Rust with a full compiler pipeline (lexer → parser → AST → interpreter + LLVM IR codegen).\nIt supports arrays, structs with impl blocks, closures, pattern matching, try/catch, file I/O, module imports, a REPL, and a basic LSP server.\nThis is a side project, not a \"you should use this instead of Python\" pitch. \nFeedback on language design, compiler architecture, or the Korean keyword choices is very welcome.\nhttps://github.com/xodn348/han\nComments URL: https://news.ycombinator.com/item?id=47381382\nPoints: 184\n# Comments: 101",
+      "creator": "xodn348",
+      "summary": "Han是一个用Rust编写的静态类型编程语言，其特点是所有关键字都使用韩文（Hangul）。该语言包含完整的编译器管道（lexer→parser→AST→解释器+LLVM IR代码生成），支持数组、结构体、闭包、模式匹配、异常处理、文件IO、模块导入、REPL和LSP服务器等特性。作者受AI辅助代码转换启发，用AI assistance完成开发，在Hacker News获得184分和101条评论。",
+      "ai_score": 8,
+      "ai_reason": "用Rust实现完整编译器管道，韩文关键字设计具有创新性，作为个人side project技术深度和完成度都很高"
+    },
+    {
+      "title": "What happens when US economic data becomes unreliable",
+      "link": "https://mitsloan.mit.edu/ideas-made-to-matter/what-happens-when-us-economic-data-becomes-unreliable",
+      "pubDate": "Sat, 14 Mar 2026 16:58:40 +0000",
+      "isoDate": "2026-03-14T16:58:40.000Z",
+      "content": "\n<p>Article URL: <a href=\"https://mitsloan.mit.edu/ideas-made-to-matter/what-happens-when-us-economic-data-becomes-unreliable\">https://mitsloan.mit.edu/ideas-made-to-matter/what-happens-when-us-economic-data-becomes-unreliable</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=47378638\">https://news.ycombinator.com/item?id=47378638</a></p>\n<p>Points: 335</p>\n<p># Comments: 353</p>\n",
+      "contentSnippet": "Article URL: https://mitsloan.mit.edu/ideas-made-to-matter/what-happens-when-us-economic-data-becomes-unreliable\nComments URL: https://news.ycombinator.com/item?id=47378638\nPoints: 335\n# Comments: 353",
+      "creator": "inaros",
+      "summary": "本文探讨美国经济数据可靠性问题。当官方统计数据出现争议或不准确时，投资者、政策制定者和公众如何做出正确决策？文章分析了经济数据发布机制、数据质量评估方法，以及在数据不可靠情况下的替代方案和应对策略。对于关注经济趋势和投资决策的读者具有重要参考价值。",
+      "ai_score": 7,
+      "ai_reason": "MIT Sloan发布的高质量经济分析文章，探讨美国经济数据可靠性问题，有深度观点和实用价值，社区关注度高（335 points）"
+    },
+    {
+      "title": "Mouser: An open source alternative to Logi-Plus mouse software",
+      "link": "https://github.com/TomBadash/MouseControl",
+      "pubDate": "Fri, 13 Mar 2026 18:42:54 +0000",
+      "isoDate": "2026-03-13T18:42:54.000Z",
+      "content": "\n<p>I discovered this project because all-of-a-sudden Logi Options Plus software updater started taking 40-60% of my Intel Macbook Pro until I killed the process (of course it restarts). In my searches I ended up at a reddit discussion where I found other people with same issues.<p>I'm a minor contributor to this project but it aims to reduce/eliminate the need to use Logitech proprietary software and telemetry. We could use help if other people are interested.<p>Please check out the github link for more detailed motivations (eliminating telemetry) as a part of this project.   Here is link: <a href=\"https://github.com/TomBadash/MouseControl\" rel=\"nofollow\">https://github.com/TomBadash/MouseControl</a></p>\n<hr>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=47368033\">https://news.ycombinator.com/item?id=47368033</a></p>\n<p>Points: 425</p>\n<p># Comments: 141</p>\n",
+      "contentSnippet": "I discovered this project because all-of-a-sudden Logi Options Plus software updater started taking 40-60% of my Intel Macbook Pro until I killed the process (of course it restarts). In my searches I ended up at a reddit discussion where I found other people with same issues.\nI'm a minor contributor to this project but it aims to reduce/eliminate the need to use Logitech proprietary software and telemetry. We could use help if other people are interested.\nPlease check out the github link for more detailed motivations (eliminating telemetry) as a part of this project.   Here is link: https://github.com/TomBadash/MouseControl\nComments URL: https://news.ycombinator.com/item?id=47368033\nPoints: 425\n# Comments: 141",
+      "creator": "avionics-guy",
+      "summary": "<think>\n让我分析这个内容：\n\n标题：Mouser: An open source alternative to Logi-Plus mouse software\n\n内容分析：\n- 这是一个开源项目，旨在替代罗技的Logi Options Plus软件\n- 原因是罗技软件在后台占用大量CPU资源（40-60%）\n- 项目目标是减少/消除使用罗技专有软件和遥测数据的需求\n- 这是一个GitHub上的开源项目\n\n评分考虑：\n1. 技术深度：这是一个实用的开源替代方案，解决了一个真实的用户痛点\n2. 创新性：作为开源替代方案，有一定的创新性\n3. 实用性：对罗技鼠标用户来说很有用，可以避免专有软件的资源占用和隐私问题\n4. 影响力：在Hacker News上获得了425个points和141条评论，说明受到一定关注\n\n这个内容是关于AI/技术的，虽然不是直接关于AI，但是一个有价值的开源技术项目。考虑到：\n- 它是一个实用的工具解决方案\n- 解决了真实的用户痛点\n- 是开源的，有社区支持\n- 在技术社区有一定影响力\n\n我认为可以给7-8分的范围。这是一个有用的技术项目，但不是突破性的AI研究或重大技术突破。\n\n我会给7分，因为它是一个高质量、有用的技术项目，但不属于突破性进展。\n</think>\n\n```json\n{\n  \"score\": 7,\n  \"reason\": \"实用的开源工具，解决罗技软件资源占用和隐私问题，有技术价值和创新性\",\n  \"summary\": \"Mouser是一个开源项目，旨在替代罗技的Logi Options Plus鼠标软件。作者因该软件占用MacBook Pro高达40-60%的CPU资源而寻找替代方案，发现Reddit上也有类似反馈。该项目目标是通过开源方案减少或消除对罗技专有软件和遥测数据的依赖，目前已获得Hacker News上425个votes和141条评论关注。\n}\n```",
+      "ai_score": 7,
+      "ai_reason": "实用的开源工具，解决罗技软件资源占用和隐私问题，有技术价值和创新性"
+    },
+    {
+      "title": "Hammerspoon",
+      "link": "https://github.com/Hammerspoon/hammerspoon",
+      "pubDate": "Fri, 13 Mar 2026 18:34:12 +0000",
+      "isoDate": "2026-03-13T18:34:12.000Z",
+      "content": "\n<p>Article URL: <a href=\"https://github.com/Hammerspoon/hammerspoon\">https://github.com/Hammerspoon/hammerspoon</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=47367932\">https://news.ycombinator.com/item?id=47367932</a></p>\n<p>Points: 345</p>\n<p># Comments: 135</p>\n",
+      "contentSnippet": "Article URL: https://github.com/Hammerspoon/hammerspoon\nComments URL: https://news.ycombinator.com/item?id=47367932\nPoints: 345\n# Comments: 135",
+      "creator": "tosh",
+      "summary": "Hammerspoon是一个macOS桌面自动化开源框架，允许用户通过Lua脚本自定义和控制macOS的各种功能，包括窗口管理、快捷键绑定、文本扩展等。作为成熟的开源工具，它在技术社区中拥有较高声誉，本次在Hacker News获得345个赞成票和135条评论，反映出社区对其价值的高度认可。",
+      "ai_score": 7,
+      "ai_reason": "Hammerspoon是macOS上知名的开源自动化工具，在Hacker News获得345高分，具备较高的技术实用性和社区认可度"
+    },
+    {
+      "title": "John Carmack about open source and anti-AI activists",
+      "link": "https://twitter.com/id_aa_carmack/status/2032460578669691171",
+      "pubDate": "Fri, 13 Mar 2026 17:51:34 +0000",
+      "isoDate": "2026-03-13T17:51:34.000Z",
+      "content": "\n<p><a href=\"https://xcancel.com/id_aa_carmack/status/2032460578669691171\" rel=\"nofollow\">https://xcancel.com/id_aa_carmack/status/2032460578669691171</a></p>\n<hr>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=47367463\">https://news.ycombinator.com/item?id=47367463</a></p>\n<p>Points: 360</p>\n<p># Comments: 475</p>\n",
+      "contentSnippet": "https://xcancel.com/id_aa_carmack/status/2032460578669691171\nComments URL: https://news.ycombinator.com/item?id=47367463\nPoints: 360\n# Comments: 475",
+      "creator": "tzury",
+      "summary": "游戏传奇程序员John Carmack在社交平台发表关于开源与AI活动人士的观点。Hacker News上获得360票和475条评论，反映出技术社区对这一话题的高度关注。Carmack作为科技界资深人士，其对开源文化和AI伦理的见解具有一定参考价值。",
+      "ai_score": 7,
+      "ai_reason": "知名技术人物John Carmack关于开源和AI的讨论，具有一定技术深度和社区关注度"
+    },
+    {
+      "title": "1M context is now generally available for Opus 4.6 and Sonnet 4.6",
+      "link": "https://claude.com/blog/1m-context-ga",
+      "pubDate": "Fri, 13 Mar 2026 17:19:01 +0000",
+      "isoDate": "2026-03-13T17:19:01.000Z",
+      "content": "\n<p>Article URL: <a href=\"https://claude.com/blog/1m-context-ga\">https://claude.com/blog/1m-context-ga</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=47367129\">https://news.ycombinator.com/item?id=47367129</a></p>\n<p>Points: 1163</p>\n<p># Comments: 495</p>\n",
+      "contentSnippet": "Article URL: https://claude.com/blog/1m-context-ga\nComments URL: https://news.ycombinator.com/item?id=47367129\nPoints: 1163\n# Comments: 495",
+      "creator": "meetpateltech",
+      "summary": "Anthropic宣布Claude的100万上下文窗口现已在Opus 4.6和Sonnet 4.6模型中正式可用。这是AI模型上下文处理能力的重大突破，将显著提升长文档分析、代码库理解、多文件处理等场景的能力，是大语言模型发展的重要里程碑。",
+      "ai_score": 9,
+      "ai_reason": "100万上下文是AI模型能力的重大突破，Claude的里程碑式更新，对长文档分析和复杂任务有重要意义"
+    },
+    {
+      "title": "Can I run AI locally?",
+      "link": "https://www.canirun.ai/",
+      "pubDate": "Fri, 13 Mar 2026 12:46:10 +0000",
+      "isoDate": "2026-03-13T12:46:10.000Z",
+      "content": "\n<p>Article URL: <a href=\"https://www.canirun.ai/\">https://www.canirun.ai/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=47363754\">https://news.ycombinator.com/item?id=47363754</a></p>\n<p>Points: 1434</p>\n<p># Comments: 343</p>\n",
+      "contentSnippet": "Article URL: https://www.canirun.ai/\nComments URL: https://news.ycombinator.com/item?id=47363754\nPoints: 1434\n# Comments: 343",
+      "creator": "ricardbejarano",
+      "summary": "Can I Run AI是一个在线工具网站，帮助用户查询自己的硬件配置（主要是GPU）能否在本地运行各种主流AI大模型。用户只需选择具体的AI模型，网站即可根据其硬件规格给出兼容性判断结果。该工具涵盖了Llama、Stable Diffusion、GPT等热门模型，为想要本地部署AI的用户提供了有价值的参考信息。",
+      "ai_score": 7,
+      "ai_reason": "实用工具网站，帮助用户检查本地硬件是否能运行各类AI大模型，提供直观的兼容性查询服务，社区关注度高（1434分、343评论）"
+    },
+    {
+      "title": "Qatar helium shutdown puts chip supply chain on a two-week clock",
+      "link": "https://www.tomshardware.com/tech-industry/qatar-helium-shutdown-puts-chip-supply-chain-on-a-two-week-clock",
+      "pubDate": "Fri, 13 Mar 2026 12:31:09 +0000",
+      "isoDate": "2026-03-13T12:31:09.000Z",
+      "content": "\n<p>Article URL: <a href=\"https://www.tomshardware.com/tech-industry/qatar-helium-shutdown-puts-chip-supply-chain-on-a-two-week-clock\">https://www.tomshardware.com/tech-industry/qatar-helium-shutdown-puts-chip-supply-chain-on-a-two-week-clock</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=47363584\">https://news.ycombinator.com/item?id=47363584</a></p>\n<p>Points: 679</p>\n<p># Comments: 614</p>\n",
+      "contentSnippet": "Article URL: https://www.tomshardware.com/tech-industry/qatar-helium-shutdown-puts-chip-supply-chain-on-a-two-week-clock\nComments URL: https://news.ycombinator.com/item?id=47363584\nPoints: 679\n# Comments: 614",
+      "creator": "johnbarron",
+      "summary": "卡塔尔氦气供应设施停工，可能导致全球芯片制造业面临材料短缺危机。氦气在半导体制造中用于冷却和清洗等关键工艺，供应链中断已进入两周倒计时。这一事件凸显了芯片制造对关键原材料的高度依赖性，可能对全球科技产业产生连锁影响。",
+      "ai_score": 7,
+      "ai_reason": "半导体供应链重要新闻，卡塔尔氦气停产直接影响芯片制造，属于高价值产业动态，但与AI技术无直接关联"
+    }
+  ],
+  "lastUpdated": "2026-03-15T13:05:56.103Z"
+}

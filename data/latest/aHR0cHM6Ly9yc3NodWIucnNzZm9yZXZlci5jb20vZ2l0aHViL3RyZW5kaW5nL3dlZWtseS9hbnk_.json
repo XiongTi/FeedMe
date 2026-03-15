@@ -1,0 +1,141 @@
+{
+  "sourceUrl": "https://rsshub.rssforever.com/github/trending/weekly/any",
+  "title": "Trending repositories on GitHub this week · GitHub",
+  "description": "Trending repositories on GitHub this week · GitHub - Powered by RSSHub",
+  "link": "https://github.com/trending/?since=weekly&spoken_language_code=",
+  "items": [
+    {
+      "title": "microsoft/BitNet",
+      "link": "https://github.com/microsoft/BitNet",
+      "pubDate": "2026-03-15T13:08:09.909Z",
+      "isoDate": "2026-03-15T13:08:09.909Z",
+      "content": "<img src=\"https://opengraph.githubassets.com/6b1b54eb53b541ee9468a50c9447489bbd0f8b591ac8f71c9c92d9142727ae3e/microsoft/BitNet\" referrerpolicy=\"no-referrer\"><br>Official inference framework for 1-bit LLMs <br><br>Language: Python <br>Stars: 34641 <br>Forks: 2930",
+      "contentSnippet": "Official inference framework for 1-bit LLMs \nLanguage: Python \nStars: 34641 \nForks: 2930",
+      "creator": "microsoft",
+      "summary": "微软官方发布的1位大语言模型推理框架，专门针对BitNet等1-bit/3-bit量化模型进行优化。该项目获34641星标和2930分支，体现了社区对模型量化压缩技术的高度关注。1-bit LLM能显著降低推理内存和计算成本，是大模型部署优化的重要研究方向。",
+      "ai_score": 8,
+      "ai_reason": "微软官方的1-bit LLM推理框架，代表大模型量化压缩的重要方向，Stars超3.4万，社区关注度高且实用性强的AI基础设施项目"
+    },
+    {
+      "title": "promptfoo/promptfoo",
+      "link": "https://github.com/promptfoo/promptfoo",
+      "pubDate": "2026-03-15T13:08:09.909Z",
+      "isoDate": "2026-03-15T13:08:09.909Z",
+      "content": "<img src=\"https://opengraph.githubassets.com/cb1a62447ac7d15fb6cb3128b61a1e37af13b05757604e27c2e38e23d7e9e14e/promptfoo/promptfoo\" referrerpolicy=\"no-referrer\"><br>Test your prompts, agents, and RAGs. Red teaming/pentesting/vulnerability scanning for AI. Compare performance of GPT, Claude, Gemini, Llama, and more. Simple declarative configs with command line and CI/CD integration. <br><br>Language: TypeScript <br>Stars: 16175 <br>Forks: 1413",
+      "contentSnippet": "Test your prompts, agents, and RAGs. Red teaming/pentesting/vulnerability scanning for AI. Compare performance of GPT, Claude, Gemini, Llama, and more. Simple declarative configs with command line and CI/CD integration. \nLanguage: TypeScript \nStars: 16175 \nForks: 1413",
+      "creator": "promptfoo",
+      "summary": "promptfoo是一个TypeScript开发的AI测试框架，用于测试提示词、代理和RAG系统。支持红队测试、渗透测试和漏洞扫描，可比较GPT、Claude、Gemini、Llama等主流模型性能。提供声明式配置和命令行工具，支持CI/CD集成。该项目在GitHub获得16175星，表明其在AI开发者社区具有重要影响力和实用价值。",
+      "ai_score": 8,
+      "ai_reason": "实用的AI提示词和模型测试工具，支持红队测试/渗透测试，覆盖主流LLM，有CI/CD集成，GitHub 16000+星说明其高实用价值和社区认可度"
+    },
+    {
+      "title": "666ghj/BettaFish",
+      "link": "https://github.com/666ghj/BettaFish",
+      "pubDate": "2026-03-15T13:08:09.909Z",
+      "isoDate": "2026-03-15T13:08:09.909Z",
+      "content": "<img src=\"https://repository-images.githubusercontent.com/822604462/bc43617c-4efc-4742-b64d-9a14f511ad02\" referrerpolicy=\"no-referrer\"><br>微舆：人人可用的多Agent舆情分析助手，打破信息茧房，还原舆情原貌，预测未来走向，辅助决策！从0实现，不依赖任何框架。 <br><br>Language: Python <br>Stars: 38795 <br>Forks: 7247",
+      "contentSnippet": "微舆：人人可用的多Agent舆情分析助手，打破信息茧房，还原舆情原貌，预测未来走向，辅助决策！从0实现，不依赖任何框架。 \nLanguage: Python \nStars: 38795 \nForks: 7247",
+      "creator": "666ghj",
+      "summary": "微舆是一个人人可用的多Agent舆情分析开源项目，基于Python开发，Stars数高达38795。该助手能够打破信息茧房，还原舆情原貌，预测未来走向并辅助决策。项目特点是从零实现，不依赖任何现有框架，适合对多Agent系统和舆情分析感兴趣的开发者学习参考。",
+      "ai_score": 8,
+      "ai_reason": "高star数的开源多Agent舆情分析项目，具有实用价值和社区认可度，从零实现不依赖框架体现了技术深度"
+    },
+    {
+      "title": "fishaudio/fish-speech",
+      "link": "https://github.com/fishaudio/fish-speech",
+      "pubDate": "2026-03-15T13:08:09.909Z",
+      "isoDate": "2026-03-15T13:08:09.909Z",
+      "content": "<img src=\"https://opengraph.githubassets.com/5b84018c88de9a03fa94f0702d6ce9802520f26917c3818cbcbf47c47659ea72/fishaudio/fish-speech\" referrerpolicy=\"no-referrer\"><br>SOTA Open Source TTS <br><br>Language: Python <br>Stars: 27414 <br>Forks: 2289",
+      "contentSnippet": "SOTA Open Source TTS \nLanguage: Python \nStars: 27414 \nForks: 2289",
+      "creator": "fishaudio",
+      "summary": "fish-speech是一个SOTA级别的开源文本转语音(TTS)项目，使用Python开发，在GitHub上获得27414个stars和2289个forks，表明其在开发者社区中具有高认可度和广泛使用。该项目代表了语音合成领域的前沿技术，为开发者提供了高质量的TTS解决方案。",
+      "ai_score": 8,
+      "ai_reason": "SOTA开源TTS项目，stars超2.7万，社区活跃度高，是语音合成领域有影响力的实用工具"
+    },
+    {
+      "title": "bytedance/deer-flow",
+      "link": "https://github.com/bytedance/deer-flow",
+      "pubDate": "2026-03-15T13:08:09.909Z",
+      "isoDate": "2026-03-15T13:08:09.909Z",
+      "content": "<img src=\"https://opengraph.githubassets.com/bd78b7da958ca4bbce0adca8be94998a4f1304944978aa8d12daec6db71528b2/bytedance/deer-flow\" referrerpolicy=\"no-referrer\"><br>An open-source SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skills and subagents, it handles different levels of tasks that could take minutes to hours. <br><br>Language: Python <br>Stars: 30737 <br>Forks: 3705",
+      "contentSnippet": "An open-source SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skills and subagents, it handles different levels of tasks that could take minutes to hours. \nLanguage: Python \nStars: 30737 \nForks: 3705",
+      "creator": "bytedance",
+      "summary": "Deer-flow是字节跳动开源的超级智能体框架，支持研究、编码和创作任务。框架利用沙箱、记忆、工具、技能和子代理等组件，可处理从分钟到小时级别的不同复杂程度任务，采用Python开发，拥有3万多星标和3700多fork，在AI Agent领域具有较高的技术价值和社区影响力。",
+      "ai_score": 8,
+      "ai_reason": "字节跳动开源的SuperAgent框架，具有sandboxes、memories、tools、skills、subagents等完整架构，3万多星标说明有较高社区认可度和实用性"
+    },
+    {
+      "title": "karpathy/nanochat",
+      "link": "https://github.com/karpathy/nanochat",
+      "pubDate": "2026-03-15T13:08:09.909Z",
+      "isoDate": "2026-03-15T13:08:09.909Z",
+      "content": "<img src=\"https://opengraph.githubassets.com/766365c08a19bdbe2e7db0784e183ba0170fd27a2973c7af5bcc8ca874ceb7e9/karpathy/nanochat\" referrerpolicy=\"no-referrer\"><br>The best ChatGPT that $100 can buy. <br><br>Language: Python <br>Stars: 48598 <br>Forks: 6358",
+      "contentSnippet": "The best ChatGPT that $100 can buy. \nLanguage: Python \nStars: 48598 \nForks: 6358",
+      "creator": "karpathy",
+      "summary": "这是知名AI研究者Andrej Karpathy开发的开源项目，旨在用约100美元的硬件成本构建一个本地运行的类ChatGPT对话系统。项目使用Python开发，在GitHub上获得了48598 stars和6358 forks的极高关注度，代表了低成本本地大语言模型部署的创新实践，具有较高的技术参考价值和实用意义。",
+      "ai_score": 8,
+      "ai_reason": "知名AI研究者Karpathy的开源项目，100美元构建本地ChatGPT的创新实践，技术实用性强，社区关注度高(48598 stars)"
+    },
+    {
+      "title": "virattt/ai-hedge-fund",
+      "link": "https://github.com/virattt/ai-hedge-fund",
+      "pubDate": "2026-03-15T13:08:09.909Z",
+      "isoDate": "2026-03-15T13:08:09.909Z",
+      "content": "<img src=\"https://opengraph.githubassets.com/65e5a5da59eea6ebb8b2b845e96aeb61a4e25adcfe81985b737a8df7971e5455/virattt/ai-hedge-fund\" referrerpolicy=\"no-referrer\"><br>An AI Hedge Fund Team <br><br>Language: Python <br>Stars: 48950 <br>Forks: 8545",
+      "contentSnippet": "An AI Hedge Fund Team \nLanguage: Python \nStars: 48950 \nForks: 8545",
+      "creator": "virattt",
+      "summary": "这是一个AI量化对冲基金团队的开源项目，使用Python开发，在GitHub上获得了约4.9万stars和8.5千forks，体现了AI在金融交易领域的应用潜力和社区认可度",
+      "ai_score": 7,
+      "ai_reason": "高热度AI量化交易开源项目，stars近5万，社区关注度高，属于AI在金融领域的实际应用，具有一定技术价值和实用性"
+    },
+    {
+      "title": "volcengine/OpenViking",
+      "link": "https://github.com/volcengine/OpenViking",
+      "pubDate": "2026-03-15T13:08:09.909Z",
+      "isoDate": "2026-03-15T13:08:09.909Z",
+      "content": "<img src=\"https://opengraph.githubassets.com/3edfb499ad7917de8d0b16b43ec22b5c496eeb55782f12b63c9f136930017867/volcengine/OpenViking\" referrerpolicy=\"no-referrer\"><br>OpenViking is an open-source context database designed specifically for AI Agents(such as openclaw). OpenViking unifies the management of context (memory, resources, and skills) that Agents need through a file system paradigm, enabling hierarchical context delivery and self-evolving. <br><br>Language: Python <br>Stars: 11506 <br>Forks: 787",
+      "contentSnippet": "OpenViking is an open-source context database designed specifically for AI Agents(such as openclaw). OpenViking unifies the management of context (memory, resources, and skills) that Agents need through a file system paradigm, enabling hierarchical context delivery and self-evolving. \nLanguage: Python \nStars: 11506 \nForks: 787",
+      "creator": "volcengine",
+      "summary": "OpenViking是火山引擎开源的AI Agent专用上下文数据库，通过文件系统范式统一管理Agent所需的memory、resources和skills，支持层级上下文传递和自演进能力。该项目用Python开发，获得11506个stars和787个forks，适合AI Agent开发者用于构建更智能的上下文管理系统。",
+      "ai_score": 7,
+      "ai_reason": "由火山引擎开源的AI Agent上下文数据库，采用创新的文件系统范式统一管理memory/resources/skills，支持层级上下文传递和自演进，11506 stars表明有一定社区影响力，对Agent开发有实用价值。"
+    },
+    {
+      "title": "GoogleCloudPlatform/generative-ai",
+      "link": "https://github.com/GoogleCloudPlatform/generative-ai",
+      "pubDate": "2026-03-15T13:08:09.909Z",
+      "isoDate": "2026-03-15T13:08:09.909Z",
+      "content": "<img src=\"https://opengraph.githubassets.com/7fefc17f175446aee05a396c4babdb9444d70e35e733cedd74be444077502cb3/GoogleCloudPlatform/generative-ai\" referrerpolicy=\"no-referrer\"><br>Sample code and notebooks for Generative AI on Google Cloud, with Gemini on Vertex AI <br><br>Language: Jupyter Notebook <br>Stars: 16192 <br>Forks: 4049",
+      "contentSnippet": "Sample code and notebooks for Generative AI on Google Cloud, with Gemini on Vertex AI \nLanguage: Jupyter Notebook \nStars: 16192 \nForks: 4049",
+      "creator": "GoogleCloudPlatform",
+      "summary": "Google Cloud官方生成式AI示例仓库，包含Gemini模型在Vertex AI平台上的代码和Jupyter笔记本教程，适合开发者学习Google Cloud上的大模型应用开发，具备较高的技术参考和实践价值。",
+      "ai_score": 7,
+      "ai_reason": "Google官方生成式AI代码仓库，提供Gemini和Vertex AI的实战示例，16192 Stars表明其高实用价值和社区认可度"
+    },
+    {
+      "title": "teng-lin/notebooklm-py",
+      "link": "https://github.com/teng-lin/notebooklm-py",
+      "pubDate": "2026-03-15T13:08:09.909Z",
+      "isoDate": "2026-03-15T13:08:09.909Z",
+      "content": "<img src=\"https://opengraph.githubassets.com/e273ee30acbad2347fda52f26657294e42e52203846a2e194a34057cdb83f06b/teng-lin/notebooklm-py\" referrerpolicy=\"no-referrer\"><br>Unofficial Python API and agentic skill for Google NotebookLM. Full programmatic access to NotebookLM's features—including capabilities the web UI doesn't expose—via Python, CLI, and AI agents like Claude Code, Codex, and OpenClaw. <br><br>Language: Python <br>Stars: 5774 <br>Forks: 711",
+      "contentSnippet": "Unofficial Python API and agentic skill for Google NotebookLM. Full programmatic access to NotebookLM's features—including capabilities the web UI doesn't expose—via Python, CLI, and AI agents like Claude Code, Codex, and OpenClaw. \nLanguage: Python \nStars: 5774 \nForks: 711",
+      "creator": "teng-lin",
+      "summary": "这是一个针对Google NotebookLM的非官方Python API和agentic工具，提供了Web界面未暴露的功能编程访问能力，支持Python、CLI及Claude Code等AI代理集成。对于需要自动化NotebookLM工作流程的开发者具有较高实用价值。",
+      "ai_score": 7,
+      "ai_reason": "高价值实用工具，提供非官方Python API访问Google NotebookLM完整功能，支持AI代理集成，社区认可度高(5774 stars)"
+    },
+    {
+      "title": "AstrBotDevs/AstrBot",
+      "link": "https://github.com/AstrBotDevs/AstrBot",
+      "pubDate": "2026-03-15T13:08:09.909Z",
+      "isoDate": "2026-03-15T13:08:09.909Z",
+      "content": "<img src=\"https://opengraph.githubassets.com/72b86ce6139b244153262d97dc179758e06429d76eb1884e7612e2c360f125d4/AstrBotDevs/AstrBot\" referrerpolicy=\"no-referrer\"><br>Agentic IM Chatbot infrastructure that integrates lots of IM platforms, LLMs, plugins and AI feature, and can be your openclaw alternative. ✨ <br><br>Language: Python <br>Stars: 24739 <br>Forks: 1683",
+      "contentSnippet": "Agentic IM Chatbot infrastructure that integrates lots of IM platforms, LLMs, plugins and AI feature, and can be your openclaw alternative. ✨ \nLanguage: Python \nStars: 24739 \nForks: 1683",
+      "creator": "AstrBotDevs",
+      "summary": "AstrBot是一个Agentic IM聊天机器人基础设施，使用Python开发，支持集成多个即时通讯平台、LLM和插件功能，可作为openclaw的替代方案。该项目拥有2.4万+星标和1600+分支，表明其在开发者社区中具有较高认可度和实用性，是一个功能较为全面的AI聊天机器人开发框架。",
+      "ai_score": 7,
+      "ai_reason": "一个功能完整的AI聊天机器人基础设施项目，集成多平台和LLM，有较高实用价值和技术深度，24739星表明社区认可度高"
+    }
+  ],
+  "lastUpdated": "2026-03-15T13:08:09.909Z"
+}

@@ -1,0 +1,57 @@
+{
+  "sourceUrl": "https://rsshub.rssforever.com/google/developers/en",
+  "title": "Google Developers Blog",
+  "description": "Google Developers Blog - Powered by RSSHub",
+  "link": "https://developers.googleblog.com",
+  "items": [
+    {
+      "title": "Plan mode is now available in Gemini CLI",
+      "link": "https://developers.googleblog.com/en/plan-mode-now-available-in-gemini-cli/",
+      "pubDate": "Tue, 10 Mar 2026 16:00:00 GMT",
+      "isoDate": "2026-03-10T16:00:00.000Z",
+      "content": "Gemini CLI now features Plan Mode, a read-only environment that allows the AI to analyze complex codebases and map out architectural changes without the risk of accidental execution. By leveraging the new ask_user tool and expanded Model Context Protocol (MCP) support, developers can collaboratively refine strategies and pull in external data before committing to implementation.",
+      "contentSnippet": "Gemini CLI now features Plan Mode, a read-only environment that allows the AI to analyze complex codebases and map out architectural changes without the risk of accidental execution. By leveraging the new ask_user tool and expanded Model Context Protocol (MCP) support, developers can collaboratively refine strategies and pull in external data before committing to implementation.",
+      "creator": "Google",
+      "summary": "Google Gemini CLI新增Plan Mode功能，这是一个只读环境，允许AI安全地分析复杂代码库并规划架构变更，避免意外执行风险。该功能结合新的ask_user工具和扩展的Model Context Protocol（MCP）支持，使开发者能够在实施前协作完善策略并引入外部数据，提升了AI辅助编码的安全性和协作效率。",
+      "ai_score": 7,
+      "ai_reason": "Gemini CLI推出的Plan Mode是一个实用的开发工具创新，提供只读环境分析代码库，降低了AI辅助开发的风险，具有较高的技术实用性和开发者价值"
+    },
+    {
+      "title": "What's new in TensorFlow 2.21",
+      "link": "https://developers.googleblog.com/en/whats-new-in-tensorflow-221/",
+      "pubDate": "Thu, 05 Mar 2026 16:00:00 GMT",
+      "isoDate": "2026-03-05T16:00:00.000Z",
+      "content": "Google has officially launched LiteRT, the successor to TFLite, which offers significantly faster GPU and NPU acceleration alongside seamless support for PyTorch and JAX. The update also introduces lower-precision data type support for increased efficiency and a commitment to more frequent security and dependency updates across the TensorFlow ecosystem. This transition solidifies LiteRT as Google's primary high-performance framework for deploying GenAI and advanced on-device inference.",
+      "contentSnippet": "Google has officially launched LiteRT, the successor to TFLite, which offers significantly faster GPU and NPU acceleration alongside seamless support for PyTorch and JAX. The update also introduces lower-precision data type support for increased efficiency and a commitment to more frequent security and dependency updates across the TensorFlow ecosystem. This transition solidifies LiteRT as Google's primary high-performance framework for deploying GenAI and advanced on-device inference.",
+      "creator": "Google",
+      "summary": "Google正式发布LiteRT作为TFLite的继任者，新版本提供显著提升的GPU和NPU加速性能，并实现对PyTorch和JAX的无缝支持。同时引入低精度数据类型以提高效率，并承诺在TensorFlow生态系统中提供更频繁的安全和依赖更新。此次更新标志着LiteRT成为Google部署生成式AI和设备端推理的主要高性能框架。",
+      "ai_score": 8,
+      "ai_reason": "Google发布TensorFlow重大更新，LiteRT作为TFLite继任者带来显著的GPU/NPU性能提升，并支持PyTorch和JAX，涵盖GenAI部署，属于高价值技术发布"
+    },
+    {
+      "title": "On-Device Function Calling in Google AI Edge Gallery",
+      "link": "https://developers.googleblog.com/en/on-device-function-calling-in-google-ai-edge-gallery/",
+      "pubDate": "Wed, 25 Feb 2026 16:00:00 GMT",
+      "isoDate": "2026-02-25T16:00:00.000Z",
+      "content": "Google has introduced FunctionGemma, a specialized 270M parameter model designed to bring efficient, action-oriented AI experiences directly to mobile devices through on-device function calling. By leveraging Google AI Edge and LiteRT-LM, the model enables complex tasks—such as managing calendars, controlling device hardware, or executing specific game logic in the \"Tiny Garden\" demo—to be performed entirely offline with high speed and low latency. Available for testing in the Google AI Edge Gallery app on both Android and iOS, FunctionGemma allows developers to move beyond simple text generation toward building responsive, \"agentic\" applications that interact seamlessly with the physical and digital world without relying on cloud processing.",
+      "contentSnippet": "Google has introduced FunctionGemma, a specialized 270M parameter model designed to bring efficient, action-oriented AI experiences directly to mobile devices through on-device function calling. By leveraging Google AI Edge and LiteRT-LM, the model enables complex tasks—such as managing calendars, controlling device hardware, or executing specific game logic in the \"Tiny Garden\" demo—to be performed entirely offline with high speed and low latency. Available for testing in the Google AI Edge Gallery app on both Android and iOS, FunctionGemma allows developers to move beyond simple text generation toward building responsive, \"agentic\" applications that interact seamlessly with the physical and digital world without relying on cloud processing.",
+      "creator": "Google",
+      "summary": "Google推出FunctionGemma，一款270M参数的设备端函数调用模型。通过Google AI Edge和LiteRT-LM技术，该模型可在移动设备上离线执行复杂任务（如日历管理、设备控制、游戏逻辑等），具有高速低延迟特点。目前已在Google AI Edge Gallery应用中开放测试，标志着移动端AI从简单文本生成向响应式\\",
+      "ai_score": 8,
+      "ai_reason": "Google发布的FunctionGemma是设备端AI的重要进展，270M参数模型实现离线函数调用，有技术创新和实用价值。"
+    },
+    {
+      "title": "Turn creative prompts into interactive XR experiences with Gemini",
+      "link": "https://developers.googleblog.com/en/turn-creative-prompts-into-interactive-xr-experiences-with-gemini/",
+      "pubDate": "Wed, 18 Feb 2026 16:00:00 GMT",
+      "isoDate": "2026-02-18T16:00:00.000Z",
+      "content": "The Android XR team is using Gemini's Canvas feature to make creating immersive extended reality (XR) experiences more accessible. This allows developers to rapidly prototype interactive 3D environments and models on a Samsung Galaxy XR headset using simple creative prompts.",
+      "contentSnippet": "The Android XR team is using Gemini's Canvas feature to make creating immersive extended reality (XR) experiences more accessible. This allows developers to rapidly prototype interactive 3D environments and models on a Samsung Galaxy XR headset using simple creative prompts.",
+      "creator": "Google",
+      "summary": "Android XR团队利用Gemini的Canvas功能，让开发者可通过简单创意提示在三星Galaxy XR头显上快速原型制作交互式3D环境和模型，使沉浸式XR体验创建更加便捷可达。",
+      "ai_score": 7,
+      "ai_reason": "Google将Gemini AI与XR开发结合，提供实用工具降低创作门槛，有一定创新性和实用性，属于有价值的技术进展但非重大突破"
+    }
+  ],
+  "lastUpdated": "2026-03-15T13:09:29.317Z"
+}

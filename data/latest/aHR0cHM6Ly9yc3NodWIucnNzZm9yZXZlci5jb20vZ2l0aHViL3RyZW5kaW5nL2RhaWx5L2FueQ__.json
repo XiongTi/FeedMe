@@ -1,0 +1,117 @@
+{
+  "sourceUrl": "https://rsshub.rssforever.com/github/trending/daily/any",
+  "title": "Trending repositories on GitHub today · GitHub",
+  "description": "Trending repositories on GitHub today · GitHub - Powered by RSSHub",
+  "link": "https://github.com/trending/?since=daily&spoken_language_code=",
+  "items": [
+    {
+      "title": "volcengine/OpenViking",
+      "link": "https://github.com/volcengine/OpenViking",
+      "pubDate": "2026-03-15T13:07:25.581Z",
+      "isoDate": "2026-03-15T13:07:25.581Z",
+      "content": "<img src=\"https://opengraph.githubassets.com/3edfb499ad7917de8d0b16b43ec22b5c496eeb55782f12b63c9f136930017867/volcengine/OpenViking\" referrerpolicy=\"no-referrer\"><br>OpenViking is an open-source context database designed specifically for AI Agents(such as openclaw). OpenViking unifies the management of context (memory, resources, and skills) that Agents need through a file system paradigm, enabling hierarchical context delivery and self-evolving. <br><br>Language: Python <br>Stars: 11506 <br>Forks: 787",
+      "contentSnippet": "OpenViking is an open-source context database designed specifically for AI Agents(such as openclaw). OpenViking unifies the management of context (memory, resources, and skills) that Agents need through a file system paradigm, enabling hierarchical context delivery and self-evolving. \nLanguage: Python \nStars: 11506 \nForks: 787",
+      "creator": "volcengine",
+      "summary": "OpenViking是火山引擎开源的AI Agent上下文数据库，通过文件系统范式统一管理Agent所需的memory（记忆）、resources（资源）和skills（技能），实现层级上下文传递和自演化能力，为AI Agent开发提供基础设施支持。",
+      "ai_score": 8,
+      "ai_reason": "AI Agent上下文数据库开源项目，火山引擎出品，使用文件系统范式统一管理memory/resources/skills，具有较高实用价值和创新性，11506 stars表明有社区认可度"
+    },
+    {
+      "title": "shareAI-lab/learn-claude-code",
+      "link": "https://github.com/shareAI-lab/learn-claude-code",
+      "pubDate": "2026-03-15T13:07:25.581Z",
+      "isoDate": "2026-03-15T13:07:25.581Z",
+      "content": "<img src=\"https://opengraph.githubassets.com/12a9ecddc3ea1deef8a77190d19fd74ff61c4fa84f859d324fcd1588b1a18586/shareAI-lab/learn-claude-code\" referrerpolicy=\"no-referrer\"><br>Bash is all you need -  A nano Claude Code–like agent, built from 0 to 1 <br><br>Language: TypeScript <br>Stars: 27484 <br>Forks: 4833",
+      "contentSnippet": "Bash is all you need -  A nano Claude Code–like agent, built from 0 to 1 \nLanguage: TypeScript \nStars: 27484 \nForks: 4833",
+      "creator": "shareAI-lab",
+      "summary": "这是一个GitHub开源项目，演示如何从零开始构建一个类似Anthropic Claude Code的AI Agent。项目使用TypeScript编写，标题「Bash is all you need」暗示其简洁性。目前已获得27484 stars和4833 forks，在GitHub上非常受欢迎，适合开发者学习AI Agent的原理与实现。",
+      "ai_score": 8,
+      "ai_reason": "高人气的AI Agent教学项目，从零构建类Claude Code的agent，star数近2.8万，具有较高的实用性和学习价值"
+    },
+    {
+      "title": "abhigyanpatwari/GitNexus",
+      "link": "https://github.com/abhigyanpatwari/GitNexus",
+      "pubDate": "2026-03-15T13:07:25.581Z",
+      "isoDate": "2026-03-15T13:07:25.581Z",
+      "content": "<img src=\"https://opengraph.githubassets.com/764fe88ac4bde51b523b03ee2f48302bce70437b5a28ca6c3e429cf4afdce398/abhigyanpatwari/GitNexus\" referrerpolicy=\"no-referrer\"><br>GitNexus: The Zero-Server Code Intelligence Engine -       GitNexus is a client-side knowledge graph creator that runs entirely in your browser. Drop in a GitHub repo or ZIP file, and get an interactive knowledge graph wit a built in Graph RAG Agent. Perfect for code exploration <br><br>Language: TypeScript <br>Stars: 13260 <br>Forks: 1569",
+      "contentSnippet": "GitNexus: The Zero-Server Code Intelligence Engine -       GitNexus is a client-side knowledge graph creator that runs entirely in your browser. Drop in a GitHub repo or ZIP file, and get an interactive knowledge graph wit a built in Graph RAG Agent. Perfect for code exploration \nLanguage: TypeScript \nStars: 13260 \nForks: 1569",
+      "creator": "abhigyanpatwari",
+      "summary": "GitNexus是一个客户端代码智能知识图谱引擎，完全在浏览器中运行。用户可导入GitHub仓库或ZIP文件，获取交互式知识图谱和内置的Graph RAG代理，非常适合代码探索。使用TypeScript开发，拥有约1.3万星标，是代码分析和可视化领域的有价值工具。",
+      "ai_score": 8,
+      "ai_reason": "创新的客户端知识图谱工具，零服务器架构，可在浏览器中直接分析GitHub仓库，13260星表明其高价值和受欢迎程度"
+    },
+    {
+      "title": "lightpanda-io/browser",
+      "link": "https://github.com/lightpanda-io/browser",
+      "pubDate": "2026-03-15T13:07:25.581Z",
+      "isoDate": "2026-03-15T13:07:25.581Z",
+      "content": "<img src=\"https://opengraph.githubassets.com/43f081d452f1254b2b06b798e9e267b1bc436f5c292724e7e38352817b8c7861/lightpanda-io/browser\" referrerpolicy=\"no-referrer\"><br>Lightpanda: the headless browser designed for AI and automation <br><br>Language: Zig <br>Stars: 17683 <br>Forks: 660",
+      "contentSnippet": "Lightpanda: the headless browser designed for AI and automation \nLanguage: Zig \nStars: 17683 \nForks: 660",
+      "creator": "lightpanda-io",
+      "summary": "Lightpanda是一个使用Zig语言开发的无头浏览器，专门为AI和自动化场景优化。该项目在GitHub上获得17683个星标，表明其在开发者社区中具有较高关注度。作为专注于AI自动化的浏览器工具，在网页抓取、自动化测试等场景有实际应用价值。",
+      "ai_score": 7,
+      "ai_reason": "专为AI自动化设计的无头浏览器，使用Zig语言开发，星标数高(17k+)，具有一定创新性和实用价值"
+    },
+    {
+      "title": "Crosstalk-Solutions/project-nomad",
+      "link": "https://github.com/Crosstalk-Solutions/project-nomad",
+      "pubDate": "2026-03-15T13:07:25.581Z",
+      "isoDate": "2026-03-15T13:07:25.581Z",
+      "content": "<img src=\"https://opengraph.githubassets.com/c4ae961a4b208c34fd674799f3e081e0577569b820f3172b61ed485c23cd4235/Crosstalk-Solutions/project-nomad\" referrerpolicy=\"no-referrer\"><br>Project N.O.M.A.D, is a self-contained, offline survival computer packed with critical tools, knowledge, and AI to keep you informed and empowered—anytime, anywhere. <br><br>Language: TypeScript <br>Stars: 719 <br>Forks: 87",
+      "contentSnippet": "Project N.O.M.A.D, is a self-contained, offline survival computer packed with critical tools, knowledge, and AI to keep you informed and empowered—anytime, anywhere. \nLanguage: TypeScript \nStars: 719 \nForks: 87",
+      "creator": "Crosstalk-Solutions",
+      "summary": "Project N.O.M.A.D是一个自包含的离线生存计算设备，集成关键工具、知识库和AI功能，帮助用户在无网络环境下获取信息和生存技能。该项目使用TypeScript开发，拥有719个stars和87个fork，具有一定的社区关注度，是将AI应用于离线场景的有趣实践。",
+      "ai_score": 7,
+      "ai_reason": "有创意的AI离线应用项目，将AI技术与生存场景结合，具有一定实用性和技术实现"
+    },
+    {
+      "title": "obra/superpowers",
+      "link": "https://github.com/obra/superpowers",
+      "pubDate": "2026-03-15T13:07:25.581Z",
+      "isoDate": "2026-03-15T13:07:25.581Z",
+      "content": "<img src=\"https://opengraph.githubassets.com/b5106aad78cd643785d748b0f3fdcb3d1e41554ebbb70520166eb8731af720f9/obra/superpowers\" referrerpolicy=\"no-referrer\"><br>An agentic skills framework &amp; software development methodology that works. <br><br>Language: Shell <br>Stars: 84589 <br>Forks: 6624",
+      "contentSnippet": "An agentic skills framework & software development methodology that works. \nLanguage: Shell \nStars: 84589 \nForks: 6624",
+      "creator": "obra",
+      "summary": "obra/superpowers是一个Shell语言编写的代理技能框架与软件开发方法论，在GitHub上拥有84589星标和6624分支，人气极高。该框架专注于AI代理技能的开发与实践，为开发者提供了一套可落地的代理系统构建方案，在AI开发社区具有重要影响力。",
+      "ai_score": 7,
+      "ai_reason": "高人气AI代理技能框架与开发方法论，8.5万星标表明其高度实用性和社区认可度，属于有价值的开发工具"
+    },
+    {
+      "title": "666ghj/MiroFish",
+      "link": "https://github.com/666ghj/MiroFish",
+      "pubDate": "2026-03-15T13:07:25.581Z",
+      "isoDate": "2026-03-15T13:07:25.581Z",
+      "content": "<img src=\"https://repository-images.githubusercontent.com/1104332987/1d2666e4-67da-4bb7-bd85-60d49f5d3e10\" referrerpolicy=\"no-referrer\"><br>A Simple and Universal Swarm Intelligence Engine, Predicting Anything. 简洁通用的群体智能引擎，预测万物 <br><br>Language: Python <br>Stars: 25695 <br>Forks: 3029",
+      "contentSnippet": "A Simple and Universal Swarm Intelligence Engine, Predicting Anything. 简洁通用的群体智能引擎，预测万物 \nLanguage: Python \nStars: 25695 \nForks: 3029",
+      "creator": "666ghj",
+      "summary": "MiroFish是一个用Python开发的通用群体智能引擎，旨在预测各类事物。该项目在GitHub上拥有25695 stars和3029 forks，表明其在开发者社区中具有一定影响力和关注度。作为AI/机器学习领域的一个开源实现，值得关注但实际效果需进一步验证。",
+      "ai_score": 7,
+      "ai_reason": "高星标开源项目，群体智能方向有一定技术价值，但'预测万物'表述偏夸张"
+    },
+    {
+      "title": "topoteretes/cognee",
+      "link": "https://github.com/topoteretes/cognee",
+      "pubDate": "2026-03-15T13:07:25.581Z",
+      "isoDate": "2026-03-15T13:07:25.581Z",
+      "content": "<img src=\"https://opengraph.githubassets.com/93e4fb1348fa4fc3917b78cc64aa854d53b460b6a34ad2b8923e147b99d31f3e/topoteretes/cognee\" referrerpolicy=\"no-referrer\"><br>Knowledge Engine for AI Agent Memory in 6 lines of code <br><br>Language: Python <br>Stars: 13670 <br>Forks: 1373",
+      "contentSnippet": "Knowledge Engine for AI Agent Memory in 6 lines of code \nLanguage: Python \nStars: 13670 \nForks: 1373",
+      "creator": "topoteretes",
+      "summary": "cognee是由topoteretes开发的AI Agent记忆引擎，核心特点是仅需6行代码即可实现。项目用Python编写，在GitHub上获得13670 stars和1373 forks，人气较高。这是一个面向AI Agent开发者的实用记忆管理工具，主打简洁易用的特点。",
+      "ai_score": 7,
+      "ai_reason": "高人气AI开源项目，13670星表明广泛认可。6行代码实现Agent记忆功能，具备实用性和创新性，是AI开发者有价值工具库。"
+    },
+    {
+      "title": "anthropics/claude-plugins-official",
+      "link": "https://github.com/anthropics/claude-plugins-official",
+      "pubDate": "2026-03-15T13:07:25.581Z",
+      "isoDate": "2026-03-15T13:07:25.581Z",
+      "content": "<img src=\"https://opengraph.githubassets.com/16283b6cde1f9ce2461a8821fe057029f2df04fd44a3458f1ddac79d669ceca8/anthropics/claude-plugins-official\" referrerpolicy=\"no-referrer\"><br>Official, Anthropic-managed directory of high quality Claude Code Plugins. <br><br>Language: Python <br>Stars: 11615 <br>Forks: 1130",
+      "contentSnippet": "Official, Anthropic-managed directory of high quality Claude Code Plugins. \nLanguage: Python \nStars: 11615 \nForks: 1130",
+      "creator": "anthropics",
+      "summary": "这是Anthropic官方管理的Claude Code插件目录，使用Python语言编写，获得11615个stars和1130个forks。该仓库汇集了经过官方审核的高质量插件，为开发者提供了可靠的插件资源参考，是了解和使用Claude Code生态的重要入口",
+      "ai_score": 7,
+      "ai_reason": "Anthropic官方维护的Claude Code高质量插件目录，11K+stars表明社区认可度高，对开发者具有实用参考价值，属于高质量技术资源聚合页"
+    }
+  ],
+  "lastUpdated": "2026-03-15T13:07:25.581Z"
+}

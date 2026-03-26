@@ -24,11 +24,11 @@ export const config = {
       url: "https://hnrss.org/best",
       category: "科技资讯",
     },
-    {
-      name: "Hacker News 历史每日前十",
-      url: "https://rsshub.rssforever.com/github/issue/headllines/hackernews-daily",
-      category: "科技资讯",
-    },
+    // {
+    //   name: "Hacker News 历史每日前十",
+    //   url: "https://rsshub.rssforever.com/github/issue/headllines/hackernews-daily",
+    //   category: "科技资讯",
+    // },
     {
       name: "OpenAI News",
       url: "https://openai.com/news/rss.xml",
@@ -44,11 +44,12 @@ export const config = {
       url: "https://rsshub.rssforever.com/github/trending/daily/any",
       category: "代码项目",
     },
-    {
-      name: "Github 近一周热门",
-      url: "https://rsshub.rssforever.com/github/trending/weekly/any",
-      category: "代码项目",
-    },
+    // Github 近一周热门 - RSSHub 超时，暂不可用
+    // {
+    //   name: "Github 近一周热门",
+    //   url: "https://rsshub.rssforever.com/github/trending/weekly/any",
+    //   category: "代码项目",
+    // },
     {
       name: "Hugging Face 每日论文",
       url: "https://rsshub.rssforever.com/huggingface/daily-papers",
@@ -80,31 +81,32 @@ export const config = {
       url: "https://www.microsoft.com/en-us/research/feed/",
       category: "技术博客",
     },
-    {
-      name: "LINUX DO 今日热门",
-      url: "https://linux.do/top.rss?period=daily",
-      category: "论坛",
-    },
-    {
-      name: "LINUX DO 近一周热门",
-      url: "https://linux.do/top.rss?period=weekly",
-      category: "论坛",
-    },
-    {
-      name: "LINUX DO 近一月热门",
-      url: "https://linux.do/top.rss?period=monthly",
-      category: "论坛",
-    },
-    {
-      name: "V2EX 今日热门",
-      url: "https://rsshub.rssforever.com/v2ex/topics/hot",
-      category: "论坛",
-    },
-    {
-      name: "Product Hunt 今日热门",
-      url: "https://www.producthunt.com/feed",
-      category: "科技资讯",
-    },
+    // 论坛类 - 暂时禁用
+    // {
+    //   name: "LINUX DO 今日热门",
+    //   url: "https://linux.do/top.rss?period=daily",
+    //   category: "论坛",
+    // },
+    // {
+    //   name: "LINUX DO 近一周热门",
+    //   url: "https://linux.do/top.rss?period=weekly",
+    //   category: "论坛",
+    // },
+    // {
+    //   name: "LINUX DO 近一月热门",
+    //   url: "https://linux.do/top.rss?period=monthly",
+    //   category: "论坛",
+    // },
+    // {
+    //   name: "V2EX 今日热门",
+    //   url: "https://rsshub.rssforever.com/v2ex/topics/hot",
+    //   category: "论坛",
+    // },
+    // {
+    //   name: "Product Hunt 今日热门",
+    //   url: "https://www.producthunt.com/feed",
+    //   category: "科技资讯",
+    // },
     // 番剧类 - 暂时禁用
     // {
     //   name: "Bangumi 近一月热门",

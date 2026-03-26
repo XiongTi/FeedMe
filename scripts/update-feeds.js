@@ -280,8 +280,30 @@ const SUMMARY_USER = `文章标题：{title}
 文章内容：
 {content}`;
 
+// 并发控制：限制同时执行的异步任务数量
+async function asyncPool(limit, items, fn) {
+  const results = [];
+  const executing = new Set();
+  for (const [index, item] of items.entries()) {
+    const p = Promise.resolve().then(() => fn(item, index));
+    results.push(p);
+    executing.add(p);
+    const clean = () => executing.delete(p);
+    p.then(clean, clean);
+    if (executing.size >= limit) {
+      await Promise.race(executing);
+    }
+  }
+  return Promise.all(results);
+}
+
+// 带重试的延迟函数
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 // 生成摘要和评分函数
-async function generateSummaryAndScore(title, content) {
+async function generateSummaryAndScore(title, content, retries = 3) {
   try {
     const contentToClean = (content || "").replace(/<[^>]*>?/gm, "");
     const cleanContent = contentToClean.slice(0, 5000);
@@ -326,6 +348,13 @@ async function generateSummaryAndScore(title, content) {
       summary: result.summary || "无法生成摘要"
     };
   } catch (error) {
+    // 429 限流时自动重试
+    if (error?.status === 429 && retries > 0) {
+      const waitSec = (4 - retries) * 5; // 5s, 10s, 15s 递增等待
+      console.warn(`429 限流，${waitSec}s 后重试 (剩余 ${retries} 次): ${title}`);
+      await sleep(waitSec * 1000);
+      return generateSummaryAndScore(title, content, retries - 1);
+    }
     console.error("生成摘要和评分时出错:", error);
     return { score: 5, reason: "AI 模型暂时不可用", summary: "无法生成摘要" };
   }
@@ -454,28 +483,27 @@ async function updateFeed(sourceUrl) {
 
     // 为新条目生成摘要和评分
     const threshold = config.aiScoreThreshold || 6.0;
-    const itemsWithSummaries = await Promise.all(
-      mergedItems.map(async (item) => {
-        // 如果是新条目且需要生成摘要
-        if (newItemsForSummary.some((newItem) => newItem.link === item.link) && !item.summary) {
-          try {
-            const contentForSummary = item.content || item.contentSnippet || "";
-            const result = await generateSummaryAndScore(item.title, contentForSummary);
-            return { 
-              ...item, 
-              summary: result.summary,
-              ai_score: result.score,
-              ai_reason: result.reason
-            };
-          } catch (err) {
-            console.error(`为条目 ${item.title} 生成摘要时出错:`, err);
-            return { ...item, summary: "无法生成摘要", ai_score: 5, ai_reason: "AI 错误" };
-          }
+    // 并发限制为 3，避免触发 API 限流
+    const itemsWithSummaries = await asyncPool(3, mergedItems, async (item) => {
+      // 如果是新条目且需要生成摘要
+      if (newItemsForSummary.some((newItem) => newItem.link === item.link) && !item.summary) {
+        try {
+          const contentForSummary = item.content || item.contentSnippet || "";
+          const result = await generateSummaryAndScore(item.title, contentForSummary);
+          return {
+            ...item,
+            summary: result.summary,
+            ai_score: result.score,
+            ai_reason: result.reason
+          };
+        } catch (err) {
+          console.error(`为条目 ${item.title} 生成摘要时出错:`, err);
+          return { ...item, summary: "无法生成摘要", ai_score: 5, ai_reason: "AI 错误" };
         }
-        // 否则保持不变
-        return item;
-      }),
-    );
+      }
+      // 否则保持不变
+      return item;
+    });
 
     // 处理日期字段：确保每条都有日期
     itemsWithSummaries.forEach(item => {
@@ -552,41 +580,10 @@ async function updateAllFeeds() {
     fs.mkdirSync(latestDataDir, { recursive: true });
   }
 
-  // 先获取 Folo 数据
-  const folioUrl = "folo://list";
-  try {
-    console.log("正在获取 Folo 数据...");
-    const folioData = await fetchFoloData();
-    if (folioData && folioData.items.length > 0) {
-      // 保存 Folo 数据
-      const folioFilePath = path.join(latestDataDir, Buffer.from(folioUrl).toString('base64').replace(/[/+=]/g, '_') + '.json');
-      fs.writeFileSync(folioFilePath, JSON.stringify(folioData, null, 2), 'utf-8');
-      results[folioUrl] = true;
-      feedCounts[folioUrl] = {
-        name: 'Folo 订阅',
-        count: folioData.items.length,
-        category: 'Folo'
-      };
-      console.log(`Folo 数据获取成功: ${folioData.items.length} 条`);
-    } else {
-      results[folioUrl] = false;
-      feedCounts[folioUrl] = {
-        name: 'Folo 订阅',
-        count: 0,
-        category: 'Folo'
-      };
-    }
-  } catch (error) {
-    console.error('获取 Folo 数据失败:', error);
-    results[folioUrl] = false;
-    feedCounts[folioUrl] = {
-      name: 'Folo 订阅',
-      count: 0,
-      category: 'Folo'
-    };
-  }
+  // Folo 订阅已禁用，跳过
+  // 如需恢复，取消注释 rss-config.js 中的 Folo 源并恢复此处代码
 
-  // 更新其他 RSS 源
+  // 更新 RSS 源
   for (const source of config.sources) {
     // 跳过 Folo 等非 RSS 源
     if (source.url.startsWith('folo://') || source.url.startsWith('api://')) {

@@ -24,6 +24,24 @@ function formatDate(dateStr: string | undefined): string {
   })
 }
 
+// 产品标签颜色（静态常量，避免每次渲染重建）
+const TAG_COLORS: Record<string, string> = {
+  '代码质量防线': 'bg-blue-500/15 text-blue-700 dark:text-blue-300',
+  'Piston': 'bg-purple-500/15 text-purple-700 dark:text-purple-300',
+  'SmartTest': 'bg-emerald-500/15 text-emerald-700 dark:text-emerald-300',
+  'ATS运维': 'bg-amber-500/15 text-amber-700 dark:text-amber-300',
+  '支付大促Agent': 'bg-rose-500/15 text-rose-700 dark:text-rose-300',
+  'ALS': 'bg-cyan-500/15 text-cyan-700 dark:text-cyan-300',
+}
+
+// 评分颜色
+function getScoreColor(score: number) {
+  if (score >= 8) return "bg-green-500"
+  if (score >= 7) return "bg-yellow-500"
+  if (score >= 6) return "bg-orange-500"
+  return "bg-red-500"
+}
+
 export function RssFeed({ defaultSource }: { defaultSource: string }) {
   const searchParams = useSearchParams()
   const sourceUrl = searchParams.get("source") || defaultSource
@@ -38,7 +56,7 @@ export function RssFeed({ defaultSource }: { defaultSource: string }) {
       setError(null)
 
       const cachedData = await loadFeedData(url)
-      
+
       if (cachedData) {
         setFeedData(cachedData)
       } else {
@@ -58,14 +76,6 @@ export function RssFeed({ defaultSource }: { defaultSource: string }) {
 
   const source = findSourceByUrl(sourceUrl)
   const displayTitle = source?.name || feedData?.title || "信息源"
-
-  // 评分颜色
-  const getScoreColor = (score: number) => {
-    if (score >= 8) return "bg-green-500"
-    if (score >= 7) return "bg-yellow-500"
-    if (score >= 6) return "bg-orange-500"
-    return "bg-red-500"
-  }
 
   if (error) {
     return (
@@ -118,8 +128,9 @@ export function RssFeed({ defaultSource }: { defaultSource: string }) {
       ) : (
         <div className="space-y-3">
           {feedData?.items.map((item, index) => {
-            const score = item.ai_score || 5
-            
+            const score = item.ai_score ?? 5
+            const dateDisplay = formatDate(item.pubDate || item.isoDate)
+
             return (
               <Card key={index} className="feed-card">
                 <CardHeader className="pb-2">
@@ -142,9 +153,18 @@ export function RssFeed({ defaultSource }: { defaultSource: string }) {
                     </CardTitle>
                   </div>
                   <div className="flex items-center gap-2 mt-1 text-sm text-muted-foreground">
-                    {formatDate(item.pubDate || item.isoDate) && <span>{formatDate(item.pubDate || item.isoDate)}</span>}
+                    {dateDisplay && <span>{dateDisplay}</span>}
                     {item.creator && <><span className="mx-1">·</span><span>{item.creator}</span></>}
                   </div>
+                  {item.tags && item.tags.length > 0 && (
+                    <div className="flex items-center gap-1.5 mt-1.5 flex-wrap">
+                      {item.tags.map(tag => (
+                        <Badge key={tag} variant="secondary" className={TAG_COLORS[tag] || 'bg-gray-500/15 text-gray-700 dark:text-gray-300'}>
+                          {tag}
+                        </Badge>
+                      ))}
+                    </div>
+                  )}
                 </CardHeader>
                 
                 <CardContent className="pt-0">

@@ -117,7 +117,13 @@ export const config = {
   maxItemsPerFeed: 30,
   // AI 打分阈值配置
   aiScoreThreshold: 7.0,
+  maxAgeDays: 7,
   dataPath: "./public/data",
+  // RSSHub 多镜像 fallback
+  rsshubMirrors: [
+    'https://rsshub.rssforever.com',
+    'https://rsshub.pseudoyu.com',
+  ],
 }
 
 export const defaultSource = config.sources[0]

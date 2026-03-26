@@ -7,6 +7,9 @@ export interface FeedItem {
   contentSnippet?: string
   creator?: string
   summary?: string
+  ai_score?: number
+  ai_reason?: string
+  tags?: string[]
   enclosure?: {
     url: string
     type: string

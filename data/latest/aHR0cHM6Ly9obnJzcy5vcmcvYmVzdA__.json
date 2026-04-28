@@ -1,0 +1,35 @@
+{
+  "sourceUrl": "https://hnrss.org/best",
+  "title": "Hacker News: Best",
+  "description": "Hacker News RSS",
+  "link": "https://news.ycombinator.com/best",
+  "items": [
+    {
+      "title": "Show HN: OSS Agent I built topped the TerminalBench on Gemini-3-flash-preview",
+      "link": "https://github.com/dirac-run/dirac",
+      "pubDate": "Mon, 27 Apr 2026 12:35:55 +0000",
+      "isoDate": "2026-04-27T12:35:55.000Z",
+      "content": "\n<p>Scored 65.2% vs google's official 47.8%, and the existing top closed source model Junie CLI's 64.3%.<p>Since there are a lot of reports of deliberate cheating on TerminalBench 2.0 lately (<a href=\"https://debugml.github.io/cheating-agents/\" rel=\"nofollow\">https://debugml.github.io/cheating-agents/</a>), I would like to also clarify a few things<p>1. Absolutely no {agents/skills}.md files were inserted at any point. No cheating mechanisms whatsoever<p>2. The cli agent was run in leaderboard compliant way (no modification of resources or timeouts)<p>3. The full terminal bench run was done using the fully open source version of the agent, no difference between what is on github and what was run.<p>I was originally going to wait for it to land on the leaderboard, but it has been 8 days and the maintainers do not respond unfortunately (there is a large backlog of the pull requests on their HF) so I decided to post anyways.<p>HF PR: <a href=\"https://huggingface.co/datasets/harborframework/terminal-bench-2-leaderboard/discussions/145\" rel=\"nofollow\">https://huggingface.co/datasets/harborframework/terminal-ben...</a><p>It is astounding how much the harness matters, based on this and other experiments I have done.</p>\n<hr>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=47920787\">https://news.ycombinator.com/item?id=47920787</a></p>\n<p>Points: 353</p>\n<p># Comments: 131</p>\n",
+      "contentSnippet": "Scored 65.2% vs google's official 47.8%, and the existing top closed source model Junie CLI's 64.3%.\nSince there are a lot of reports of deliberate cheating on TerminalBench 2.0 lately (https://debugml.github.io/cheating-agents/), I would like to also clarify a few things\n1. Absolutely no {agents/skills}.md files were inserted at any point. No cheating mechanisms whatsoever\n2. The cli agent was run in leaderboard compliant way (no modification of resources or timeouts)\n3. The full terminal bench run was done using the fully open source version of the agent, no difference between what is on github and what was run.\nI was originally going to wait for it to land on the leaderboard, but it has been 8 days and the maintainers do not respond unfortunately (there is a large backlog of the pull requests on their HF) so I decided to post anyways.\nHF PR: https://huggingface.co/datasets/harborframework/terminal-ben...\nIt is astounding how much the harness matters, based on this and other experiments I have done.\nComments URL: https://news.ycombinator.com/item?id=47920787\nPoints: 353\n# Comments: 131",
+      "creator": "GodelNumbering",
+      "summary": "开发者展示其开源Agent在TerminalBench基准测试中得分65.2%，超越Google官方模型(47.8%)和闭源Junie CLI(64.3%)。作者强调无作弊行为，使用合规方式运行，并澄清了多项质疑。该项目已开源发布在GitHub上，反映了AI Agent工程化的实际性能对比。",
+      "ai_score": 7,
+      "ai_reason": "AI Agent核心领域的技术展示，涉及benchmark对比和开源工程实践，有明确数据支撑但偏向展示性内容，缺乏深度架构解析",
+      "tags": []
+    },
+    {
+      "title": "The Prompt API",
+      "link": "https://developer.chrome.com/docs/ai/prompt-api",
+      "pubDate": "Mon, 27 Apr 2026 02:18:58 +0000",
+      "isoDate": "2026-04-27T02:18:58.000Z",
+      "content": "\n<p>Article URL: <a href=\"https://developer.chrome.com/docs/ai/prompt-api\">https://developer.chrome.com/docs/ai/prompt-api</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=47917026\">https://news.ycombinator.com/item?id=47917026</a></p>\n<p>Points: 266</p>\n<p># Comments: 140</p>\n",
+      "contentSnippet": "Article URL: https://developer.chrome.com/docs/ai/prompt-api\nComments URL: https://news.ycombinator.com/item?id=47917026\nPoints: 266\n# Comments: 140",
+      "creator": "gslin",
+      "summary": "Chrome推出了内置Prompt API，允许开发者直接在浏览器中调用AI模型处理prompt。这是浏览器原生AI能力的标准化接口，属于开发者工具范畴，为Web开发者提供了一种新的调用AI能力的途径，但并非核心关注领域的技术突破。",
+      "ai_score": 7,
+      "ai_reason": "Chrome内置Prompt API技术文档，属于LLM工程化落地实践，有技术细节但非核心关注的Agent/测试/DevOps领域",
+      "tags": []
+    }
+  ],
+  "lastUpdated": "2026-04-28T14:33:19.072Z"
+}

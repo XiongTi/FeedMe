@@ -1,0 +1,47 @@
+{
+  "https://hnrss.org/best": {
+    "name": "Hacker News 近期最佳",
+    "count": 2,
+    "category": "科技资讯"
+  },
+  "https://openai.com/news/rss.xml": {
+    "name": "OpenAI News",
+    "count": 2,
+    "category": "科技资讯"
+  },
+  "https://news.smol.ai/rss.xml": {
+    "name": "Smol AI News",
+    "count": 2,
+    "category": "科技资讯"
+  },
+  "https://rsshub.rssforever.com/github/trending/daily/any": {
+    "name": "Github 今日热门",
+    "count": 3,
+    "category": "代码项目"
+  },
+  "https://rsshub.rssforever.com/huggingface/daily-papers": {
+    "name": "Hugging Face 每日论文",
+    "count": 8,
+    "category": "科研论文"
+  },
+  "https://rsshub.rssforever.com/google/developers/en": {
+    "name": "Google 开发者博客",
+    "count": 0,
+    "category": "技术博客"
+  },
+  "https://rsshub.rssforever.com/google/research": {
+    "name": "Google 研究博客",
+    "count": 0,
+    "category": "技术博客"
+  },
+  "https://simonwillison.net/atom/everything/": {
+    "name": "Simon Willison's Weblog",
+    "count": 1,
+    "category": "技术博客"
+  },
+  "https://www.microsoft.com/en-us/research/feed/": {
+    "name": "Microsoft Research",
+    "count": 1,
+    "category": "技术博客"
+  }
+}

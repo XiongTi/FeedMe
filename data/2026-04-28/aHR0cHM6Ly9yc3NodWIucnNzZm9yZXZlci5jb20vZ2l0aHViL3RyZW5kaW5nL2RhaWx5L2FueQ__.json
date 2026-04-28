@@ -1,0 +1,48 @@
+{
+  "sourceUrl": "https://rsshub.rssforever.com/github/trending/daily/any",
+  "title": "Trending repositories on GitHub today · GitHub",
+  "description": "Trending repositories on GitHub today · GitHub - Powered by RSSHub",
+  "link": "https://github.com/trending/?since=daily&spoken_language_code=",
+  "items": [
+    {
+      "title": "abhigyanpatwari/GitNexus",
+      "link": "https://github.com/abhigyanpatwari/GitNexus",
+      "pubDate": "2026-04-28T14:46:12.597Z",
+      "isoDate": "2026-04-28T14:46:12.597Z",
+      "content": "<img src=\"https://opengraph.githubassets.com/6e198c487b4df2077cd5c7c6caac69930a962aece0981f6153f84d7b9f895acd/abhigyanpatwari/GitNexus\" referrerpolicy=\"no-referrer\"><br>GitNexus: The Zero-Server Code Intelligence Engine -       GitNexus is a client-side knowledge graph creator that runs entirely in your browser. Drop in a GitHub repo or ZIP file, and get an interactive knowledge graph wit a built in Graph RAG Agent. Perfect for code exploration<br><br>Language: TypeScript<br>Stars: 32390<br>Forks: 3678",
+      "contentSnippet": "GitNexus: The Zero-Server Code Intelligence Engine -       GitNexus is a client-side knowledge graph creator that runs entirely in your browser. Drop in a GitHub repo or ZIP file, and get an interactive knowledge graph wit a built in Graph RAG Agent. Perfect for code exploration\nLanguage: TypeScript\nStars: 32390\nForks: 3678",
+      "creator": "abhigyanpatwari",
+      "summary": "GitNexus是一个客户端知识图谱引擎，可在浏览器中运行。用户可上传GitHub仓库或ZIP文件，获得交互式代码知识图谱和内置的Graph RAG Agent，显著提升代码理解和探索效率。采用零服务器架构，所有处理在本地完成，保护代码隐私。",
+      "ai_score": 8,
+      "ai_reason": "零服务器架构的代码智能理解工具，创新性强；知识图谱+Graph RAG在代码探索中的应用新颖；32390 stars表明极高的社区认可度和实用价值",
+      "tags": []
+    },
+    {
+      "title": "davila7/claude-code-templates",
+      "link": "https://github.com/davila7/claude-code-templates",
+      "pubDate": "2026-04-28T14:46:12.597Z",
+      "isoDate": "2026-04-28T14:46:12.597Z",
+      "content": "<img src=\"https://opengraph.githubassets.com/a6ce1b1a9b9d7a69ef3cea20f50208b25c17c18ebabb8aa5abadadd559474ab6/davila7/claude-code-templates\" referrerpolicy=\"no-referrer\"><br>CLI tool for configuring and monitoring Claude Code<br><br>Language: Python<br>Stars: 26012<br>Forks: 2606",
+      "contentSnippet": "CLI tool for configuring and monitoring Claude Code\nLanguage: Python\nStars: 26012\nForks: 2606",
+      "creator": "davila7",
+      "summary": "davila7/claude-code-templates 是一个CLI命令行工具，用于配置和监控Claude Code（Anthropic的AI编程助手）。使用Python开发，Star数达26012，Fork数2606，表明它在开发者社区中拥有极高的关注度和使用率，是一个提升AI编程体验的实用工程工具。",
+      "ai_score": 7,
+      "ai_reason": "CLI开发者工具项目，高star(26012)表明社区认可度高，用于Claude Code的配置和监控，属于开发者工程效能范畴，有实际技术价值。",
+      "tags": []
+    },
+    {
+      "title": "CJackHwang/ds2api",
+      "link": "https://github.com/CJackHwang/ds2api",
+      "pubDate": "2026-04-28T14:46:12.597Z",
+      "isoDate": "2026-04-28T14:46:12.597Z",
+      "content": "<img src=\"https://opengraph.githubassets.com/dad532f235702964d6aba990371b61ad02d8f76d678faca1b9232d8091d853df/CJackHwang/ds2api\" referrerpolicy=\"no-referrer\"><br>Deepseek to API: A lightweight, high-performance full-stack middleware converting client protocols to universal APIs. Supports multi-account rotation, compiled binaries, Vercel Serverless, and Docker. Compatible with Google, Claude, and OpenAI API formats.<br><br>Language: Go<br>Stars: 2172<br>Forks: 628",
+      "contentSnippet": "Deepseek to API: A lightweight, high-performance full-stack middleware converting client protocols to universal APIs. Supports multi-account rotation, compiled binaries, Vercel Serverless, and Docker. Compatible with Google, Claude, and OpenAI API formats.\nLanguage: Go\nStars: 2172\nForks: 628",
+      "creator": "CJackHwang",
+      "summary": "这是一个将Deepseek及其他LLM提供商的API协议统一转换为通用格式的轻量级高性能中间件，支持多账号轮换、编译二进制部署（Vercel Serverless、Docker），兼容Google、Claude、OpenAI的API格式，星标2k+，适合需要统一管理多个LLM API的工程场景",
+      "ai_score": 7,
+      "ai_reason": "LLM API网关类工具，实现多提供商协议转换与统一，有技术实现价值但非Agent核心领域，属于LLM工程化基础设施",
+      "tags": []
+    }
+  ],
+  "lastUpdated": "2026-04-28T14:46:12.598Z"
+}

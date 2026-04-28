@@ -1,0 +1,22 @@
+{
+  "sourceUrl": "https://www.microsoft.com/en-us/research/feed/",
+  "title": "Microsoft Research",
+  "description": "",
+  "link": "https://www.microsoft.com/en-us/research/",
+  "items": [
+    {
+      "title": "AutoAdapt: Automated domain adaptation for large language models",
+      "link": "https://www.microsoft.com/en-us/research/blog/autoadapt-automated-domain-adaptation-for-large-language-models/",
+      "pubDate": "Wed, 22 Apr 2026 16:25:30 +0000",
+      "isoDate": "2026-04-22T16:25:30.000Z",
+      "content": "<p>Deploying large language models (LLMs) in real-world, high-stakes settings is harder than it should be. In high-stakes settings like law, medicine, and cloud incident response, performance and reliability can quickly break down because adapting models to domain-specific requirements is a slow and manual process that is difficult to reproduce. The core challenge is domain adaptation, [&#8230;]</p>\n<p>The post <a href=\"https://www.microsoft.com/en-us/research/blog/autoadapt-automated-domain-adaptation-for-large-language-models/\">AutoAdapt: Automated domain adaptation for large language models</a> appeared first on <a href=\"https://www.microsoft.com/en-us/research\">Microsoft Research</a>.</p>\n",
+      "contentSnippet": "Deploying large language models (LLMs) in real-world, high-stakes settings is harder than it should be. In high-stakes settings like law, medicine, and cloud incident response, performance and reliability can quickly break down because adapting models to domain-specific requirements is a slow and manual process that is difficult to reproduce. The core challenge is domain adaptation, […]\nThe post AutoAdapt: Automated domain adaptation for large language models appeared first on Microsoft Research.",
+      "creator": "Sidharth Sinha, Anson Bastos, Xuchao Zhang, Akshay Nambi, Rujia Wang, Chetan Bansal",
+      "summary": "AutoAdapt是微软研究院开发的自动化领域适应框架，旨在解决LLM在法律、医学、云事故响应等高风险领域的部署难题。传统模型适应过程缓慢且难以复现，AutoAdapt通过自动化方法简化领域特定要求的适配，提升模型性能和可靠性。",
+      "ai_score": 7,
+      "ai_reason": "AutoAdapt是微软研究院发布的LLM自动化领域适应方案，解决高风险领域模型部署的手动适应难题，属于LLM工程化落地的有价值技术进展，与核心关注领域强相关。",
+      "tags": []
+    }
+  ],
+  "lastUpdated": "2026-04-28T15:02:53.479Z"
+}

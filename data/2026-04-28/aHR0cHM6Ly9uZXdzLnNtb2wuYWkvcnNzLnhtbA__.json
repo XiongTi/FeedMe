@@ -1,0 +1,35 @@
+{
+  "sourceUrl": "https://news.smol.ai/rss.xml",
+  "title": "AINews",
+  "description": "Weekday recaps of top News for AI Engineers",
+  "link": "https://news.smol.ai/",
+  "items": [
+    {
+      "title": "not much happened today",
+      "link": "https://news.smol.ai/issues/26-04-27-not-much/",
+      "pubDate": "Mon, 27 Apr 2026 05:44:39 GMT",
+      "isoDate": "2026-04-27T05:44:39.000Z",
+      "content": "**OpenAI** loosens its **Azure exclusivity**, allowing distribution across **Google TPU**, **AWS Trainium**, and **Bedrock** with commitments through **2032** and revenue share through **2030**. **GPT-5.5** shows improved benchmarks but is not uniformly dominant, ranking variably across coding, document, math, and vision tasks. GitHub's **Copilot** shifts to usage-based billing starting June 1, reflecting increased runtime costs. **OpenAI** open-sourced **Symphony**, an orchestration layer for issue tracking and Codex agents. **Xiaomi** released **MiMo-V2.5** and **MiMo-V2.5-Pro**, large context models with up to **1M-token context** and trillions of tokens trained, emphasizing complex agent and omni-modal capabilities. **Kimi K2.6** leads OpenRouter's leaderboard, noted for coding and long-horizon agent capabilities with large-scale sub-agent coordination.",
+      "contentSnippet": "**OpenAI** loosens its **Azure exclusivity**, allowing distribution across **Google TPU**, **AWS Trainium**, and **Bedrock** with commitments through **2032** and revenue share through **2030**. **GPT-5.5** shows improved benchmarks but is not uniformly dominant, ranking variably across coding, document, math, and vision tasks. GitHub's **Copilot** shifts to usage-based billing starting June 1, reflecting increased runtime costs. **OpenAI** open-sourced **Symphony**, an orchestration layer for issue tracking and Codex agents. **Xiaomi** released **MiMo-V2.5** and **MiMo-V2.5-Pro**, large context models with up to **1M-token context** and trillions of tokens trained, emphasizing complex agent and omni-modal capabilities. **Kimi K2.6** leads OpenRouter's leaderboard, noted for coding and long-horizon agent capabilities with large-scale sub-agent coordination.",
+      "creator": "",
+      "summary": "<think>让我分析这条内容：\n\n标题：not much happened today - 这是一个讽刺的标题，实际上内容很丰富\n\n内容分析：\n1. OpenAI 放宽了Azure独家协议，允许在Google TPU、AWS Trainium和Bedrock上分发 - 这是重大行业新闻\n2. GPT-5.5展示了改进的基准测试 - AI模型进展\n3. GitHub Copilot转向基于使用的计费 - 开发者工具/定价变化\n4. OpenAI开源了Symphony - 编排层，用于issue tracking和Codex agents - 这是Agent相关！\n5. Xiaomi发布了MiMo-V2.5和MiMi-V2.5-Pro - 大上下文模型，1M-token上下文 - AI模型\n6. Kimi K2.6在OpenRouter上领先 - AI模型\n\n评分维度：\n- 这个内容主要涵盖：AI模型、开发者工具、Agent编排\n- 核心关注领域：\n  - AI Agent：Symphony是编排层，Kimi K2.6有sub-agent协调 - 是Agent相关\n  - 代码质量/静态分析：无直接相关\n  - 软件测试智能化：无\n  - DevOps：无\n  - LLM工程化：有GPT-5.5、小米模型等\n  - 开发者工具：GitHub Copilot\n\n根据评分标准：\n- 核心领域的突破性进展：Azure独家协议的变更、Copilot计费模式变化、Symphony开源 - 这些是行业重要事件\n\n\n- Agent相关：Symphony和Kimi K2.6的Agent能力是加分项\n- 开发者工具：GitHub Copilot相关\n\n我注意到这条内容包含多个关键技术进展。关键亮点包括OpenAI的模型分发协议变更、Copilot新计费模式，以及Symphony开源项目。这些都是技术生态系统的重大变化。考虑到内容的广度和重要性，我倾向于给予8分的评分。\n\n在评估产品标签时，我发现这个新闻主要聚焦于AI模型和开发者工具。Copilot作为一个关键产品，自然成为匹配对象，但内容本质上更像行业新闻而非具体产品发布。最终得分可能是7分，反映出内容的技术深度和行业意义。</think>\n\n```json\n{\n  \"score\": 7,\n  \"reason\": \"涵盖多个AI行业重要事件：OpenAI放宽Azure独家协议、Copilot计费模式转变、Symphony开源、MiMo-V2.5长上下文突破等。其中Symphony编排层和Kimi K2.6的sub-agent协调属于Agent相关（+1）。内容技术深度较高但非纯工程实践类。\",\n  \"summary\": \"本周AI领域重大变化：OpenAI放宽Azure独家协议，允许通过Google TPU、AWS Trainium和Bedrock分发至2032年；GPT-5.5基准提升但未全面领先；Copilot将于6月转向使用量计费；OpenAI开源Symphony编排层支持Codex agents；小米发布1M-token",
+      "ai_score": 7,
+      "ai_reason": "涵盖多个AI行业重要事件：OpenAI放宽Azure独家协议、Copilot计费模式转变、Symphony开源、MiMo-V2.5长上下文突破等。其中Symphony编排层和Kimi K2.6的sub-agent协调属于Agent相关（+1）。内容技术深度较高但非纯工程实践类。",
+      "tags": []
+    },
+    {
+      "title": "not much happened today",
+      "link": "https://news.smol.ai/issues/26-04-22-not-much/",
+      "pubDate": "Wed, 22 Apr 2026 05:44:39 GMT",
+      "isoDate": "2026-04-22T05:44:39.000Z",
+      "content": "**Alibaba** released **Qwen3.6-27B**, a dense, Apache 2.0 open coding model with thinking and non-thinking modes, outperforming the larger Qwen3.5-397B-A17B on multiple coding benchmarks including SWE-bench and Terminal-Bench. It supports native vision-language reasoning over images and video, with immediate ecosystem support from vLLM, Unsloth, ggml, and Ollama. **OpenAI** open-sourced a practical **Privacy Filter** model for PII detection and masking, a 1.5B parameter token-classification model with a 128k context window aimed at enterprise redaction tasks. **Xiaomi** announced **MiMo-V2.5-Pro** and **MiMo-V2.5** models, emphasizing software engineering advances, long-horizon agents, and large context windows (up to 1M tokens), with strong benchmark results and integrations with Hermes and Nous. At **Google Cloud Next**, **Google** and **Google DeepMind** unveiled 8th-gen TPUs (TPU 8t for training and TPU 8i for inference) with claims of scaling to a million TPUs in a cluster, and launched the **Gemini Enterprise Agent Platform** evolving Vertex AI with Agent Studio and access to 200+ models including **Gemini 3.1 Pro** and **Gemini 3.1 Flash Image**. This marks a significant vertical integration of hardware, models, and enterprise tooling.",
+      "contentSnippet": "**Alibaba** released **Qwen3.6-27B**, a dense, Apache 2.0 open coding model with thinking and non-thinking modes, outperforming the larger Qwen3.5-397B-A17B on multiple coding benchmarks including SWE-bench and Terminal-Bench. It supports native vision-language reasoning over images and video, with immediate ecosystem support from vLLM, Unsloth, ggml, and Ollama. **OpenAI** open-sourced a practical **Privacy Filter** model for PII detection and masking, a 1.5B parameter token-classification model with a 128k context window aimed at enterprise redaction tasks. **Xiaomi** announced **MiMo-V2.5-Pro** and **MiMo-V2.5** models, emphasizing software engineering advances, long-horizon agents, and large context windows (up to 1M tokens), with strong benchmark results and integrations with Hermes and Nous. At **Google Cloud Next**, **Google** and **Google DeepMind** unveiled 8th-gen TPUs (TPU 8t for training and TPU 8i for inference) with claims of scaling to a million TPUs in a cluster, and launched the **Gemini Enterprise Agent Platform** evolving Vertex AI with Agent Studio and access to 200+ models including **Gemini 3.1 Pro** and **Gemini 3.1 Flash Image**. This marks a significant vertical integration of hardware, models, and enterprise tooling.",
+      "creator": "",
+      "summary": "本周AI领域密集发布：阿里Qwen3.6-27B开源编程模型支持思维模式，OpenAI开源Privacy Filter用于PII脱敏，小米发布MiMo-V2.5-Pro强调软件工程能力，Google发布第8代TPU并推出Gemini Enterprise Agent Platform构建完整企业Agent栈",
+      "ai_score": 7,
+      "ai_reason": "多厂商AI模型发布+Google Agent平台，涵盖LLM工程化与Agentic系统，附带开源工具链生态，有技术增量",
+      "tags": []
+    }
+  ],
+  "lastUpdated": "2026-04-28T14:45:13.123Z"
+}

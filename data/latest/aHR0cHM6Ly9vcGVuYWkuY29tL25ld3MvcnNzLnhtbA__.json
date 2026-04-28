@@ -1,0 +1,35 @@
+{
+  "sourceUrl": "https://openai.com/news/rss.xml",
+  "title": "OpenAI News",
+  "description": "The OpenAI blog",
+  "link": "https://openai.com/news",
+  "items": [
+    {
+      "title": "An open-source spec for orchestration: Symphony",
+      "link": "https://openai.com/index/open-source-codex-orchestration-symphony",
+      "pubDate": "Mon, 27 Apr 2026 00:00:00 GMT",
+      "isoDate": "2026-04-27T00:00:00.000Z",
+      "content": "Learn how Symphony, an open-source spec for Codex orchestration, turns issue trackers into always-on agent systems—boosting engineering output and reducing context switching.",
+      "contentSnippet": "Learn how Symphony, an open-source spec for Codex orchestration, turns issue trackers into always-on agent systems—boosting engineering output and reducing context switching.",
+      "creator": "",
+      "summary": "Symphony是一个开源的Codex编排规范，旨在将问题追踪器转变为持续运行的agent系统，以提升工程产出并减少开发者上下文切换。该规范提供了agent系统的编排框架，属于AI Agent工程化的重要实践",
+      "ai_score": 8,
+      "ai_reason": "核心关注领域的开源规范发布，S Symphony作为Codex编排的开源规范，将issue trackers转变为always-on agent系统，属于AI Agent编排的技术创新，有实质性技术内容",
+      "tags": []
+    },
+    {
+      "title": "Speeding up agentic workflows with WebSockets in the Responses API",
+      "link": "https://openai.com/index/speeding-up-agentic-workflows-with-websockets",
+      "pubDate": "Wed, 22 Apr 2026 10:00:00 GMT",
+      "isoDate": "2026-04-22T10:00:00.000Z",
+      "content": "A deep dive into the Codex agent loop, showing how WebSockets and connection-scoped caching reduced API overhead and improved model latency.",
+      "contentSnippet": "A deep dive into the Codex agent loop, showing how WebSockets and connection-scoped caching reduced API overhead and improved model latency.",
+      "creator": "",
+      "summary": "深入分析OpenAI Codex Agent循环机制，介绍如何利用WebSockets和连接作用域缓存降低API开销、提升模型响应延迟的技术实践。这是Agentic工作流优化的实质性技术内容，展示了生产级AI Agent系统的工程优化方案。",
+      "ai_score": 9,
+      "ai_reason": "核心领域(Agent系统)的深度技术实践，探讨WebSocket优化与缓存策略属于行业标杆技术方案，Agent相关加1分",
+      "tags": []
+    }
+  ],
+  "lastUpdated": "2026-04-28T14:39:22.311Z"
+}

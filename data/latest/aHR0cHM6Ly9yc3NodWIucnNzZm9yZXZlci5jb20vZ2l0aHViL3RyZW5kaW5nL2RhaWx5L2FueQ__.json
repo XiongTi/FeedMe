@@ -1,0 +1,100 @@
+{
+  "sourceUrl": "https://rsshub.rssforever.com/github/trending/daily/any",
+  "title": "Trending repositories on GitHub today · GitHub",
+  "description": "Trending repositories on GitHub today · GitHub - Powered by RSSHub",
+  "link": "https://github.com/trending/?since=daily&spoken_language_code=",
+  "items": [
+    {
+      "title": "bytedance/deer-flow",
+      "link": "https://github.com/bytedance/deer-flow",
+      "pubDate": "2026-05-06T14:30:27.231Z",
+      "isoDate": "2026-05-06T14:30:27.231Z",
+      "content": "<img src=\"https://opengraph.githubassets.com/4342d01e56f1244dc1d2a9d677335b96df9f3fe9810584f866897931b8ab2644/bytedance/deer-flow\" referrerpolicy=\"no-referrer\"><br>An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours.<br><br>Language: Python<br>Stars: 65400<br>Forks: 8649",
+      "contentSnippet": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours.\nLanguage: Python\nStars: 65400\nForks: 8649",
+      "creator": "bytedance",
+      "summary": "ByteDance开源的deer-flow是一个长周期SuperAgent框架，能够进行研究、编码和创建任务。该框架通过集成sandbox（沙箱）、memories（记忆）、tools（工具）、skill（技能）、subagents（子代理）和message gateway（消息网关）等核心组件，支持处理从分钟到小时级别的不同复杂度任务，采用Python实现，在GitHub上获得65400星标和8649分支，展现了现代AI Agent系统的完整架构设计理念",
+      "ai_score": 10,
+      "ai_reason": "字节跳动开源的SuperAgent框架，是AI Agent领域的重大开源发布，包含sandbox、memories、tools、subagents等完整架构组件，65400 stars表明其行业影响力，属于核心关注领域的突破性进展",
+      "tags": []
+    },
+    {
+      "title": "ruvnet/ruflo",
+      "link": "https://github.com/ruvnet/ruflo",
+      "pubDate": "2026-05-06T14:30:27.231Z",
+      "isoDate": "2026-05-06T14:30:27.231Z",
+      "content": "<img src=\"https://repository-images.githubusercontent.com/995029641/095f6349-c2bf-4850-b1bf-87ebfa3091db\" referrerpolicy=\"no-referrer\"><br>🌊 The leading agent orchestration platform for Claude. Deploy intelligent multi-agent swarms, coordinate autonomous workflows, and build conversational AI systems. Features    enterprise-grade architecture, self-learning swarm intelligence, RAG integration, and native Claude Code / Codex Integration<br><br>Language: TypeScript<br>Stars: 44804<br>Forks: 4968",
+      "contentSnippet": "🌊 The leading agent orchestration platform for Claude. Deploy intelligent multi-agent swarms, coordinate autonomous workflows, and build conversational AI systems. Features    enterprise-grade architecture, self-learning swarm intelligence, RAG integration, and native Claude Code / Codex Integration\nLanguage: TypeScript\nStars: 44804\nForks: 4968",
+      "creator": "ruvnet",
+      "summary": "ruflo是为Claude提供的主导智能体编排平台，支持部署多智能体群组、协调自主工作流、构建对话AI系统。该项目拥有44,804 Stars和4,968 Forks，采用TypeScript开发，提供企业级架构、自学习群组智能、RAG集成及原生Claude Code/Codex集成能力。",
+      "ai_score": 9,
+      "ai_reason": "核心领域（AI Agent编排平台）的重大开源项目，44K+ Stars表明极高的社区认可度，具备企业级架构、多Agent协作、RAG集成、Claude Code集成等完整技术特性，属于突破性进展",
+      "tags": []
+    },
+    {
+      "title": "Hmbown/DeepSeek-TUI",
+      "link": "https://github.com/Hmbown/DeepSeek-TUI",
+      "pubDate": "2026-05-06T14:30:27.231Z",
+      "isoDate": "2026-05-06T14:30:27.231Z",
+      "content": "<img src=\"https://opengraph.githubassets.com/daccaf427fe762c064f0062103ce40b515f521dbb4b7c84d53e2373b15aeba97/Hmbown/DeepSeek-TUI\" referrerpolicy=\"no-referrer\"><br>Coding agent for DeepSeek models that runs in your terminal<br><br>Language: Rust<br>Stars: 12355<br>Forks: 936",
+      "contentSnippet": "Coding agent for DeepSeek models that runs in your terminal\nLanguage: Rust\nStars: 12355\nForks: 936",
+      "creator": "Hmbown",
+      "summary": "开源的DeepSeek模型终端编码Agent工具，采用Rust语言编写，可在终端运行。作为面向大模型的开发者工具，直接服务于LLM工程化落地场景，拥有1.2万+Stars和900+Forks，社区认可度高，是高质量的AI Agent实践项目。",
+      "ai_score": 8,
+      "ai_reason": "核心领域：DeepSeek Coding Agent终端工具，用Rust实现，高星社区认可度高，属于AI Agent与开发者工具交叉领域",
+      "tags": []
+    },
+    {
+      "title": "addyosmani/agent-skills",
+      "link": "https://github.com/addyosmani/agent-skills",
+      "pubDate": "2026-05-06T14:30:27.231Z",
+      "isoDate": "2026-05-06T14:30:27.231Z",
+      "content": "<img src=\"https://opengraph.githubassets.com/57436c260d8e6cb58fe27bacb3dbe263a56c2e1d2b4ef3e8cfb6af914f34a1ba/addyosmani/agent-skills\" referrerpolicy=\"no-referrer\"><br>Production-grade engineering skills for AI coding agents.<br><br>Language: Shell<br>Stars: 29485<br>Forks: 3563",
+      "contentSnippet": "Production-grade engineering skills for AI coding agents.\nLanguage: Shell\nStars: 29485\nForks: 3563",
+      "creator": "addyosmani",
+      "summary": "addyosmani出品的AI编码Agent生产级工程技能仓库，提供Shell脚本形式的实用技能。该项目聚焦于赋能AI编程Agent的工程化能力，虽未提供详细技术文档，但基于超高星标数（29485）和Google Chrome团队背景，在AI Agent开发者社区具有重要影响力，是该领域的标杆实践资源。",
+      "ai_score": 8,
+      "ai_reason": "核心领域高质量技术资源，AI编码Agent工程技能的生产级实践，超2.9万星标表明广泛认可，addyosmani背书更具权威性",
+      "tags": []
+    },
+    {
+      "title": "LearningCircuit/local-deep-research",
+      "link": "https://github.com/LearningCircuit/local-deep-research",
+      "pubDate": "2026-05-06T14:30:27.231Z",
+      "isoDate": "2026-05-06T14:30:27.231Z",
+      "content": "<img src=\"https://opengraph.githubassets.com/ea2168c5a0c4bc8353e155de323b36157ea311b571134554bdf2637228869dc5/LearningCircuit/local-deep-research\" referrerpolicy=\"no-referrer\"><br> ~95% on SimpleQA (e.g. Qwen3.6-27B on a 3090). Supports all local and cloud LLMs (llama.cpp, Ollama, Google, ...). 10+ search engines - arXiv, PubMed, your private documents. Everything Local &amp; Encrypted.<br><br>Language: Python<br>Stars: 5474<br>Forks: 499",
+      "contentSnippet": "~95% on SimpleQA (e.g. Qwen3.6-27B on a 3090). Supports all local and cloud LLMs (llama.cpp, Ollama, Google, ...). 10+ search engines - arXiv, PubMed, your private documents. Everything Local & Encrypted.\nLanguage: Python\nStars: 5474\nForks: 499",
+      "creator": "LearningCircuit",
+      "summary": "local-deep-research是一个本地运行的AI深度研究工具，支持Qwen3.6-27B等本地LLM（3090上SimpleQA达~95%），集成llama.cpp、Ollama、Google等模型，涵盖arXiv、PubMed等10+私有/公开搜索引擎，支持本地加密部署，适合需要进行本地化AI研究和文档检索的开发者",
+      "ai_score": 8,
+      "ai_reason": "本地LLM深度研究工具，支持多种搜索引擎和本地/云端模型部署，Stars超过5000，具有较高的实用价值和工程化落地实践，属于LLM工程化和开发者工具领域的高质量开源项目",
+      "tags": []
+    },
+    {
+      "title": "InsForge/InsForge",
+      "link": "https://github.com/InsForge/InsForge",
+      "pubDate": "2026-05-06T14:30:27.231Z",
+      "isoDate": "2026-05-06T14:30:27.231Z",
+      "content": "<img src=\"https://opengraph.githubassets.com/4ed40ecf1d73e38d513ca8b28f2d378a4549e6849d1e195f09a09602e887c7ad/InsForge/InsForge\" referrerpolicy=\"no-referrer\"><br>InsForge is a Postgres-based backend with auth, storage, compute, hosting, and AI gateway. Built for coding agents.<br><br>Language: TypeScript<br>Stars: 8279<br>Forks: 686",
+      "contentSnippet": "InsForge is a Postgres-based backend with auth, storage, compute, hosting, and AI gateway. Built for coding agents.\nLanguage: TypeScript\nStars: 8279\nForks: 686",
+      "creator": "InsForge",
+      "summary": "InsForge 是一个基于 Postgres 的全栈后端，专为 AI 编码代理设计，提供认证、存储、计算、托管和 AI 网关等功能。使用 TypeScript 开发，拥有8279 Stars 和686 Fork，在开发者工具领域有一定影响力。这是一个将后端基础设施与 AI Agent 结合的开源项目。",
+      "ai_score": 7,
+      "ai_reason": "InsForge 是为 AI 编码代理构建的全栈后端平台，包含 Postgres 存储、认证、计算、托管和 AI 网关，属于核心关注的 AI Agent/开发者工具领域，虽然只是项目简介但Stars高达8279说明有一定影响力",
+      "tags": []
+    },
+    {
+      "title": "virattt/dexter",
+      "link": "https://github.com/virattt/dexter",
+      "pubDate": "2026-05-06T14:30:27.231Z",
+      "isoDate": "2026-05-06T14:30:27.231Z",
+      "content": "<img src=\"https://opengraph.githubassets.com/3d9c9c7136264175d94f426ff09f35d36ee70cdb9328f9943c73f7f36258fd0d/virattt/dexter\" referrerpolicy=\"no-referrer\"><br>An autonomous agent for deep financial research<br><br>Language: TypeScript<br>Stars: 24183<br>Forks: 2943",
+      "contentSnippet": "An autonomous agent for deep financial research\nLanguage: TypeScript\nStars: 24183\nForks: 2943",
+      "creator": "virattt",
+      "summary": "virattt/dexter是一个专注于深度金融研究的TypeScript开源自主Agent项目，Stars数24183 Forks数2943，在GitHub上具有极高的流行度和社区影响力，是AI Agent在实际垂直领域应用的成功案例。",
+      "ai_score": 7,
+      "ai_reason": "核心领域的Agent开源项目，Stars高达24k表明受社区广泛认可，属于AI Agent在金融研究场景的典型实践，但描述信息有限",
+      "tags": []
+    }
+  ],
+  "lastUpdated": "2026-05-06T14:30:27.231Z"
+}

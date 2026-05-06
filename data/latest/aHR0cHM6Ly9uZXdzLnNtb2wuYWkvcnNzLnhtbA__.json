@@ -1,0 +1,22 @@
+{
+  "sourceUrl": "https://news.smol.ai/rss.xml",
+  "title": "AINews",
+  "description": "Weekday recaps of top News for AI Engineers",
+  "link": "https://news.smol.ai/",
+  "items": [
+    {
+      "title": "not much happened today",
+      "link": "https://news.smol.ai/issues/26-05-05-not-much/",
+      "pubDate": "Mon, 04 May 2026 05:44:39 GMT",
+      "isoDate": "2026-05-04T05:44:39.000Z",
+      "content": "**OpenAI** rolled out **GPT-5.5 Instant** as the new default for ChatGPT and API, enhancing **factuality, intelligence, image understanding, and tone** with stronger personalization features like saved memories and Gmail integration. OpenAI also shared infrastructure updates on a rebuilt **WebRTC stack** for voice and real-time API, aiming to reduce latency for speech-paced conversations. Developer tools expanded with an **Agents SDK for TypeScript**, sandbox agents, and open-source harnesses, improving coding and automation workflows. Discussions highlighted the importance of **Model–Harness–Task fit** over raw model quality for agent performance, with debates on agent coding UX and benchmarks. Community sentiment praises GPT-5.5 for high-token-budget coding and non-coding tasks.",
+      "contentSnippet": "**OpenAI** rolled out **GPT-5.5 Instant** as the new default for ChatGPT and API, enhancing **factuality, intelligence, image understanding, and tone** with stronger personalization features like saved memories and Gmail integration. OpenAI also shared infrastructure updates on a rebuilt **WebRTC stack** for voice and real-time API, aiming to reduce latency for speech-paced conversations. Developer tools expanded with an **Agents SDK for TypeScript**, sandbox agents, and open-source harnesses, improving coding and automation workflows. Discussions highlighted the importance of **Model–Harness–Task fit** over raw model quality for agent performance, with debates on agent coding UX and benchmarks. Community sentiment praises GPT-5.5 for high-token-budget coding and non-coding tasks.",
+      "creator": "",
+      "summary": "OpenAI发布GPT-5.5 Instant作为ChatGPT和API的新默认模型，增强事实性、图像理解和个性化功能（记忆保存、Gmail集成）。同时重建WebRTC堆栈降低语音延迟，推出TypeScript Agents SDK和沙盒Agent等开发者工具。社区关注Model-Harness-Task匹配度对Agent性能的影响。",
+      "ai_score": 7,
+      "ai_reason": "GPT-5.5模型发布及开发者工具更新，涉及LLM工程化和Agent SDK，但为产品层面发布公告，缺少深度技术细节",
+      "tags": []
+    }
+  ],
+  "lastUpdated": "2026-05-06T14:30:00.235Z"
+}

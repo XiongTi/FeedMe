@@ -1,0 +1,74 @@
+{
+  "sourceUrl": "https://hnrss.org/best",
+  "title": "Hacker News: Best",
+  "description": "Hacker News RSS",
+  "link": "https://news.ycombinator.com/best",
+  "items": [
+    {
+      "title": "Agents can now create Cloudflare accounts, buy domains, and deploy",
+      "link": "https://blog.cloudflare.com/agents-stripe-projects/",
+      "pubDate": "Wed, 06 May 2026 03:10:33 +0000",
+      "isoDate": "2026-05-06T03:10:33.000Z",
+      "content": "\n<p>Article URL: <a href=\"https://blog.cloudflare.com/agents-stripe-projects/\">https://blog.cloudflare.com/agents-stripe-projects/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=48031684\">https://news.ycombinator.com/item?id=48031684</a></p>\n<p>Points: 465</p>\n<p># Comments: 249</p>\n",
+      "contentSnippet": "Article URL: https://blog.cloudflare.com/agents-stripe-projects/\nComments URL: https://news.ycombinator.com/item?id=48031684\nPoints: 465\n# Comments: 249",
+      "creator": "rolph",
+      "summary": "Cloudflare发布新功能，AI Agent现可自动完成创建Cloudflare账号、购买域名及部署网站的完整流程。基于Stripe Projects集成，展示了Agent调用外部服务能力的实际应用场景。该案例体现了Agentic系统在实际业务中的工具调用和自动化执行潜力，是AI Agent工程化落地的有代表性实践。",
+      "ai_score": 8,
+      "ai_reason": "核心领域突破性应用，Agent工具调用能力的典型案例展示，社区关注度高（465points），但偏向产品功能演示而非深度技术分析",
+      "tags": []
+    },
+    {
+      "title": "Computer Use is 45x more expensive than structured APIs",
+      "link": "https://reflex.dev/blog/computer-use-is-45x-more-expensive-than-structured-apis/",
+      "pubDate": "Tue, 05 May 2026 16:34:48 +0000",
+      "isoDate": "2026-05-05T16:34:48.000Z",
+      "content": "\n<p>Article URL: <a href=\"https://reflex.dev/blog/computer-use-is-45x-more-expensive-than-structured-apis/\">https://reflex.dev/blog/computer-use-is-45x-more-expensive-than-structured-apis/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=48024859\">https://news.ycombinator.com/item?id=48024859</a></p>\n<p>Points: 433</p>\n<p># Comments: 244</p>\n",
+      "contentSnippet": "Article URL: https://reflex.dev/blog/computer-use-is-45x-more-expensive-than-structured-apis/\nComments URL: https://news.ycombinator.com/item?id=48024859\nPoints: 433\n# Comments: 244",
+      "creator": "palashawas",
+      "summary": "本文深入分析了AI Agent两种交互方式的成本差异：让AI代理直接操作计算机（Computer Use）与调用结构化API相比，前者成本高出45倍。作者通过实际测试和定价数据论证了结构化API在工程化落地中的显著成本优势，为AI应用架构设计提供了重要的成本优化参考",
+      "ai_score": 7,
+      "ai_reason": "AI Agent工程化落地的深度技术分析，讨论Computer Use与结构化API的成本效益差异45倍，属于核心关注领域的高质量内容",
+      "tags": []
+    },
+    {
+      "title": "Accelerating Gemma 4: faster inference with multi-token prediction drafters",
+      "link": "https://blog.google/innovation-and-ai/technology/developers-tools/multi-token-prediction-gemma-4/",
+      "pubDate": "Tue, 05 May 2026 16:14:17 +0000",
+      "isoDate": "2026-05-05T16:14:17.000Z",
+      "content": "\n<p>Article URL: <a href=\"https://blog.google/innovation-and-ai/technology/developers-tools/multi-token-prediction-gemma-4/\">https://blog.google/innovation-and-ai/technology/developers-tools/multi-token-prediction-gemma-4/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=48024540\">https://news.ycombinator.com/item?id=48024540</a></p>\n<p>Points: 615</p>\n<p># Comments: 298</p>\n",
+      "contentSnippet": "Article URL: https://blog.google/innovation-and-ai/technology/developers-tools/multi-token-prediction-gemma-4/\nComments URL: https://news.ycombinator.com/item?id=48024540\nPoints: 615\n# Comments: 298",
+      "creator": "amrrs",
+      "summary": "Google发布了Gemma 4模型的推理加速技术，通过multi-token prediction drafters实现并行 token 生成，显著提升推理速度。该技术允许模型在单次推理中预测多个后续token，而非传统的自回归逐token生成方式，从而大幅降低推理延迟。这是大语言模型推理优化的重要技术突破，对于提升模型服务化效率具有实际价值。",
+      "ai_score": 8,
+      "ai_reason": "LLM推理加速的核心技术创新，详细介绍了multi-token prediction drafter技术，属于LLM工程化落地的高质量技术分析",
+      "tags": []
+    },
+    {
+      "title": "Agent Skills",
+      "link": "https://addyosmani.com/blog/agent-skills/",
+      "pubDate": "Mon, 04 May 2026 21:40:42 +0000",
+      "isoDate": "2026-05-04T21:40:42.000Z",
+      "content": "\n<p>Article URL: <a href=\"https://addyosmani.com/blog/agent-skills/\">https://addyosmani.com/blog/agent-skills/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=48015397\">https://news.ycombinator.com/item?id=48015397</a></p>\n<p>Points: 370</p>\n<p># Comments: 205</p>\n",
+      "contentSnippet": "Article URL: https://addyosmani.com/blog/agent-skills/\nComments URL: https://news.ycombinator.com/item?id=48015397\nPoints: 370\n# Comments: 205",
+      "creator": "BOOSTERHIDROGEN",
+      "summary": "Google Chrome团队工程师Addy Osmani发布的技术文章，探讨AI Agent的技能构建与实践。作为行业内标杆技术博客，内容聚焦Agent系统的核心能力与架构设计，在技术社区引发广泛讨论热度。",
+      "ai_score": 9,
+      "ai_reason": "AI Agent核心领域，Google工程师Addy Osmani发布的技术文章，在Hacker News获370高分和205评论，影响力显著，+1加分",
+      "tags": []
+    },
+    {
+      "title": "How OpenAI delivers low-latency voice AI at scale",
+      "link": "https://openai.com/index/delivering-low-latency-voice-ai-at-scale/",
+      "pubDate": "Mon, 04 May 2026 19:42:47 +0000",
+      "isoDate": "2026-05-04T19:42:47.000Z",
+      "content": "\n<p>Article URL: <a href=\"https://openai.com/index/delivering-low-latency-voice-ai-at-scale/\">https://openai.com/index/delivering-low-latency-voice-ai-at-scale/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=48013919\">https://news.ycombinator.com/item?id=48013919</a></p>\n<p>Points: 498</p>\n<p># Comments: 143</p>\n",
+      "contentSnippet": "Article URL: https://openai.com/index/delivering-low-latency-voice-ai-at-scale/\nComments URL: https://news.ycombinator.com/item?id=48013919\nPoints: 498\n# Comments: 143",
+      "creator": "Sean-Der",
+      "summary": "本文详细介绍了OpenAI在语音AI低延迟传输方面的大规模工程实践，包括架构设计、性能优化策略等技术细节，是AI工程化落地的标杆案例",
+      "ai_score": 8,
+      "ai_reason": "核心领域的高质量技术分析，深度分享了低延迟语音AI的大规模工程实践，涉及LLM服务化架构和性能优化",
+      "tags": []
+    }
+  ],
+  "lastUpdated": "2026-05-06T14:28:05.132Z"
+}

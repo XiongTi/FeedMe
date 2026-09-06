@@ -1,0 +1,35 @@
+{
+  "sourceUrl": "https://hnrss.org/best",
+  "title": "Hacker News: Best",
+  "description": "Hacker News RSS",
+  "link": "https://news.ycombinator.com/best",
+  "items": [
+    {
+      "title": "AI handles incidents, engineers lose touch with their systems",
+      "link": "https://www.sylvainkalache.com/blog/ai-handles-incidents-engineers-lose-touch-with-their-systems",
+      "pubDate": "Sat, 05 Sep 2026 07:52:50 +0000",
+      "isoDate": "2026-09-05T07:52:50.000Z",
+      "content": "\n<p>Article URL: <a href=\"https://www.sylvainkalache.com/blog/ai-handles-incidents-engineers-lose-touch-with-their-systems\">https://www.sylvainkalache.com/blog/ai-handles-incidents-engineers-lose-touch-with-their-systems</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=49574167\">https://news.ycombinator.com/item?id=49574167</a></p>\n<p>Points: 391</p>\n<p># Comments: 335</p>\n",
+      "contentSnippet": "Article URL: https://www.sylvainkalache.com/blog/ai-handles-incidents-engineers-lose-touch-with-their-systems\nComments URL: https://news.ycombinator.com/item?id=49574167\nPoints: 391\n# Comments: 335",
+      "creator": "sylvainkalache",
+      "summary": "文章探讨AI在事件处理中的应用趋势及潜在问题：AI自动化运维虽能快速响应和解决故障，但可能导致工程师失去对系统的深度理解，当AI无法处理新型问题时会引发隐患。作者认为需要平衡AI效率与工程师技能培养，建议在自动化同时保持人工介入和系统认知",
+      "ai_score": 8,
+      "ai_reason": "核心领域高质量讨论：AI Agent在SRE/运维场景的应用，探讨AI自动化事件处理对工程师系统理解能力的影响，属于DevOps/AIOps领域的深度技术分析，HN高热度(391分)验证内容价值",
+      "tags": []
+    },
+    {
+      "title": "Portal by Spotify cut my Claude Code token usage by 90%",
+      "link": "https://engineering.atspotify.com/2026/9/portal-by-spotify-cut-my-claude-code-token-usage-by-90",
+      "pubDate": "Fri, 04 Sep 2026 23:38:50 +0000",
+      "isoDate": "2026-09-04T23:38:50.000Z",
+      "content": "\n<p>Article URL: <a href=\"https://engineering.atspotify.com/2026/9/portal-by-spotify-cut-my-claude-code-token-usage-by-90\">https://engineering.atspotify.com/2026/9/portal-by-spotify-cut-my-claude-code-token-usage-by-90</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=49571465\">https://news.ycombinator.com/item?id=49571465</a></p>\n<p>Points: 261</p>\n<p># Comments: 167</p>\n",
+      "contentSnippet": "Article URL: https://engineering.atspotify.com/2026/9/portal-by-spotify-cut-my-claude-code-token-usage-by-90\nComments URL: https://news.ycombinator.com/item?id=49571465\nPoints: 261\n# Comments: 167",
+      "creator": "cebert",
+      "summary": "Spotify工程师分享了内部工具Portal如何通过优化工作流程，将Claude Code的token使用量降低90%。Portal作为Spotify的开发者效率平台，通过改进AI辅助编程的使用方式，实现了显著的成本优化和效率提升。这一案例展示了大型科技公司在AI工程化落地方面的实际探索。",
+      "ai_score": 8,
+      "ai_reason": "Spotify内部开发者工具Portal的工程实践分享，展示了AI编程助手使用优化的高效案例，90%token节省效果显著，属于开发者工具与工程效能领域的真实落地实践",
+      "tags": []
+    }
+  ],
+  "lastUpdated": "2026-09-06T15:15:41.116Z"
+}

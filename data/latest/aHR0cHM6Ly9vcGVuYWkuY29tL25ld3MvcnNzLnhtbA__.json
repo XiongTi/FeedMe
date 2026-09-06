@@ -1,0 +1,22 @@
+{
+  "sourceUrl": "https://openai.com/news/rss.xml",
+  "title": "OpenAI News",
+  "description": "The OpenAI blog",
+  "link": "https://openai.com/news",
+  "items": [
+    {
+      "title": "How AI-native companies turn workflows into operating capability",
+      "link": "https://openai.com/index/ai-native-company-workflows",
+      "pubDate": "Tue, 01 Sep 2026 17:00:00 GMT",
+      "isoDate": "2026-09-01T17:00:00.000Z",
+      "content": "Basis, Clay, and Exa Labs use AI agents to improve onboarding, account management, and developer integrations. See what enterprise leaders can apply.",
+      "contentSnippet": "Basis, Clay, and Exa Labs use AI agents to improve onboarding, account management, and developer integrations. See what enterprise leaders can apply.",
+      "creator": "",
+      "summary": "报道了Basis、Clay和Exa Labs三家AI原生公司如何利用AI代理改进企业工作流程，包括员工入职、客户账户管理和开发者工具集成。内容为行业应用趋势概述，面向企业领导者提供参考，但缺少具体技术架构或实现细节。",
+      "ai_score": 7,
+      "ai_reason": "AI Agent在实际企业场景（入职、账户管理、开发者集成）的应用案例，属于核心关注领域但为浅层报道，缺乏技术实现细节",
+      "tags": []
+    }
+  ],
+  "lastUpdated": "2026-09-06T15:16:38.428Z"
+}

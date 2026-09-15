@@ -1,0 +1,22 @@
+{
+  "sourceUrl": "https://openai.com/news/rss.xml",
+  "title": "OpenAI News",
+  "description": "The OpenAI blog",
+  "link": "https://openai.com/news",
+  "items": [
+    {
+      "title": "Cognition helps Devin test its own work with GPT‑6 Astra",
+      "link": "https://openai.com/index/cognition-devin-testing-with-astra",
+      "pubDate": "Fri, 11 Sep 2026 16:00:00 GMT",
+      "isoDate": "2026-09-11T16:00:00.000Z",
+      "content": "GPT‑6 Astra improves Devin’s ability to test software and show that it works, with the goal of helping engineers review less code and ship more.",
+      "contentSnippet": "GPT‑6 Astra improves Devin’s ability to test software and show that it works, with the goal of helping engineers review less code and ship more.",
+      "creator": "",
+      "summary": "Cognition宣布其AI软件工程师Devin借助GPT-6 Astra模型提升自我测试能力，旨在帮助工程师减少代码审查工作量并加快软件发布。该进展体现了AI Agent在代码质量保障领域的探索，但目前披露信息有限，具体技术细节待进一步公开。",
+      "ai_score": 7,
+      "ai_reason": "AI Agent Devin结合GPT-6进行自测的进展，属于核心关注领域（AI Agent+测试智能化），但仅为产品新闻公告，缺乏技术实现细节",
+      "tags": []
+    }
+  ],
+  "lastUpdated": "2026-09-15T16:41:19.598Z"
+}

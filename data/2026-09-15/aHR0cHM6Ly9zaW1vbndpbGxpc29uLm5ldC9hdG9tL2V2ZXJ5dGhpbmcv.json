@@ -1,0 +1,74 @@
+{
+  "sourceUrl": "https://simonwillison.net/atom/everything/",
+  "title": "Simon Willison's Weblog",
+  "description": "",
+  "link": "http://simonwillison.net/",
+  "items": [
+    {
+      "title": "So you want to use OpenRouter?",
+      "link": "https://simonwillison.net/2026/Sep/11/so-you-want-to-use-openrouter/",
+      "pubDate": "2026-09-11T22:49:18.000Z",
+      "isoDate": "2026-09-11T22:49:18.000Z",
+      "content": "\n    \n<p><strong><a href=\"https://mmoustafa.com/blog/so-you-want-to-use-openrouter/\">So you want to use OpenRouter?</a></strong></p>\nOne of OpenRouter's selling points is that it \"handles fallbacks automatically and picks the most cost-effective option for each request\", so you can call a single API endpoint for a model and get routed to the best available backend provider.</p>\n<p>Mohamed Moustafa points out a whole set of ways that this can cause you problems. Different providers run different serving software with different optimizations and settings, which means that the same OpenRouter endpoint can serve model requests that behave in different ways.</p>\n<p>Some providers even lack vision capability for vision models, and the way the reasoning effort option is processed can differ as well.</p>\n<p>Thankfully you can control which provider is routed to using <a href=\"https://openrouter.ai/docs/guides/routing/provider-selection#allowing-only-specific-providers\">the provider.only option</a>. The <a href=\"https://openrouter.ai/docs/api/api-reference/endpoints/list-all-endpoints-for-a-model\">/endpoints method</a> returns the list of available providers for a specific model ID.\n\n    <p><small></small>Via <a href=\"https://news.ycombinator.com/item?id=49621546\">Hacker News</a></small></p>\n\n\n    <p>Tags: <a href=\"https://simonwillison.net/tags/ai\">ai</a>, <a href=\"https://simonwillison.net/tags/generative-ai\">generative-ai</a>, <a href=\"https://simonwillison.net/tags/llms\">llms</a>, <a href=\"https://simonwillison.net/tags/openrouter\">openrouter</a></p>\n\n\n\n",
+      "contentSnippet": "",
+      "creator": "",
+      "summary": "本文讨论了OpenRouter作为LLM聚合服务的潜在问题。OpenRouter自动选择最便宜provider的特性可能导致不同后端行为差异，如vision能力缺失、reasoning处理不一致等。作者建议使用provider.only参数控制路由，并通过/endpoints方法查看可用provider列表。这是一篇实用的技术避坑指南。",
+      "ai_score": 7,
+      "ai_reason": "LLM模型路由服务化的技术实践分享，属于核心关注领域，有技术深度和实用建议，但非突破性进展",
+      "tags": []
+    },
+    {
+      "title": "Quoting Boris Cherny",
+      "link": "https://simonwillison.net/2026/Sep/11/boris-cherny/",
+      "pubDate": "2026-09-11T17:47:11.000Z",
+      "isoDate": "2026-09-11T17:47:11.000Z",
+      "content": "\n    <blockquote cite=\"https://twitter.com/bcherny/status/2098217573276131577\"><p>Production code written by Claude should have a higher bar than if it was written by a human. At Anthropic, we have many guardrails in place to make sure this is happening: lots of lint rules, lots of tests, Claude-driven end to end tests, Claude-powered fuzzers running daily, automated code reviews and security reviews, automated code refactoring, and so on. Without these, you can end up with a mess that is hard to maintain down the line.</p></blockquote>\n<p class=\"cite\">&mdash; <a href=\"https://twitter.com/bcherny/status/2098217573276131577\">Boris Cherny</a></p>\n\n    <p>Tags: <a href=\"https://simonwillison.net/tags/claude\">claude</a>, <a href=\"https://simonwillison.net/tags/ai\">ai</a>, <a href=\"https://simonwillison.net/tags/claude-code\">claude-code</a>, <a href=\"https://simonwillison.net/tags/llms\">llms</a>, <a href=\"https://simonwillison.net/tags/coding-agents\">coding-agents</a>, <a href=\"https://simonwillison.net/tags/ai-assisted-programming\">ai-assisted-programming</a>, <a href=\"https://simonwillison.net/tags/generative-ai\">generative-ai</a>, <a href=\"https://simonwillison.net/tags/agentic-engineering\">agentic-engineering</a>, <a href=\"https://simonwillison.net/tags/boris-cherny\">boris-cherny</a>, <a href=\"https://simonwillison.net/tags/anthropic\">anthropic</a></p>\n\n\n\n",
+      "contentSnippet": "",
+      "creator": "",
+      "summary": "Anthropic工程师Boris Cherny分享了使用Claude生成生产代码的质量保障措施，包括大量lint规则、测试、Claude驱动的端到端测试、AI fuzzing、自动化代码审查和安全审查等，强调AI生成代码需要比人工代码更高的质量标准，否则会导致难以维护的技术债务。",
+      "ai_score": 8,
+      "ai_reason": "核心领域高质量技术讨论：AI代码质量保障实践，涵盖lint、测试、fuzzing、自动化代码审查等工程措施，符合代码质量/测试工程实践加分规则",
+      "tags": []
+    },
+    {
+      "title": "Don't sleep on wrapture",
+      "link": "https://simonwillison.net/2026/Sep/11/wrapture/",
+      "pubDate": "2026-09-11T13:51:32.000Z",
+      "isoDate": "2026-09-11T13:51:32.000Z",
+      "content": "\n    <p>Graham Dumpleton's new monkey patching package <a href=\"https://wrapture.readthedocs.io/\">wrapture</a> is shaping up to be an indispensable tool for Python developers. I'm not sure why I've seen so little buzz about it!</p>\n<p>Graham has been posting new tutorials for it almost daily since <a href=\"https://simonwillison.net/2026/Aug/31/introducing-wrapture/\">the initial release</a> on August 31st. Here's everything he's published so far:</p>\n<ul>\n<li><a href=\"https://grahamdumpleton.me/posts/2026/08/introducing-wrapture/\">Introducing wrapture</a> - a new monkey patching library that serves both testing and observability (think New Relic style tracing) at the same time.</li>\n<li><a href=\"https://grahamdumpleton.me/posts/2026/09/unit-testing-with-wrapture/\">Unit testing with wrapture</a> - how to use it for the same kinds of thing as <code>unittest.mock</code>.</li>\n<li><a href=\"https://grahamdumpleton.me/posts/2026/09/recording-calls-with-wrapture/\">Recording calls with wrapture</a>  - recording method calls as timelines and processing and displaying them as trees.</li>\n<li><a href=\"https://grahamdumpleton.me/posts/2026/09/phased-behaviour-in-wrapture/\">Phased behaviour in wrapture</a>  - arranging patched methods to change behavior across multiple calls.</li>\n<li><a href=\"https://grahamdumpleton.me/posts/2026/09/beyond-callables-in-wrapture/\">Beyond callables in wrapture</a> - monkey patching attributes, dictionaries, generators.</li>\n<li><a href=\"https://grahamdumpleton.me/posts/2026/09/live-tracing-with-wrapture/\">Live tracing with wrapture</a>  - tracing a live application to see exactly how it works.</li>\n<li><a href=\"https://grahamdumpleton.me/posts/2026/09/zero-code-tracing-with-wrapture/\">Zero-code tracing with wrapture</a>  - configuring tracing in a separate TOML file without modifying Python code at all.</li>\n<li><a href=\"https://grahamdumpleton.me/posts/2026/09/tracing-flask-with-wrapture/\">Tracing Flask with wrapture</a>  - using the separate <a href=\"https://github.com/GrahamDumpleton/wrapture-instrumentation\">wrapture-instrumenation</a> package to instrument a Flask application. That package also provides instrumentation for <code>aiohttp.client</code>, <code>aiohttp.web</code>, <code>django</code>, <code>fastapi</code>, <code>flask</code>, <code>grpc</code>, <code>http.client</code>, <code>httpx</code>, <code>jinja2</code>, <code>requests</code>, <code>sqlalchemy</code>, <code>sqlite3</code>, <code>starlette</code>, <code>urllib.request</code>, <code>urllib3</code>, <code>uvicorn</code>, <code>werkzeug.serving</code>, <code>wsgiref.simple_server</code>, <code>xmlrpc.client</code>, <code>xmlrpc.server</code>.</li>\n<li><a href=\"https://grahamdumpleton.me/posts/2026/09/finding-slow-code-with-wrapture/\">Finding slow code with wrapture</a> - wrapture's tools for recording timing information, both individually and aggregated across multiple calls.</li>\n<li><a href=\"https://grahamdumpleton.me/posts/2026/09/opentelemetry-export-in-wrapture/\">OpenTelemetry export in wrapture</a> - exporting traces to OpenTelemetry.</li>\n</ul>\n<p>Graham also has a <a href=\"https://github.com/GrahamDumpleton/wrapture-workshops\">set of interactive workshops</a> for wrapture, implemented as JupyterLab notebooks.</p>\n<p>Wrapture is still alpha software but it's already very usable - especially given you can configure and try it out with a TOML file without modifying any Python code at all.</p>\n<p>This feels like one of those Swiss Army Knife packages that, once mastered, will provide value against all sorts of problems for years to come.</p>\n\n    <p>Tags: <a href=\"https://simonwillison.net/tags/graham-dumpleton\">graham-dumpleton</a>, <a href=\"https://simonwillison.net/tags/open-source\">open-source</a>, <a href=\"https://simonwillison.net/tags/testing\">testing</a>, <a href=\"https://simonwillison.net/tags/python\">python</a>, <a href=\"https://simonwillison.net/tags/observability\">observability</a>, <a href=\"https://simonwillison.net/tags/monkey-patching\">monkey-patching</a></p>\n\n\n\n",
+      "contentSnippet": "",
+      "creator": "",
+      "summary": "介绍Graham Dumpleton发布的Python monkey patching库wrapture，该库同时支持测试和可观测性场景（如New Relic风格追踪）。文章汇总了其核心功能：单元测试模拟、方法调用录制、时间轴可视化、分阶段行为修改、属性/字典/生成器补丁，以及通过TOML配置实现零代码追踪和OpenTelemetry导出。该库仍处于alpha阶段但已可使用，适合Python开发者用于测试隔离和应用行为追踪。",
+      "ai_score": 7,
+      "ai_reason": "核心领域（测试+可观测性）的实用Python工具介绍，提供了详细功能列表和教程信息，属于工程实践类内容但偏向工具推荐而非深度技术分析",
+      "tags": []
+    },
+    {
+      "title": "Datasette 1.0a39 and 0.65.4 security releases",
+      "link": "https://simonwillison.net/2026/Sep/11/datasette-security/",
+      "pubDate": "2026-09-11T03:27:16.000Z",
+      "isoDate": "2026-09-11T03:27:16.000Z",
+      "content": "\n    \n<p><strong><a href=\"https://datasette.io/blog/2026/september-security-releases/\">Datasette 1.0a39 and 0.65.4 security releases</a></strong></p>\nToday we're releasing two new security patch versions of Datasette: <a href=\"https://docs.datasette.io/en/latest/changelog.html#v1-0-a39\">1.0a39</a> and <a href=\"https://docs.datasette.io/en/stable/changelog.html#v0-65-4\">0.65.4</a> - one for the current alpha series and one for the stable 0.65.x family.</p>\n<p>These are security fixes which you should apply if you are running a Datasette instance on the public web - in particular if that instance mixes both public and private tables.</p>\n<p>Following issues reported by <a href=\"https://github.com/jankesec\">Sevban Dönmez</a>, <a href=\"https://alexgarcia.xyz\">Alex Garcia</a> and I ran an extensive audit of Datasette using Claude Fable 5.1, GPT-5.6, and GPT-6 Astra. We then spent almost a week collaborating on and reviewing the fixes.</p>\n<p>They helped find some <em>very</em> subtle bugs. We'll be incorporating security audits by frontier models into all of our development work going forward.</p>\n<p>Alex came up with a way of splitting the work which I found extremely productive:</p>\n<blockquote>\n<p>Alex Garcia and I worked together running and then responding to the audit, working in a shared private repository. For most of the issues we split the work: one of us would create the automated tests highlighting the issue, then the other would implement the fix. This ensured that two separate humans had eyes on each of the issues, in addition to our coding agents running different models.</p>\n</blockquote>\n\n\n    <p>Tags: <a href=\"https://simonwillison.net/tags/releases\">releases</a>, <a href=\"https://simonwillison.net/tags/security\">security</a>, <a href=\"https://simonwillison.net/tags/ai\">ai</a>, <a href=\"https://simonwillison.net/tags/datasette\">datasette</a>, <a href=\"https://simonwillison.net/tags/generative-ai\">generative-ai</a>, <a href=\"https://simonwillison.net/tags/llms\">llms</a>, <a href=\"https://simonwillison.net/tags/agentic-engineering\">agentic-engineering</a>, <a href=\"https://simonwillison.net/tags/ai-security-research\">ai-security-research</a></p>\n\n\n\n",
+      "contentSnippet": "",
+      "creator": "",
+      "summary": "Datasette发布两个安全版本修复混合公共和私有表的安全漏洞。团队使用Claude Fable 5.1、GPT-5.6、GPT-6 Astra进行安全审计，采用一人创建测试、另一人修复的双人Code Review流程，将AI安全审计纳入开发工作流程。",
+      "ai_score": 7,
+      "ai_reason": "安全补丁发布但使用了AI辅助审计（AI agent参与安全审计流程），属于AI工程化落地实践，有一定技术价值",
+      "tags": []
+    },
+    {
+      "title": "Any Nix package, live in your browser",
+      "link": "https://simonwillison.net/2026/Sep/10/trynix/",
+      "pubDate": "2026-09-10T23:44:15.000Z",
+      "isoDate": "2026-09-10T23:44:15.000Z",
+      "content": "\n    \n<p><strong><a href=\"https://fzakaria.com/2026/09/04/any-nix-package-live-in-your-browser\">Any Nix package, live in your browser</a></strong></p>\nFarid Zakaria calls this his \"<em>magnum opus</em> of Nix work\", and I can see why.</p>\n<p><a href=\"https://trynix.dev\">trynix.dev</a> provides a <a href=\"https://github.com/ktock/qemu-wasm\">qemu-wasm</a> powered x86_64 Linux virtual machine running entirely in your browser through WebAssembly. That VM can then be booted with <em>any Nix package</em> from the past 13 years. They are URL addressable, so you can navigate to this page:</p>\n<p><a href=\"https://trynix.dev/?pkg=python3%403.6.2\">https://trynix.dev/?pkg=python3%403.6.2</a></p>\n<p>Then click \"Load\" and get an interactive shell against a virtual machine running Python 3.6.2 from 2017.</p>\n<p>Farid is building all sorts of neat things on top of this. One recent example: <a href=\"https://fzakaria.com/2026/09/09/review-a-pull-request-by-booting-it\">Review a pull request by booting it</a> introduces <a href=\"https://github.com/marketplace/actions/trynix-preview\">trynix-preview</a>, described like this:</p>\n<blockquote>\n<p>GitHub action that comments a link on a pull request which lets you boot the PR’s build in the browser using <a href=\"https://trynix.dev/\">https://trynix.dev</a>. No servers, just browsers.</p>\n</blockquote>\n\n    <p><small></small>Via <a href=\"https://lobste.rs/s/7lii0g/review_pull_request_by_booting_it\">Lobste.rs</a></small></p>\n\n\n    <p>Tags: <a href=\"https://simonwillison.net/tags/code-review\">code-review</a>, <a href=\"https://simonwillison.net/tags/linux\">linux</a>, <a href=\"https://simonwillison.net/tags/webassembly\">webassembly</a>, <a href=\"https://simonwillison.net/tags/github-actions\">github-actions</a></p>\n\n\n\n",
+      "contentSnippet": "",
+      "creator": "",
+      "summary": "trynix.dev是一个创新的浏览器端Nix包运行工具，基于qemu-wasm在WebAssembly中运行x86_64 Linux虚拟机，可直接启动任意Nix包（支持过去13年版本）。用户可通过URL指定包版本，如直接运行2017年的Python 3.6.2。还提供trynix-preview GitHub Action，可在PR上自动生成浏览器预览链接，无需服务器支持。",
+      "ai_score": 8,
+      "ai_reason": "技术创新性强，实现了浏览器内运行任意Nix包，支持URL寻址和GitHub Actions集成，属于高质量开发者工具，但非核心关注领域",
+      "tags": []
+    }
+  ],
+  "lastUpdated": "2026-09-15T16:44:55.633Z"
+}

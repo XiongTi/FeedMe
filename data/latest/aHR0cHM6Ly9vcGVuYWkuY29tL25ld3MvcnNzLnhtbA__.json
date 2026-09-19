@@ -1,0 +1,22 @@
+{
+  "sourceUrl": "https://openai.com/news/rss.xml",
+  "title": "OpenAI News",
+  "description": "The OpenAI blog",
+  "link": "https://openai.com/news",
+  "items": [
+    {
+      "title": "Perplexity trusts GPT-6 Astra with end-to-end systems",
+      "link": "https://openai.com/index/perplexity-improving-accuracy-with-astra",
+      "pubDate": "Mon, 14 Sep 2026 00:00:00 GMT",
+      "isoDate": "2026-09-14T00:00:00.000Z",
+      "content": "Perplexity uses Astra to write communications, change software, and monitor production systems, and checks in much less frequently than with earlier models.",
+      "contentSnippet": "Perplexity uses Astra to write communications, change software, and monitor production systems, and checks in much less frequently than with earlier models.",
+      "creator": "",
+      "summary": "Perplexity采用GPT-6 Astra模型实现端到端系统操作，包括编写通信内容、修改软件代码及生产系统监控，且相比早期模型大幅降低了人工检查频率。这是AI Agent在生产环境中的典型应用案例。",
+      "ai_score": 7,
+      "ai_reason": "AI Agent在生产系统的实际应用案例，属于核心领域但缺乏技术深度，纯新闻报道性质",
+      "tags": []
+    }
+  ],
+  "lastUpdated": "2026-09-19T15:43:20.129Z"
+}

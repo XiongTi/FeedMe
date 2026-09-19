@@ -1,0 +1,22 @@
+{
+  "sourceUrl": "https://hnrss.org/best",
+  "title": "Hacker News: Best",
+  "description": "Hacker News RSS",
+  "link": "https://news.ycombinator.com/best",
+  "items": [
+    {
+      "title": "How to Write with an LLM",
+      "link": "https://sockpuppet.org/blog/2026/09/17/how-to-write-with-an-llm/",
+      "pubDate": "Thu, 17 Sep 2026 21:48:38 +0000",
+      "isoDate": "2026-09-17T21:48:38.000Z",
+      "content": "\n<p>Article URL: <a href=\"https://sockpuppet.org/blog/2026/09/17/how-to-write-with-an-llm/\">https://sockpuppet.org/blog/2026/09/17/how-to-write-with-an-llm/</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=49747070\">https://news.ycombinator.com/item?id=49747070</a></p>\n<p>Points: 542</p>\n<p># Comments: 356</p>\n",
+      "contentSnippet": "Article URL: https://sockpuppet.org/blog/2026/09/17/how-to-write-with-an-llm/\nComments URL: https://news.ycombinator.com/item?id=49747070\nPoints: 542\n# Comments: 356",
+      "creator": "joeriddles",
+      "summary": "本文探讨了如何有效利用大型语言模型进行写作，提供了prompt工程的具体实践指导。作为一篇技术博客文章，作者分享了使用LLM提升写作效率的方法和思考，文章在Hacker News获得较高关注，说明其在开发者群体中有一定实用价值。内容属于LLM工程化落地的Prompt Engineering方向",
+      "ai_score": 7,
+      "ai_reason": "核心领域(LLM工程化)的技术实践文章，Hacker News高关注度(542 points)，内容涉及Prompt Engineering的实用技巧，属于核心领域的高质量技术分析",
+      "tags": []
+    }
+  ],
+  "lastUpdated": "2026-09-19T15:42:11.818Z"
+}

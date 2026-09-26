@@ -1,0 +1,22 @@
+{
+  "sourceUrl": "https://openai.com/news/rss.xml",
+  "title": "OpenAI News",
+  "description": "The OpenAI blog",
+  "link": "https://openai.com/news",
+  "items": [
+    {
+      "title": "V7 cuts costs 78% while boosting accuracy with GPT-5.6 Luna",
+      "link": "https://openai.com/index/v7",
+      "pubDate": "Mon, 21 Sep 2026 00:00:00 GMT",
+      "isoDate": "2026-09-21T00:00:00.000Z",
+      "content": "Using GPT-5.6, V7 turns scattered company files into context agents can use to complete complex, source-linked work.",
+      "contentSnippet": "Using GPT-5.6, V7 turns scattered company files into context agents can use to complete complex, source-linked work.",
+      "creator": "",
+      "summary": "V7宣布基于GPT-5.6 Luna模型实现成本降低78%的同时提升准确率，该产品可将企业分散的文件转化为结构化上下文，供Agent完成复杂的溯源工作。属于AI Agent应用层的实践案例。",
+      "ai_score": 7,
+      "ai_reason": "涉及AI Agent将文件转换为上下文的实际应用场景，属于核心关注领域，但为产品新闻发布，缺少深度技术细节，基础分6分加Agent相关1分。",
+      "tags": []
+    }
+  ],
+  "lastUpdated": "2026-09-26T16:09:08.668Z"
+}

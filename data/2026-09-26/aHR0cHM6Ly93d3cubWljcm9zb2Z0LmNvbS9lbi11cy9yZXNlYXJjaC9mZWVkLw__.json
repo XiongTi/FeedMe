@@ -1,0 +1,26 @@
+{
+  "sourceUrl": "https://www.microsoft.com/en-us/research/feed/",
+  "title": "Microsoft Research",
+  "description": "",
+  "link": "https://www.microsoft.com/en-us/research/",
+  "items": [
+    {
+      "title": "Offloaded inference for real-world physical AI robotics",
+      "link": "https://www.microsoft.com/en-us/research/blog/offloaded-inference-for-real-world-physical-ai-robotics/",
+      "pubDate": "Wed, 23 Sep 2026 16:01:36 +0000",
+      "isoDate": "2026-09-23T16:01:36.000Z",
+      "content": "<p>Robots are getting smarter, but how can their hardware match that growth? New Microsoft Research findings show that moving AI inference beyond the robot can improve task success, boost efficiency, and support more advanced physical AI workloads.</p>\n<p>The post <a href=\"https://www.microsoft.com/en-us/research/blog/offloaded-inference-for-real-world-physical-ai-robotics/\">Offloaded inference for real-world physical AI robotics</a> appeared first on <a href=\"https://www.microsoft.com/en-us/research\">Microsoft Research</a>.</p>\n",
+      "contentSnippet": "Robots are getting smarter, but how can their hardware match that growth? New Microsoft Research findings show that moving AI inference beyond the robot can improve task success, boost efficiency, and support more advanced physical AI workloads.\nThe post Offloaded inference for real-world physical AI robotics appeared first on Microsoft Research.",
+      "creator": "Ganesh Ananthanarayanan, Matthew Balkwill, Xenofon Foukas, Sanjeev Mehrotra, Bozidar Radunovic, Connor Settle, Ankit Verma, David White, Shawn Cicoria, Mark Martin, Rachel Johnson, Mayur Patel",
+      "enclosure": {
+        "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2026/09/SO101-handover-1.mp4",
+        "type": "video/mp4"
+      },
+      "summary": "微软研究院发布关于物理AI机器人的最新成果，探讨将AI推理从机器人本体卸载到外部硬件的方案。研究表明这种方法可提升任务成功率、提高效率并支持更先进的物理AI工作负载。这是Physical AI领域的技术探索，与软件Agent架构有相通之处但更偏硬件层面。",
+      "ai_score": 7,
+      "ai_reason": "微软研究院关于物理AI机器人推理卸载的技术研究，属于Physical AI新兴领域，有一定技术价值但非核心关注领域，且缺乏实现细节",
+      "tags": []
+    }
+  ],
+  "lastUpdated": "2026-09-26T16:12:57.885Z"
+}

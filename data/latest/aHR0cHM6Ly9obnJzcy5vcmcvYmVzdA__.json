@@ -1,0 +1,22 @@
+{
+  "sourceUrl": "https://hnrss.org/best",
+  "title": "Hacker News: Best",
+  "description": "Hacker News RSS",
+  "link": "https://news.ycombinator.com/best",
+  "items": [
+    {
+      "title": "Greg Kroah-Hartman – Security in the LLM Age [video]",
+      "link": "https://www.youtube.com/watch?v=NnV_cWeoo5Q",
+      "pubDate": "Fri, 02 Oct 2026 02:51:27 +0000",
+      "isoDate": "2026-10-02T02:51:27.000Z",
+      "content": "\n<p>Article URL: <a href=\"https://www.youtube.com/watch?v=NnV_cWeoo5Q\">https://www.youtube.com/watch?v=NnV_cWeoo5Q</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=49929391\">https://news.ycombinator.com/item?id=49929391</a></p>\n<p>Points: 283</p>\n<p># Comments: 105</p>\n",
+      "contentSnippet": "Article URL: https://www.youtube.com/watch?v=NnV_cWeoo5Q\nComments URL: https://news.ycombinator.com/item?id=49929391\nPoints: 283\n# Comments: 105",
+      "creator": "usernomdeguerre",
+      "summary": "Linux内核核心维护者Greg Kroah-Hartman关于LLM时代安全的视频演讲，内容来自Hacker News热门分享，获得283个赞同和105条评论。作为资深内核开发者的视角，探讨了大语言模型应用中的安全问题，在技术社区引发较高关注。",
+      "ai_score": 7,
+      "ai_reason": "LLM安全主题，知名内核维护者Greg Kroah-Hartman的技术分享，Hacker News高热度(283 points)，但视频形式无法判断技术深度",
+      "tags": []
+    }
+  ],
+  "lastUpdated": "2026-10-03T16:01:19.314Z"
+}

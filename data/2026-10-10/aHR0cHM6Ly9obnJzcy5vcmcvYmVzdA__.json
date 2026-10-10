@@ -1,0 +1,22 @@
+{
+  "sourceUrl": "https://hnrss.org/best",
+  "title": "Hacker News: Best",
+  "description": "Hacker News RSS",
+  "link": "https://news.ycombinator.com/best",
+  "items": [
+    {
+      "title": "Show HN: Let your AI agents paint big arrows, boxes and text on your screen",
+      "link": "https://github.com/franzenzenhofer/big-arrow-on-the-screen",
+      "pubDate": "Fri, 09 Oct 2026 11:03:48 +0000",
+      "isoDate": "2026-10-09T11:03:48.000Z",
+      "content": "\n<p>Article URL: <a href=\"https://github.com/franzenzenhofer/big-arrow-on-the-screen\">https://github.com/franzenzenhofer/big-arrow-on-the-screen</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50018817\">https://news.ycombinator.com/item?id=50018817</a></p>\n<p>Points: 404</p>\n<p># Comments: 184</p>\n",
+      "contentSnippet": "Article URL: https://github.com/franzenzenhofer/big-arrow-on-the-screen\nComments URL: https://news.ycombinator.com/item?id=50018817\nPoints: 404\n# Comments: 184",
+      "creator": "franze",
+      "summary": "这是一个GitHub开源项目，允许AI agents在屏幕上绘制大箭头、框和文本。该工具可帮助开发者可视化AI Agent的决策过程、调试agent行为或在屏幕上创建交互式指引。对于构建需要视觉反馈的AI Agent系统有实用价值。",
+      "ai_score": 8,
+      "ai_reason": "这是一个实用的AI Agent开发者工具，让Agent能在屏幕上绘制可视化元素，属于核心关注的AI Agent和开发者工具领域，有技术实现且开源",
+      "tags": []
+    }
+  ],
+  "lastUpdated": "2026-10-10T17:12:13.035Z"
+}

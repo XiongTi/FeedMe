@@ -1,0 +1,22 @@
+{
+  "sourceUrl": "https://www.microsoft.com/en-us/research/feed/",
+  "title": "Microsoft Research",
+  "description": "",
+  "link": "https://www.microsoft.com/en-us/research/",
+  "items": [
+    {
+      "title": "Agent Lightning v1.0: A 3,500-Line Lightweight Agentic RL Framework for Training Agents with Real Harnesses",
+      "link": "https://www.microsoft.com/en-us/research/blog/agent-lightning-v1-0-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses/",
+      "pubDate": "Wed, 07 Oct 2026 16:00:00 +0000",
+      "isoDate": "2026-10-07T16:00:00.000Z",
+      "content": "<p>Training AI agents with reinforcement learning can be challenging because their tools, context, and decision-making are managed by complex frameworks. Agent Lightning connects existing agents to RL training, making it easier to improve them without rebuilding them.</p>\n<p>The post <a href=\"https://www.microsoft.com/en-us/research/blog/agent-lightning-v1-0-a-3500-line-lightweight-agentic-rl-framework-for-training-agents-with-real-harnesses/\">Agent Lightning v1.0: A 3,500-Line Lightweight Agentic RL Framework for Training Agents with Real Harnesses</a> appeared first on <a href=\"https://www.microsoft.com/en-us/research\">Microsoft Research</a>.</p>\n",
+      "contentSnippet": "Training AI agents with reinforcement learning can be challenging because their tools, context, and decision-making are managed by complex frameworks. Agent Lightning connects existing agents to RL training, making it easier to improve them without rebuilding them.\nThe post Agent Lightning v1.0: A 3,500-Line Lightweight Agentic RL Framework for Training Agents with Real Harnesses appeared first on Microsoft Research.",
+      "creator": "Zhiyuan He, Yuqing Yang",
+      "summary": "微软研究院发布Agent Lightning v1.0，一个3500行的轻量级Agentic强化学习框架。该框架旨在将现有agents连接到RL训练流程中，无需重建即可提升agent能力，解决AI agent工具、上下文和决策管理的复杂性问题。",
+      "ai_score": 8,
+      "ai_reason": "核心领域(AI Agent)的高质量开源框架发布，由微软研究院推出，3500行轻量级代码，有具体技术架构和实现细节，属于Agentic RL训练领域的突破性进展",
+      "tags": []
+    }
+  ],
+  "lastUpdated": "2026-10-10T17:19:24.481Z"
+}

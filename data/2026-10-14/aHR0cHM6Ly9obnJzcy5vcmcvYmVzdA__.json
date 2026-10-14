@@ -1,0 +1,48 @@
+{
+  "sourceUrl": "https://hnrss.org/best",
+  "title": "Hacker News: Best",
+  "description": "Hacker News RSS",
+  "link": "https://news.ycombinator.com/best",
+  "items": [
+    {
+      "title": "AOSP Source Releases Are So Late Developers Disassemble Libraries to Report Bugs",
+      "link": "https://github.com/android/ndk/issues/2260",
+      "pubDate": "Wed, 14 Oct 2026 06:18:01 +0000",
+      "isoDate": "2026-10-14T06:18:01.000Z",
+      "content": "\n<p>Article URL: <a href=\"https://github.com/android/ndk/issues/2260\">https://github.com/android/ndk/issues/2260</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50083130\">https://news.ycombinator.com/item?id=50083130</a></p>\n<p>Points: 437</p>\n<p># Comments: 210</p>\n",
+      "contentSnippet": "Article URL: https://github.com/android/ndk/issues/2260\nComments URL: https://news.ycombinator.com/item?id=50083130\nPoints: 437\n# Comments: 210",
+      "creator": "tharen",
+      "summary": "GitHub Android NDK issue引发广泛讨论，开发者抱怨AOSP源码发布滞后，导致在向Google报告bug时无法查看源码，只能通过反汇编库来定位问题。这反映了Android开发工具链中的一个实际痛点，影响了开发者向开源项目提交有效bug报告的效率。",
+      "ai_score": 7,
+      "ai_reason": "HN热门讨论(437分)，涉及Android开发者工具链和平台工程问题，源码发布延迟影响bug报告效率，属于有技术深度的开发者体验议题，但非AI/Agent核心领域",
+      "tags": []
+    },
+    {
+      "title": "11 year old unsoundness bugs found in Rust borrow checker",
+      "link": "https://github.com/rust-lang/rust/issues/164250",
+      "pubDate": "Tue, 13 Oct 2026 10:27:00 +0000",
+      "isoDate": "2026-10-13T10:27:00.000Z",
+      "content": "\n<p>Article URL: <a href=\"https://github.com/rust-lang/rust/issues/164250\">https://github.com/rust-lang/rust/issues/164250</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50069499\">https://news.ycombinator.com/item?id=50069499</a></p>\n<p>Points: 729</p>\n<p># Comments: 414</p>\n",
+      "contentSnippet": "Article URL: https://github.com/rust-lang/rust/issues/164250\nComments URL: https://news.ycombinator.com/item?id=50069499\nPoints: 729\n# Comments: 414",
+      "creator": "formerly_proven",
+      "summary": "Rust 语言团队在 GitHub 上披露了 borrow checker 中存在长达11年的 unsoundness bug，这些 bug 可能导致未定义行为，绕过 Rust 的内存安全保证。该问题在 Hacker News 上获得729个投票和414条评论，引发了社区广泛关注。这是 Rust 核心安全机制的重大缺陷，对生态有深远影响",
+      "ai_score": 10,
+      "ai_reason": "Rust borrow checker 发现了存在11年之久的 unsoundness bug，是编程语言核心机制的重大缺陷，涉及内存安全，影响深远，属于代码质量/静态分析领域的标志性事件",
+      "tags": []
+    },
+    {
+      "title": "Codex CLI installs a persistent, self-updating background daemon by default",
+      "link": "https://github.com/openai/codex/issues/48195",
+      "pubDate": "Mon, 12 Oct 2026 18:29:04 +0000",
+      "isoDate": "2026-10-12T18:29:04.000Z",
+      "content": "\n<p>Article URL: <a href=\"https://github.com/openai/codex/issues/48195\">https://github.com/openai/codex/issues/48195</a></p>\n<p>Comments URL: <a href=\"https://news.ycombinator.com/item?id=50060694\">https://news.ycombinator.com/item?id=50060694</a></p>\n<p>Points: 603</p>\n<p># Comments: 292</p>\n",
+      "contentSnippet": "Article URL: https://github.com/openai/codex/issues/48195\nComments URL: https://news.ycombinator.com/item?id=50060694\nPoints: 603\n# Comments: 292",
+      "creator": "whimblepop",
+      "summary": "OpenAI的Codex CLI工具默认安装持久化、自更新的后台守护进程引发开发者讨论。该设计选择涉及工具的架构实现、后台服务机制等技术细节，在Hacker News获得603个points和292条评论，反映出开发者对CLI工具设计选择的高度关注",
+      "ai_score": 8,
+      "ai_reason": "关于OpenAI Codex CLI默认安装后台守护进程的技术讨论，涉及CLI工具架构设计和技术实现细节，在Hacker News获得高关注度，属于开发者工具领域的有深度技术内容",
+      "tags": []
+    }
+  ],
+  "lastUpdated": "2026-10-14T16:54:25.113Z"
+}

@@ -1,0 +1,74 @@
+{
+  "sourceUrl": "https://rsshub.rssforever.com/github/trending/daily/any",
+  "title": "Trending repositories on GitHub today · GitHub",
+  "description": "Trending repositories on GitHub today · GitHub - Powered by RSSHub",
+  "link": "https://github.com/trending/?since=daily&spoken_language_code=",
+  "items": [
+    {
+      "title": "mksglu/context-mode",
+      "link": "https://github.com/mksglu/context-mode",
+      "pubDate": "2026-10-14T16:57:51.264Z",
+      "isoDate": "2026-10-14T16:57:51.264Z",
+      "content": "<img src=\"https://opengraph.githubassets.com/40b740da6df5b9d7d748fbb94d7fac43ebf6f62d8ea694af2a04eb321fcb2778/mksglu/context-mode\" referrerpolicy=\"no-referrer\"><br>Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and   enforces routing across 17 platforms via MCP + hooks.<br><br>Language: TypeScript<br>Stars: 28888<br>Forks: 2030",
+      "contentSnippet": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and   enforces routing across 17 platforms via MCP + hooks.\nLanguage: TypeScript\nStars: 28888\nForks: 2030",
+      "creator": "mksglu",
+      "summary": "context-mode是一个针对AI编码代理的上下文窗口优化开源项目，核心功能包括：沙盒化工具输出（实现98%数据缩减）、会话内存持久化、以及通过MCP协议和hooks在17个平台上实现强制路由。项目使用TypeScript开发，获得28.8k stars关注，体现了AI Agent工程化在上下文管理和工具调用方面的突破性实践。",
+      "ai_score": 8,
+      "ai_reason": "高质量AI编码代理开源项目，提供上下文窗口优化核心技术，98%工具输出缩减效果显著，涉及MCP协议和跨平台路由工程实践，热度极高（28.8k stars）",
+      "tags": []
+    },
+    {
+      "title": "HKUDS/CLI-Anything",
+      "link": "https://github.com/HKUDS/CLI-Anything",
+      "pubDate": "2026-10-14T16:57:51.264Z",
+      "isoDate": "2026-10-14T16:57:51.264Z",
+      "content": "<img src=\"https://opengraph.githubassets.com/00a0555810c6b7fa9e193576c0c6a2bdc679f0d8d1d44fb72f4b2b1e2597845e/HKUDS/CLI-Anything\" referrerpolicy=\"no-referrer\"><br>\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/<br><br>Language: Python<br>Stars: 52316<br>Forks: 4764",
+      "contentSnippet": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/\nLanguage: Python\nStars: 52316\nForks: 4764",
+      "creator": "HKUDS",
+      "summary": "CLI-Anything是由HKUDS推出的开源项目，旨在让所有软件都具有Agent原生特性。项目获得了极高的社区关注度(52,316 stars, 4,764 forks)，提供了Python实现，是AI Agent工程化落地的重要工具，简化了Agent与命令行工具的集成。",
+      "ai_score": 8,
+      "ai_reason": "核心领域高质量开源项目，聚焦Agent原生CLI工具，社区热度极高(52k+ stars)，具有工程实践价值",
+      "tags": []
+    },
+    {
+      "title": "ifixai-ai/iFixAi",
+      "link": "https://github.com/ifixai-ai/iFixAi",
+      "pubDate": "2026-10-14T16:57:51.264Z",
+      "isoDate": "2026-10-14T16:57:51.264Z",
+      "content": "<img src=\"https://repository-images.githubusercontent.com/1222527844/6b39639c-1e2f-4765-b8b2-1b5fc6a93e4f\" referrerpolicy=\"no-referrer\"><br>Independent Auditing of AI Agents. Run by human or the agent itself, to answer the most crucial question in the AI Agent Economy. Is the agent doing what is supposed to do? With iFixAi you can have this answer in less than 120 seconds.<br><br>Language: Python<br>Stars: 26953<br>Forks: 1490",
+      "contentSnippet": "Independent Auditing of AI Agents. Run by human or the agent itself, to answer the most crucial question in the AI Agent Economy. Is the agent doing what is supposed to do? With iFixAi you can have this answer in less than 120 seconds.\nLanguage: Python\nStars: 26953\nForks: 1490",
+      "creator": "ifixai-ai",
+      "summary": "iFixAi是一个AI Agent独立审计工具，可验证Agent是否按预期工作，120秒内即可获得审计结果。该项目获得2.7万星关注，采用Python开发，为AI Agent经济中的信任问题提供了解决方案。",
+      "ai_score": 8,
+      "ai_reason": "AI Agent审计领域的高质量开源项目，2.7万星表明其重要性和实用性，属于核心领域的实用工具发布",
+      "tags": []
+    },
+    {
+      "title": "K-Dense-AI/scientific-agent-skills",
+      "link": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "pubDate": "2026-10-14T16:57:51.264Z",
+      "isoDate": "2026-10-14T16:57:51.264Z",
+      "content": "<img src=\"https://opengraph.githubassets.com/b2b4ac86e42fd194d2d8f69a15a36b291611a3c93afc4a712656307e95762fe3/K-Dense-AI/scientific-agent-skills\" referrerpolicy=\"no-referrer\"><br>Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.<br><br>Language: Python<br>Stars: 49101<br>Forks: 4404",
+      "contentSnippet": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.\nLanguage: Python\nStars: 49101\nForks: 4404",
+      "creator": "K-Dense-AI",
+      "summary": "scientific-agent-skills是一个将AI代理转变为AI科学家的技能库，包含177个经过验证的技能和100多个科学数据库，覆盖生物学、化学、医学和药物发现领域。兼容Cursor、Claude Code、Codex等主流AI编程工具，全球拥有超过25万科学家用户，GitHub星标数达49101。",
+      "ai_score": 7,
+      "ai_reason": "AI Agent技能库的科学垂直应用，提供177个验证技能和100+科学数据库，覆盖生物、化学、医学领域，与主流AI编程工具兼容，有较高技术价值和用户规模。",
+      "tags": []
+    },
+    {
+      "title": "vxcontrol/pentagi",
+      "link": "https://github.com/vxcontrol/pentagi",
+      "pubDate": "2026-10-14T16:57:51.264Z",
+      "isoDate": "2026-10-14T16:57:51.264Z",
+      "content": "<img src=\"https://repository-images.githubusercontent.com/913030762/c8502908-380f-4897-aaba-87cfa16d67b4\" referrerpolicy=\"no-referrer\"><br>Fully autonomous AI Agents system capable of performing complex penetration testing tasks<br><br>Language: Go<br>Stars: 29037<br>Forks: 4368",
+      "contentSnippet": "Fully autonomous AI Agents system capable of performing complex penetration testing tasks\nLanguage: Go\nStars: 29037\nForks: 4368",
+      "creator": "vxcontrol",
+      "summary": "Pentagi是一个使用Go语言开发的全自主AI Agent系统，专注于执行复杂的渗透测试任务。该项目在GitHub上获得超过29k Stars，表明其在安全社区具有较高关注度。作为AI Agent在网络安全领域的具体应用，体现了Agent技术在专业垂直场景的落地能力。",
+      "ai_score": 7,
+      "ai_reason": "AI Agent在安全渗透测试领域的实用开源项目，Star数高说明有一定影响力，属于核心领域的工具类实践",
+      "tags": []
+    }
+  ],
+  "lastUpdated": "2026-10-14T16:57:51.264Z"
+}

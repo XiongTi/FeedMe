@@ -1,0 +1,22 @@
+{
+  "sourceUrl": "https://simonwillison.net/atom/everything/",
+  "title": "Simon Willison's Weblog",
+  "description": "",
+  "link": "http://simonwillison.net/",
+  "items": [
+    {
+      "title": "Quoting Geoffrey Huntley",
+      "link": "https://simonwillison.net/2026/Oct/13/geoffrey-huntley/",
+      "pubDate": "2026-10-13T13:32:00.000Z",
+      "isoDate": "2026-10-13T13:32:00.000Z",
+      "content": "\n    <blockquote cite=\"https://ghuntley.com/agency/\"><p>If the agent isn't using my diagnostics library, I could introspect and update AGENTS.md, but there's still a delta, and it'll drift. Instead, I write a pre-commit hook that checks the git diff for direct calls to observability modules that bypass my diagnostics module. Boom: fail the commit, inject a prompt telling the agent to use the diagnostics library. All of a sudden it's ten out of ten.</p></blockquote>\n<p class=\"cite\">&mdash; <a href=\"https://ghuntley.com/agency/\">Geoffrey Huntley</a>, nobody should type code by hand anymore. here's what's left.</p>\n\n    <p>Tags: <a href=\"https://simonwillison.net/tags/coding-agents\">coding-agents</a>, <a href=\"https://simonwillison.net/tags/generative-ai\">generative-ai</a>, <a href=\"https://simonwillison.net/tags/git\">git</a>, <a href=\"https://simonwillison.net/tags/agentic-engineering\">agentic-engineering</a>, <a href=\"https://simonwillison.net/tags/ai\">ai</a>, <a href=\"https://simonwillison.net/tags/geoffrey-huntley\">geoffrey-huntley</a>, <a href=\"https://simonwillison.net/tags/llms\">llms</a></p>\n\n\n\n",
+      "contentSnippet": "",
+      "creator": "",
+      "summary": "Geoffrey Huntley分享了一个工程实践：通过pre-commit hook检查git diff，捕获直接调用可观测性模块的行为，阻止提交并提示agent使用诊断库。这是一种将代码质量控制与agent行为规范相结合的创新做法，确保agent不会绕过统一的诊断层。",
+      "ai_score": 9,
+      "ai_reason": "核心领域的工程实践创新：通过pre-commit hook强制agent使用诊断库，巧妙解决agent可观测性模块使用规范问题，具有较高的技术参考价值",
+      "tags": []
+    }
+  ],
+  "lastUpdated": "2026-10-14T17:00:26.962Z"
+}

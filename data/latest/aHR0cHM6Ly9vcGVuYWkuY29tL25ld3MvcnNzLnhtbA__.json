@@ -1,0 +1,35 @@
+{
+  "sourceUrl": "https://openai.com/news/rss.xml",
+  "title": "OpenAI News",
+  "description": "The OpenAI blog",
+  "link": "https://openai.com/news",
+  "items": [
+    {
+      "title": "How Third Moment Research runs 10,000 agents for 36+ hours",
+      "link": "https://openai.com/index/third-moment-research",
+      "pubDate": "Wed, 14 Oct 2026 07:00:00 GMT",
+      "isoDate": "2026-10-14T07:00:00.000Z",
+      "content": "With GPT-6 Astra and GPT-6.1 Sol, Codex, and Daybreak for cybersecurity, this AI lab builds agents that focus for days and improve with use.",
+      "contentSnippet": "With GPT-6 Astra and GPT-6.1 Sol, Codex, and Daybreak for cybersecurity, this AI lab builds agents that focus for days and improve with use.",
+      "creator": "",
+      "summary": "Third Moment Research实验室展示运行10,000个AI agents持续36+小时的能力，使用GPT-6 Astra、GPT-6.1 Sol、Codex和Daybreak等模型，专注于网络安全领域，构建能够长时间持续运行并随使用改进的agent系统。",
+      "ai_score": 7,
+      "ai_reason": "核心领域的AI Agent大规模运行实践，但为新闻报道性质，缺乏深度技术细节，大规模agent编排有参考价值",
+      "tags": []
+    },
+    {
+      "title": "Sophos cuts threat investigation time by 96% with OpenAI Daybreak",
+      "link": "https://openai.com/index/sophos",
+      "pubDate": "Fri, 09 Oct 2026 07:00:00 GMT",
+      "isoDate": "2026-10-09T07:00:00.000Z",
+      "content": "Discover how Sophos uses OpenAI’s Daybreak to cut cyber-threat investigation time by 96% and automate 52% of MDR cases while preserving human oversight.",
+      "contentSnippet": "Discover how Sophos uses OpenAI’s Daybreak to cut cyber-threat investigation time by 96% and automate 52% of MDR cases while preserving human oversight.",
+      "creator": "",
+      "summary": "Sophos利用OpenAI的Daybreak工具实现威胁调查自动化，将威胁调查时间缩短96%，并让52%的托管检测响应（MDR）案例实现自动化处理，同时保留人工监督机制。这是AI在安全运营领域的典型应用案例。",
+      "ai_score": 7,
+      "ai_reason": "属于AIOps安全运营领域的AI应用实践，有具体的量化效果数据（96%时间减少、52%自动化），符合核心关注领域，给予基础分+1，但属于产品应用案例而非深度技术分析",
+      "tags": []
+    }
+  ],
+  "lastUpdated": "2026-10-14T16:55:41.924Z"
+}
